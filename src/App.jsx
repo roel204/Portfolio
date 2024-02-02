@@ -1,11 +1,12 @@
-import { useState } from 'react'
+import {useState} from 'react'
+import Navbar from './Navbar.jsx';
 
 function App() {
 
 
-  return (
- <h1>Hi</h1>
-  )
+    return (
+        <Navbar/>
+    )
 }
 
 export default App
