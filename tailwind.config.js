@@ -6,7 +6,11 @@ export default {
     './src/index.css'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'cgreen': '#20C20C'
+      },
+    },
   },
   plugins: [],
 }
