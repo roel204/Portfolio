@@ -5,3 +5,25 @@
 body {
     background-color: #151515;
 }
+
+.gradientText {
+    font-size: 100px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    text-align: center;
+    background: linear-gradient(45deg, #1CFF00, #3AFF00, #63FF00, #8CFF00, #B4FF00, #88FF22, #6AE22D, #14E714, #20C20C, #14E714, #6AE22D, #88FF22, #B4FF00, #8CFF00, #63FF00, #3AFF00, #1CFF00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 1000% 1000%;
+    animation: gradient 20s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}

@@ -1,11 +1,14 @@
-import {useState} from 'react'
+import React from 'react'
 import Navbar from './Navbar.jsx';
 
 function App() {
 
 
     return (
-        <Navbar/>
+        <>
+            <h1 className="gradientText">Roel Hoogendoorn</h1>
+            <Navbar/>
+        </>
     )
 }
 
