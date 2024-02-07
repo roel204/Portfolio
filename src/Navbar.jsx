@@ -1,13 +1,14 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 
 const Navbar = () => {
-    const [darkMode, setDarkMode] = useState(true);
+    const [darkMode, setDarkMode] = useState('on');
     const [language, setLanguage] = useState('en');
 
     // Function to toggle dark mode
     const toggleDarkMode = () => {
-        setDarkMode(!darkMode);
-        localStorage.setItem('darkMode', !darkMode);
+        const newMode = darkMode === 'on' ? 'off' : 'on';
+        setDarkMode(newMode);
+        localStorage.setItem('darkMode', newMode);
     };
 
     // Function to toggle language
@@ -19,13 +20,13 @@ const Navbar = () => {
 
     // Retrieve preferences from localStorage & update dark class
     useEffect(() => {
-        const savedDarkMode = localStorage.getItem('darkMode') === 'true';
+        const savedDarkMode = localStorage.getItem('darkMode') || 'on';
         const savedLanguage = localStorage.getItem('language') || 'en';
 
         setDarkMode(savedDarkMode);
         setLanguage(savedLanguage);
 
-        if (darkMode === true) {
+        if (darkMode === 'on') {
             document.documentElement.classList.add('dark')
         } else {
             document.documentElement.classList.remove('dark')
@@ -36,7 +37,7 @@ const Navbar = () => {
         <aside className="fixed top-0 left-0 z-40 h-screen text-gray-900 dark:text-gray-200" aria-label="Sidebar">
             <div className="h-full flex flex-col items-center border-r-2 border-cgreen justify-between px-2 py-4 overflow-y-auto bg-gray-50 dark:bg-[#252525]">
 
-                <ul className="space-y-2 font-medium w-full mt-20 pb-4 border-b border-gray-200 dark:border-gray-700">
+                <ul className="space-y-2 font-medium w-full pb-4 border-b border-gray-200 dark:border-gray-700">
                     <li>
                         <a href="#" className="flex flex-col text-center items-center p-2 rounded-lg hover:bg-cgreen group">
                             <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true"
@@ -103,7 +104,7 @@ const Navbar = () => {
                     <span>Darkmode</span>
                     <div>
                         <label className="relative inline-flex items-center cursor-pointer">
-                            <input type="checkbox" value="" className="sr-only peer" checked={darkMode} onChange={toggleDarkMode}/>
+                            <input type="checkbox" value="" className="sr-only peer" checked={darkMode === 'on'} onChange={toggleDarkMode}/>
                             <div
                                 className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
                             </div>
