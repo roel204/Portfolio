@@ -2,9 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
-body {
-    background-color: #151515;
-}
 
 .gradientText {
     font-size: 100px;

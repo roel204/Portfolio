@@ -1,13 +1,17 @@
 import React from 'react'
+import { LanguageProvider } from './LanguageContext';
 import Navbar from './Navbar.jsx';
+import HomePage from "./HomePage.jsx";
 
 function App() {
 
 
     return (
         <>
-            <h1 className="gradientText">Roel Hoogendoorn</h1>
-            <Navbar/>
+            <LanguageProvider>
+                <HomePage/>
+                <Navbar/>
+            </LanguageProvider>
         </>
     )
 }
