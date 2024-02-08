@@ -66,13 +66,12 @@
     --red: #c8102e;
     --proportion: 0.5;
     --diagonal-angle: 26.5650512deg;
-    background-image:
-            linear-gradient(0deg, transparent 40%, var(--red) 40%, var(--red) 60%, transparent 60%),
-            linear-gradient(90deg, transparent 45%, var(--red) 45%, var(--red) 55%, transparent 55%),
-            linear-gradient(0deg, transparent 33.33333%, var(--white) 33.33333%, var(--white) 66.66667%, transparent 66.66667%),
-            linear-gradient(90deg, transparent 41.66667%, var(--white) 41.66667%, var(--white) 58.33333%, transparent 58.33333%),
-            linear-gradient(to top left, transparent 0, transparent 45%, var(--red) 45%, var(--red) 55%, transparent 55%, transparent 100%),
-            linear-gradient(to top right, transparent 0, transparent 45%, var(--red) 45%, var(--red) 55%, transparent 55%, transparent 100%),
-            linear-gradient(to top left, transparent 0, transparent 41.66667%, var(--white) 41.66667%, var(--white) 58.33333%, transparent 58.33333%, transparent 100%),
-            linear-gradient(to top right, transparent 0, transparent 41.66667%, var(--white) 41.66667%, var(--white) 58.33333%, transparent 58.33333%, transparent 100%);
+    background-image: linear-gradient(0deg, transparent 40%, var(--red) 40%, var(--red) 60%, transparent 60%),
+    linear-gradient(90deg, transparent 45%, var(--red) 45%, var(--red) 55%, transparent 55%),
+    linear-gradient(0deg, transparent 33.33333%, var(--white) 33.33333%, var(--white) 66.66667%, transparent 66.66667%),
+    linear-gradient(90deg, transparent 41.66667%, var(--white) 41.66667%, var(--white) 58.33333%, transparent 58.33333%),
+    linear-gradient(to top left, transparent 0, transparent 45%, var(--red) 45%, var(--red) 55%, transparent 55%, transparent 100%),
+    linear-gradient(to top right, transparent 0, transparent 45%, var(--red) 45%, var(--red) 55%, transparent 55%, transparent 100%),
+    linear-gradient(to top left, transparent 0, transparent 41.66667%, var(--white) 41.66667%, var(--white) 58.33333%, transparent 58.33333%, transparent 100%),
+    linear-gradient(to top right, transparent 0, transparent 41.66667%, var(--white) 41.66667%, var(--white) 58.33333%, transparent 58.33333%, transparent 100%);
 }

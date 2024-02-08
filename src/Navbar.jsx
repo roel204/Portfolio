@@ -44,7 +44,7 @@ const Navbar = () => {
 
                 <ul className="space-y-2 font-medium w-full pb-4 border-b border-gray-200 dark:border-gray-700">
                     <li>
-                        <a href="#" className="flex flex-col text-center items-center p-2 rounded-lg hover:bg-cgreen group">
+                        <a href="/Portfolio/" className="flex flex-col text-center items-center p-2 rounded-lg hover:bg-cgreen group">
                             <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
                                 <path
@@ -54,7 +54,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="flex flex-col items-center p-2 rounded-lg hover:bg-cgreen group">
+                        <a href="/Portfolio/projects" className="flex flex-col items-center p-2 rounded-lg hover:bg-cgreen group">
                             <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
                                 <path
@@ -64,7 +64,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="#" className="flex flex-col items-center p-2 rounded-lg hover:bg-cgreen group">
+                        <a href="/Portfolio/skills" className="flex flex-col items-center p-2 rounded-lg hover:bg-cgreen group">
                             <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512">
                                 <path
@@ -77,7 +77,7 @@ const Navbar = () => {
 
                 <ul className="py-4 space-y-2 w-full">
                     <li>
-                        <a href="#" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-cgreen group">
+                        <a href="mailto:roelhoogendoorn01369@gmail.com" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-cgreen group">
                             <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
                                 <path
@@ -97,7 +97,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="#" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-cgreen group">
+                        <a href="https://www.linkedin.com/in/roel-hoogendoorn/" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-cgreen group">
                             <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
                                 <path
