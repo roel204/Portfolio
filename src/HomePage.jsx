@@ -2,7 +2,7 @@ import React from 'react';
 import {useLanguage} from "./LanguageContext.jsx";
 
 const HomePage = () => {
-    const { language, toggleLanguage } = useLanguage();
+    const { language } = useLanguage();
 
     const texts = {
         en: {

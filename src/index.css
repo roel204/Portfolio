@@ -24,3 +24,55 @@
         background-position: 100% 50%;
     }
 }
+
+.dutch-flag {
+    width: 80%;
+    height: 40px;
+    background-color: white;
+    position: relative;
+    border-radius: 15px;
+}
+
+.dutch-flag::before,
+.dutch-flag::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 33.33%;
+}
+
+.dutch-flag::before {
+    top: 0;
+    background-color: #ae1c28;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.dutch-flag::after {
+    bottom: 0;
+    background-color: #21468b;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.uk-flag {
+    width: 80%;
+    height: 40px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #012169;
+    --white: #fff;
+    --red: #c8102e;
+    --proportion: 0.5;
+    --diagonal-angle: 26.5650512deg;
+    background-image:
+            linear-gradient(0deg, transparent 40%, var(--red) 40%, var(--red) 60%, transparent 60%),
+            linear-gradient(90deg, transparent 45%, var(--red) 45%, var(--red) 55%, transparent 55%),
+            linear-gradient(0deg, transparent 33.33333%, var(--white) 33.33333%, var(--white) 66.66667%, transparent 66.66667%),
+            linear-gradient(90deg, transparent 41.66667%, var(--white) 41.66667%, var(--white) 58.33333%, transparent 58.33333%),
+            linear-gradient(to top left, transparent 0, transparent 45%, var(--red) 45%, var(--red) 55%, transparent 55%, transparent 100%),
+            linear-gradient(to top right, transparent 0, transparent 45%, var(--red) 45%, var(--red) 55%, transparent 55%, transparent 100%),
+            linear-gradient(to top left, transparent 0, transparent 41.66667%, var(--white) 41.66667%, var(--white) 58.33333%, transparent 58.33333%, transparent 100%),
+            linear-gradient(to top right, transparent 0, transparent 41.66667%, var(--white) 41.66667%, var(--white) 58.33333%, transparent 58.33333%, transparent 100%);
+}

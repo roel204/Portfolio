@@ -1,9 +1,9 @@
 import {useState, useEffect} from 'react';
-import { useLanguage } from './LanguageContext';
+import {useLanguage} from './LanguageContext';
 
 const Navbar = () => {
     const [darkMode, setDarkMode] = useState('on');
-    const { language, toggleLanguage } = useLanguage();
+    const {language, toggleLanguage} = useLanguage();
 
     // Function to toggle dark mode
     const toggleDarkMode = () => {
@@ -40,7 +40,7 @@ const Navbar = () => {
 
     return (
         <aside className="fixed top-0 left-0 z-40 w-24 h-screen text-sm  text-gray-900 dark:text-gray-200" aria-label="Sidebar">
-            <div className="h-full flex flex-col items-center border-r-2 border-cgreen justify-between px-2 py-4 overflow-y-auto bg-green-200 dark:bg-[#252525]">
+            <div className="h-full w-full flex flex-col items-center border-r-2 border-cgreen justify-between px-2 py-4 overflow-y-auto bg-green-200 dark:bg-[#252525]">
 
                 <ul className="space-y-2 font-medium w-full pb-4 border-b border-gray-200 dark:border-gray-700">
                     <li>
@@ -108,24 +108,19 @@ const Navbar = () => {
                     </li>
                 </ul>
 
-                <div className="flex flex-col items-center mb-10 pt-4 space-y-2 font-medium w-full border-t border-gray-200 dark:border-gray-700">
-                    <span>Darkmode</span>
-                    <div>
-                        <label className="relative inline-flex items-center cursor-pointer">
-                            <input type="checkbox" value="" className="sr-only peer" checked={darkMode === 'on'} onChange={toggleDarkMode}/>
-                            <div
-                                className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600">
-                            </div>
-                        </label>
-                    </div>
-                    <div>
-                        <button
-                            className="px-2 py-2 text-white font-semibold rounded-lg bg-lime-500  hover:bg-lime-600"
-                            onClick={toggleLanguage}>
-                            {texts[language].languageButton}
-                        </button>
-                    </div>
-
+                <div className="flex flex-col items-center w-full pt-4 space-y-2 font-medium border-t border-gray-200 dark:border-gray-700">
+                    <button className="flex flex-col w-full items-center p-2 rounded-lg hover:bg-cgreen group" onClick={toggleDarkMode}>
+                        <svg className="flex-shrink-0 w-7 h-7 text-gray-900 transition duration-75 dark:text-yellow-400" aria-hidden="true"
+                             xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 384 512">
+                            <path
+                                d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"/>
+                        </svg>
+                        <span>{darkMode === 'off' ? 'Darkmode' : 'Lightmode'}</span>
+                    </button>
+                    <button className="flex flex-col w-full items-center p-2 rounded-lg hover:bg-cgreen group" onClick={toggleLanguage}>
+                        <div className={`${language === 'nl' ? 'uk-flag' : 'dutch-flag'}`}></div>
+                        <span>{texts[language].languageButton}</span>
+                    </button>
                 </div>
             </div>
         </aside>
