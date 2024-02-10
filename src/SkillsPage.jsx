@@ -15,7 +15,7 @@ const SkillsPage = () => {
 
     return (
         <div className="bg-green-100 dark:bg-[#151515] flex justify-center items-center h-screen">
-            <h1>Skills</h1>
+            <h1 className="gradientText">Skills</h1>
         </div>
     );
 }
