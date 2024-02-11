@@ -16,9 +16,9 @@ const HomePage = () => {
     };
 
     return (
-        <div className="bg-green-100 dark:bg-[#151515] flex justify-center items-center h-screen">
+        <div className="ml-24 text-black dark:text-white bg-green-100 dark:bg-[#151515] flex justify-center items-center h-screen">
             <div className="text-center">
-                <h2 className="text-black dark:text-white text-4xl font-bold mb-4">{texts[language].greet}</h2>
+                <h2 className="text-4xl font-bold mb-4">{texts[language].greet}</h2>
                 <h1 className="gradientText mb-8">Roel Hoogendoorn</h1>
                 <p className="text-gray-400 text-lg">{texts[language].extraText}</p>
             </div>
