@@ -44,7 +44,7 @@ const Navbar = () => {
                 <img src="public/RHlogo.png" alt="Git Logo" className="w-16 h-16 rounded object-contain transition duration-75 hover:scale-125"/>
                 <ul className="space-y-2 font-medium w-full pb-[8vh] border-b border-gray-200 dark:border-gray-700">
                     <li>
-                        <a href="/Portfolio/" className="flex flex-col text-center items-center p-2 rounded-lg hover:bg-cgreen group">
+                        <a href="/Portfolio/" className="flex flex-col text-center items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
                             <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                                  aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
@@ -55,7 +55,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="/Portfolio/projects" className="flex flex-col items-center p-2 rounded-lg hover:bg-cgreen group">
+                        <a href="/Portfolio/projects" className="flex flex-col items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
                             <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                                  aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
@@ -66,7 +66,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="/Portfolio/skills" className="flex flex-col items-center p-2 rounded-lg hover:bg-cgreen group">
+                        <a href="/Portfolio/skills" className="flex flex-col items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
                             <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                                  aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512">
@@ -80,7 +80,7 @@ const Navbar = () => {
 
                 <ul className="py-4 space-y-2 w-full">
                     <li>
-                        <a href="mailto:roelhoogendoorn01369@gmail.com" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-cgreen group">
+                        <a href="mailto:roelhoogendoorn01369@gmail.com" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
                             <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                                  aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
@@ -91,7 +91,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/roel204" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-cgreen group">
+                        <a href="https://github.com/roel204" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
                             <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                                  aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
@@ -102,7 +102,7 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/roel-hoogendoorn/" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-cgreen group">
+                        <a href="https://www.linkedin.com/in/roel-hoogendoorn/" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
                             <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                                  aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
@@ -115,7 +115,7 @@ const Navbar = () => {
                 </ul>
 
                 <div className="flex flex-col items-center w-full pt-4 space-y-2 font-medium border-t border-gray-200 dark:border-gray-700">
-                    <button className="flex flex-col w-full items-center p-2 rounded-lg hover:bg-cgreen group" onClick={toggleDarkMode}>
+                    <button className="flex flex-col w-full items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group" onClick={toggleDarkMode}>
                         <svg className="flex-shrink-0 w-7 h-7 text-gray-900 transition duration-75 group-hover:scale-110 dark:text-yellow-400" aria-hidden="true"
                              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 384 512">
                             <path
@@ -123,15 +123,15 @@ const Navbar = () => {
                         </svg>
                         <span>{darkMode === 'off' ? 'Darkmode' : 'Lightmode'}</span>
                     </button>
-                    <button className="flex flex-col w-full items-center p-2 rounded-lg hover:bg-cgreen group" onClick={toggleLanguage}>
-                        <div className={`${language === 'nl' ? 'uk-flag' : 'dutch-flag'}`}></div>
+                    <button className="flex flex-col w-full items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group" onClick={toggleLanguage}>
+                        <div className={`${language === 'nl' ? 'uk-flag' : 'dutch-flag'} transition group-hover:scale-110`}></div>
                         <span>{texts[language].languageButton}</span>
                     </button>
                 </div>
             </div>
 
             {/*Feedback Button*/}
-            <a href="#" className="fixed top-4 right-4 bg-lime-500 py-2 px-4 rounded-lg shadow-md hover:bg-lime-600 z-50">Feedback?</a>
+            <a href="#" className="fixed top-4 right-4 bg-dgreen dark:bg-cgreen py-2 px-4 rounded-lg shadow-md z-50 transition hover:scale-125">Feedback?</a>
 
         </aside>
     );

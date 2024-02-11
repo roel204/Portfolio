@@ -99,7 +99,7 @@ const ProjectsPage = () => {
 
             <div className="flex overflow-x-auto scrollbar-hide py-32 border-b border-cgreen" ref={containerRef}>
                 {projects.map((project, index) => (
-                    <a href="#" key={index} className="w-96 h-[50vh] flex-shrink-0 flex flex-col mx-6 bg-cgreen rounded-lg p-6 relative z-10 transition scale-95 hover:scale-110">
+                    <a href="#" key={index} className="w-96 h-[50vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative z-10 transition scale-95 hover:scale-110">
                         {/* Title */}
                         <h2 className="text-lg font-semibold">{project.title}</h2>
 

@@ -8,7 +8,8 @@ export default {
     theme: {
         extend: {
             colors: {
-                'cgreen': '#20C20C'
+                'cgreen': '#20C20C',
+                'dgreen': '#afff00'
             },
         },
     },
