@@ -16,7 +16,7 @@ const ProjectsPage = () => {
             const maxScroll = container.scrollWidth - containerWidth;
 
             // Define buffer zone width as 20% of the screen width
-            const bufferZoneWidth = 0.2 * screenWidth;
+            const bufferZoneWidth = 0.25 * screenWidth;
 
             // Calculate the scroll position based on the mouse position relative to the buffer zone
             let scrollPosition;
@@ -48,47 +48,70 @@ const ProjectsPage = () => {
         en: {
             pageTitle: "My Projects",
             code: "View Code",
+            streamTeam: "Streamteam is a Tailored Learning Environment (TLE) project for the CMGT study at Rotterdam University of Applied Sciences. The project focuses on the existing IP-car, a car controlled via a server with a live feed, which is intended for use in daily activities within care homes. Through this software, the IP-car can connect to a guide who can see a live feed and take control of the car with a controller via the same connection. It is a delivery to VindiQu and FoxConnect. VindiQu already offers livestream daily activities to care homes, and FoxConnect is the developer of the first IP-car, originally intended for private use by people with mobility impairments.",
         },
         nl: {
             pageTitle: 'Mijn Projecten',
             code: 'Bekijk Code',
+            streamTeam: "Streamteam is een Tailored Learning Environment (TLE) project voor de studie CMGT, Hogeschool Rotterdam. Het project focust op de bestaande IP-car, een via een server te besturen auto met een livefeed, die moet worden ingezet voor dagbesteding binnen zorghuizen. De IP-car kan via deze software verbinden met een gids, die een live beeld te zien krijgt en controle van de auto kan overnemen met een controller via dezelfde verbinding. Het is een oplevering aan VindiQu en FoxConnect. VindiQu biedt al livestream dagbesteding aan zorghuizen, en FoxConnect is de ontwikkelaar van de eerste IP-car, origineel bedoeld voor particulier gebruik van mensen met een motorische beperking.",
         },
     };
 
     const projects = [
         {
-            title: 'Project 1', githubLink: 'https://github.com/project1',
+            title: 'Stream Team', githubLink: 'https://github.com/faroeq33/TLE1',
+            tags: 'TLE1 Laravel JS',
             desc: {
-                en: 'shortDesc of Project 1',
-                nl: 'nl',
+                en: "A website to control Fox-Connect's IP-Car. Made together with other students.",
+                nl: 'Een website om de IP-Car van Fox-Connect te besturen. In samenwerking met andere studenten.',
             },
         },
         {
-            title: 'Project 1', githubLink: 'https://github.com/project1',
+            title: 'React Tasks', githubLink: 'https://github.com/roel204/TasksReact',
+            tags: 'PRG6 React MongoDB',
             desc: {
-                en: 'shortDesc of Project 1',
-                nl: 'nl',
+                en: 'A Task List app made with React. Gets and stores data to my own MongoDB API',
+                nl: 'Een Taken Lijst app gemaakt met React. Krijgt en slaat slaat data op in mijn eigen MongoDB API.',
             },
         },
         {
-            title: 'Project 1', githubLink: 'https://github.com/project1',
+            title: 'PC Showcase', githubLink: 'https://github.com/roel204/PCshowcase',
+            tags: 'PRG5 Laravel',
             desc: {
-                en: 'shortDesc of Project 1',
-                nl: 'nl',
+                en: 'A website made with Laravel to show your custom PC builds.',
+                nl: 'Een website gemaakt met Laravel om je eiegn PC te posten.',
             },
         },
         {
-            title: 'Project 1', githubLink: 'https://github.com/project1',
+            title: 'Hungry Fish', githubLink: 'https://github.com/roel204/hungryfish',
+            tags: 'PRG4 Excalibur Unity',
             desc: {
-                en: 'shortDesc of Project 1',
-                nl: 'nl',
+                en: 'A simple fish game made with ExcaliburJS, then remade and imporoved with Unity.',
+                nl: 'Een game over vissen gemaakt met ExcaliburJS, deze heb ik daarna opnieuw gemaakt in Unity en verbeterd.',
             },
         },
         {
-            title: 'Project 1', githubLink: 'https://github.com/project1',
+            title: "Hennie's Hulp Pagina", githubLink: 'https://github.com/roel204/CLE3',
+            tags: 'CLE3 JS',
             desc: {
-                en: 'shortDesc of Project 1',
-                nl: 'nl',
+                en: 'A help page for elderly people. Made together with other students.',
+                nl: 'Een hulp pagina voor senioren. In samenwerking met andere studenten.',
+            },
+        },
+        {
+            title: "Parrotfarm Reserveringssysteem", githubLink: 'https://github.com/roel204/Reseveeringssyteem',
+            tags: 'CLE2 PHP MySQL',
+            desc: {
+                en: 'A Reservation System made for the company Parrot Farm.',
+                nl: 'Een Reserveringssysteem gemaakt voor het bedrijk Parrot Farm.',
+            },
+        },
+        {
+            title: "Rock Paper Scurvy",
+            tags: 'CLE1 Microbit Electronics',
+            desc: {
+                en: 'A rock paper scissors like game. Built together with other students.',
+                nl: 'Een soort steen papier schaar game. Samen gemaakt met andere studenten.',
             },
         },
     ];
@@ -99,22 +122,31 @@ const ProjectsPage = () => {
 
             <div className="flex overflow-x-auto scrollbar-hide py-32 border-b border-cgreen" ref={containerRef}>
                 {projects.map((project, index) => (
-                    <a href="#" key={index} className="w-96 h-[50vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative z-10 transition scale-95 hover:scale-110">
+                    <a href={`#${index}`} key={index} className="w-96 h-[40vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative z-10 transition scale-95 hover:scale-110">
                         {/* Title */}
-                        <h2 className="text-lg font-semibold">{project.title}</h2>
+                        <h2 className="text-2xl font-semibold">{project.title}</h2>
+
+                        {/* Tags */}
+                        <div className="flex mt-2">
+                            {project.tags.split(' ').map((tag, tagIndex) => (
+                                <div key={tagIndex} className="bg-[#151515] text-white rounded-full px-2 py-1 text-xs mr-2">{tag}</div>
+                            ))}
+                        </div>
 
                         {/* GitHub Link */}
-                        <a href={project.githubLink} target="_blank" className="absolute top-2 right-2 flex flex-col items-center p-2 rounded-lg hover:bg-cgreen group">
-                            <svg className="w-10 h-10 text-gray-700 group-hover:text-white" aria-hidden="true"
-                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
-                                <path
-                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
-                            </svg>
-                            <span className="">{texts[language].code}</span>
-                        </a>
+                        {project.githubLink && (
+                            <a href={project.githubLink} target="_blank" className="absolute top-2 right-2 flex flex-col items-center p-2 group">
+                                <svg className="w-10 h-10 text-[#151515] group-hover:text-white" aria-hidden="true"
+                                     xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
+                                    <path
+                                        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                                </svg>
+                                <span className="">{texts[language].code}</span>
+                            </a>
+                        )}
 
                         {/* shortDesc */}
-                        <p className="mt-8 text-sm">{project.desc[language]}</p>
+                        <p className="mt-8 text-xl">{project.desc[language]}</p>
 
                         {/* Dropdown Arrow */}
                         <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
@@ -129,44 +161,39 @@ const ProjectsPage = () => {
                 ))}
             </div>
 
-            <div className="px-20 py-10 border-b border-cgreen">
-                <h3 className="text-5xl text-cgreen">Title 1</h3>
-                <p>Long shortDescs are text versions of the information provided in a detailed or complex image.
-
-                    Most web writers are familiar with short shortDescs for images, often called text alternatives or ALT text. We use them when an image conveys a brief message or acts as a link.
-
-                    However, when we use diagrams, maps or graphs, the ALT text is not usually enough to provide an adequate text alternative. To present a long shortDesc, we might need to use
-                    headings, dot points or data tables. While ALT text can be long (there's no technical limit), long text usually needs structure. And ALT text can only be text.</p>
+            <div id="0" className="px-20 py-10 border-b border-cgreen">
+                <h3 className="text-5xl text-cgreen mb-4">Steam Team</h3>
+                <p>{texts[language].streamTeam}</p>
             </div>
 
-            <div className="px-20 py-10 border-b border-cgreen">
-                <h3 className="text-5xl text-cgreen">Title 1</h3>
-                <p>Long shortDescs are text versions of the information provided in a detailed or complex image.
-
-                    Most web writers are familiar with short shortDescs for images, often called text alternatives or ALT text. We use them when an image conveys a brief message or acts as a link.
-
-                    However, when we use diagrams, maps or graphs, the ALT text is not usually enough to provide an adequate text alternative. To present a long shortDesc, we might need to use
-                    headings, dot points or data tables. While ALT text can be long (there's no technical limit), long text usually needs structure. And ALT text can only be text.</p>
+            <div id="1" className="px-20 py-10 border-b border-cgreen">
+                <h3 className="text-5xl text-cgreen mb-4">React Tasks</h3>
+                <p>Desc</p>
             </div>
 
-            <div className="px-20 py-10 border-b border-cgreen">
-                <h3 className="text-5xl text-cgreen">Title 1</h3>
-                <p>Long shortDescs are text versions of the information provided in a detailed or complex image.
-
-                    Most web writers are familiar with short shortDescs for images, often called text alternatives or ALT text. We use them when an image conveys a brief message or acts as a link.
-
-                    However, when we use diagrams, maps or graphs, the ALT text is not usually enough to provide an adequate text alternative. To present a long shortDesc, we might need to use
-                    headings, dot points or data tables. While ALT text can be long (there's no technical limit), long text usually needs structure. And ALT text can only be text.</p>
+            <div id="2" className="px-20 py-10 border-b border-cgreen">
+                <h3 className="text-5xl text-cgreen mb-4">PC Showcase</h3>
+                <p>Desc</p>
             </div>
 
-            <div className="px-20 py-10 border-b border-cgreen">
-                <h3 className="text-5xl text-cgreen">Title 1</h3>
-                <p>Long shortDescs are text versions of the information provided in a detailed or complex image.
+            <div id="3" className="px-20 py-10 border-b border-cgreen">
+                <h3 className="text-5xl text-cgreen mb-4">Hungry Fish</h3>
+                <p>Desc</p>
+            </div>
 
-                    Most web writers are familiar with short shortDescs for images, often called text alternatives or ALT text. We use them when an image conveys a brief message or acts as a link.
+            <div id="4" className="px-20 py-10 border-b border-cgreen">
+                <h3 className="text-5xl text-cgreen mb-4">Hennie's Hulp Pagina</h3>
+                <p>Desc</p>
+            </div>
 
-                    However, when we use diagrams, maps or graphs, the ALT text is not usually enough to provide an adequate text alternative. To present a long shortDesc, we might need to use
-                    headings, dot points or data tables. While ALT text can be long (there's no technical limit), long text usually needs structure. And ALT text can only be text.</p>
+            <div id="5" className="px-20 py-10 border-b border-cgreen">
+            <h3 className="text-5xl text-cgreen mb-4">Parrotfarm Reserveringssysteem</h3>
+                <p>Desc</p>
+            </div>
+
+            <div id="6" className="px-20 py-10 border-b border-cgreen">
+                <h3 className="text-5xl text-cgreen mb-4">Rock Paper Scurvy</h3>
+                <p>Desc</p>
             </div>
 
         </div>

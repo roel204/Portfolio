@@ -39,9 +39,11 @@ const Navbar = () => {
     };
 
     return (
-        <aside className="fixed top-0 left-0 z-40 w-24 h-screen text-sm  text-gray-900 dark:text-gray-200" aria-label="Sidebar">
+        <aside className="fixed top-0 left-0 z-40 w-24 h-screen text-sm text-gray-900 dark:text-gray-200" aria-label="Sidebar">
             <div className="h-full w-full flex flex-col items-center border-r-2 border-cgreen justify-between px-2 py-4 overflow-y-auto bg-green-200 dark:bg-[#252525]">
+                <a href="/Portfolio/">
                 <img src="public/RHlogo.png" alt="Git Logo" className="w-16 h-16 rounded object-contain transition duration-75 hover:scale-125"/>
+                </a>
                 <ul className="space-y-2 font-medium w-full pb-[8vh] border-b border-gray-200 dark:border-gray-700">
                     <li>
                         <a href="/Portfolio/" className="flex flex-col text-center items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
