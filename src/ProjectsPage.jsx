@@ -58,57 +58,37 @@ const ProjectsPage = () => {
     const projects = [
         {
             title: 'Project 1', githubLink: 'https://github.com/project1',
-            shortDesc: {
+            desc: {
                 en: 'shortDesc of Project 1',
                 nl: 'nl',
-            },
-            longDesc: {
-                en: 'longDesc of Project 1',
-                nl: '',
             },
         },
         {
             title: 'Project 1', githubLink: 'https://github.com/project1',
-            shortDesc: {
+            desc: {
                 en: 'shortDesc of Project 1',
                 nl: 'nl',
-            },
-            longDesc: {
-                en: 'longDesc of Project 1',
-                nl: '',
             },
         },
         {
             title: 'Project 1', githubLink: 'https://github.com/project1',
-            shortDesc: {
+            desc: {
                 en: 'shortDesc of Project 1',
                 nl: 'nl',
-            },
-            longDesc: {
-                en: 'longDesc of Project 1',
-                nl: '',
             },
         },
         {
             title: 'Project 1', githubLink: 'https://github.com/project1',
-            shortDesc: {
+            desc: {
                 en: 'shortDesc of Project 1',
                 nl: 'nl',
-            },
-            longDesc: {
-                en: 'longDesc of Project 1',
-                nl: '',
             },
         },
         {
             title: 'Project 1', githubLink: 'https://github.com/project1',
-            shortDesc: {
+            desc: {
                 en: 'shortDesc of Project 1',
                 nl: 'nl',
-            },
-            longDesc: {
-                en: 'longDesc of Project 1',
-                nl: '',
             },
         },
     ];
@@ -134,7 +114,7 @@ const ProjectsPage = () => {
                         </a>
 
                         {/* shortDesc */}
-                        <p className="mt-8 text-sm">{project.shortDesc[language]}</p>
+                        <p className="mt-8 text-sm">{project.desc[language]}</p>
 
                         {/* Dropdown Arrow */}
                         <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
