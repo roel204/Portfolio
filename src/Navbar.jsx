@@ -34,7 +34,7 @@ const Navbar = () => {
         nl: {
             languageButton: 'English',
             projects: 'Projecten',
-            skills: 'Kwaliteiten',
+            skills: 'Skills',
         },
     };
 
