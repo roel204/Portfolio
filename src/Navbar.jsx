@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react';
 import {useLanguage} from './LanguageContext';
 
 const Navbar = () => {
@@ -41,8 +41,8 @@ const Navbar = () => {
     return (
         <aside className="fixed top-0 left-0 z-40 w-24 h-screen text-sm  text-gray-900 dark:text-gray-200" aria-label="Sidebar">
             <div className="h-full w-full flex flex-col items-center border-r-2 border-cgreen justify-between px-2 py-4 overflow-y-auto bg-green-200 dark:bg-[#252525]">
-
-                <ul className="space-y-2 font-medium w-full pb-4 border-b border-gray-200 dark:border-gray-700">
+                <img src="public/RHlogo.png" alt="Git Logo" className="w-16 h-16 rounded object-contain transition duration-75 hover:scale-125"/>
+                <ul className="space-y-2 font-medium w-full pb-[8vh] border-b border-gray-200 dark:border-gray-700">
                     <li>
                         <a href="/Portfolio/" className="flex flex-col text-center items-center p-2 rounded-lg hover:bg-cgreen group">
                             <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
