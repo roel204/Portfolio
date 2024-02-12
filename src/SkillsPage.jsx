@@ -14,8 +14,8 @@ const SkillsPage = () => {
     };
 
     return (
-        <div className="ml-[6vw] text-black dark:text-white bg-green-100 dark:bg-[#151515] h-screen">
-            <h1 className="gradientText">{texts[language].pageTitle}</h1>
+        <div className="sm:ml-[6vw] h-screen">
+            <h1 className="gradientText text-5xl sm:text-9xl pb-5">{texts[language].pageTitle}</h1>
 
             <div className="flex mt-24 justify-center">
                 {/* First Column */}

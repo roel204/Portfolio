@@ -2,9 +2,17 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+:root {
+    background-color: rgb(220 252 231);
+    color: black;
+}
+
+.dark {
+    background-color: #151515;
+    color: white;
+}
 
 .gradientText {
-    font-size: 100px;
     font-weight: 800;
     letter-spacing: 1px;
     text-align: center;
@@ -13,7 +21,6 @@
     -webkit-text-fill-color: transparent;
     background-size: 300% 300%;
     animation: gradient 8s linear infinite;
-
 }
 
 @keyframes gradient {

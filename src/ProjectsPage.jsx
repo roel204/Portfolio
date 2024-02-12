@@ -117,10 +117,10 @@ const ProjectsPage = () => {
     ];
 
     return (
-        <div className="ml-[6vw] text-black dark:text-white bg-green-100 dark:bg-[#151515]">
-            <h1 className="gradientText">{texts[language].pageTitle}</h1>
+        <div className="sm:ml-[6vw]">
+            <h1 className="gradientText text-5xl sm:text-9xl pb-5">{texts[language].pageTitle}</h1>
 
-            <div className="flex overflow-x-auto scrollbar-hide py-32 border-b border-cgreen" ref={containerRef}>
+            <div className="flex overflow-x-auto scrollbar-hide py-24 border-b border-cgreen" ref={containerRef}>
                 {projects.map((project, index) => (
                     <a href={`#${index}`} key={index} className="w-96 h-[40vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative z-10 transition scale-95 hover:scale-110">
                         {/* Title */}
