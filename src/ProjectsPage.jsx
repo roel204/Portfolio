@@ -86,7 +86,7 @@ const ProjectsPage = () => {
             title: 'Hungry Fish', githubLink: 'https://github.com/roel204/hungryfish',
             tags: 'PRG4 Excalibur Unity',
             desc: {
-                en: 'A simple fish game made with ExcaliburJS, then remade and imporoved with Unity.',
+                en: 'A simple fish game made with ExcaliburJS, then remade and improved with Unity.',
                 nl: 'Een game over vissen gemaakt met ExcaliburJS, deze heb ik daarna opnieuw gemaakt in Unity en verbeterd.',
             },
         },
