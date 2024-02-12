@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react';
+import {useRef, useEffect} from 'react';
 import {useLanguage} from './LanguageContext.jsx';
 
 const ProjectsPage = () => {
@@ -117,7 +117,7 @@ const ProjectsPage = () => {
     ];
 
     return (
-        <div className="ml-24 text-black dark:text-white bg-green-100 dark:bg-[#151515]">
+        <div className="ml-[6vw] text-black dark:text-white bg-green-100 dark:bg-[#151515]">
             <h1 className="gradientText">{texts[language].pageTitle}</h1>
 
             <div className="flex overflow-x-auto scrollbar-hide py-32 border-b border-cgreen" ref={containerRef}>

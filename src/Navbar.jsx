@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import {useState, useEffect} from 'react';
 import {useLanguage} from './LanguageContext';
 
 const Navbar = () => {
@@ -39,15 +39,15 @@ const Navbar = () => {
     };
 
     return (
-        <aside className="fixed top-0 left-0 z-40 w-24 h-screen text-sm text-gray-900 dark:text-gray-200" aria-label="Sidebar">
+        <aside className="fixed top-0 left-0 z-40 w-[6vw] h-screen text-sm text-gray-900 dark:text-gray-200" aria-label="Sidebar">
             <div className="h-full w-full flex flex-col items-center border-r-2 border-cgreen justify-between px-2 py-4 overflow-y-auto bg-green-200 dark:bg-[#252525]">
                 <a href="/Portfolio/">
-                <img src="public/RHlogo.png" alt="Git Logo" className="w-16 h-16 rounded object-contain transition duration-75 hover:scale-125"/>
+                <img src="public/RHlogo.png" alt="Git Logo" className="w-full rounded object-contain transition duration-75 hover:scale-110"/>
                 </a>
-                <ul className="space-y-2 font-medium w-full pb-[8vh] border-b border-gray-200 dark:border-gray-700">
+                <ul className="space-y-2 pb-4 font-medium w-full border-b border-gray-200 dark:border-gray-700">
                     <li>
-                        <a href="/Portfolio/" className="flex flex-col text-center items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
-                            <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        <a href="/Portfolio/" className="flex flex-col text-center items-center py-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
+                            <svg className="flex-shrink-0 w-[40%] text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                                  aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">
                                 <path
@@ -58,7 +58,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a href="/Portfolio/projects" className="flex flex-col items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
-                            <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            <svg className="flex-shrink-0 w-[40%] text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                                  aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 18">
                                 <path
@@ -69,7 +69,7 @@ const Navbar = () => {
                     </li>
                     <li>
                         <a href="/Portfolio/skills" className="flex flex-col items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
-                            <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            <svg className="flex-shrink-0 w-[40%] text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                                  aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 512">
                                 <path
@@ -82,8 +82,8 @@ const Navbar = () => {
 
                 <ul className="py-4 space-y-2 w-full">
                     <li>
-                        <a href="mailto:roelhoogendoorn01369@gmail.com" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
-                            <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        <a href="mailto:roelhoogendoorn01369@gmail.com" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group" rel="noreferrer noopener">
+                            <svg className="flex-shrink-0 w-[40%] text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                                  aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
                                 <path
@@ -93,8 +93,8 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/roel204" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
-                            <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        <a href="https://github.com/roel204" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group" rel="noreferrer noopener">
+                            <svg className="flex-shrink-0 w-[40%] text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                                  aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
                                 <path
@@ -104,8 +104,8 @@ const Navbar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.linkedin.com/in/roel-hoogendoorn/" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
-                            <svg className="flex-shrink-0 w-7 h-7 text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                        <a href="https://www.linkedin.com/in/roel-hoogendoorn/" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group" rel="noreferrer noopener">
+                            <svg className="flex-shrink-0 w-[40%] text-gray-500 transition duration-75 group-hover:scale-110 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
                                  aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 448 512">
                                 <path
@@ -118,7 +118,7 @@ const Navbar = () => {
 
                 <div className="flex flex-col items-center w-full pt-4 space-y-2 font-medium border-t border-gray-200 dark:border-gray-700">
                     <button className="flex flex-col w-full items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group" onClick={toggleDarkMode}>
-                        <svg className="flex-shrink-0 w-7 h-7 text-gray-900 transition duration-75 group-hover:scale-110 dark:text-yellow-400" aria-hidden="true"
+                        <svg className="flex-shrink-0 w-[40%] text-gray-900 transition duration-75 group-hover:scale-110 dark:text-yellow-400" aria-hidden="true"
                              xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 384 512">
                             <path
                                 d="M272 384c9.6-31.9 29.5-59.1 49.2-86.2l0 0c5.2-7.1 10.4-14.2 15.4-21.4c19.8-28.5 31.4-63 31.4-100.3C368 78.8 289.2 0 192 0S16 78.8 16 176c0 37.3 11.6 71.9 31.4 100.3c5 7.2 10.2 14.3 15.4 21.4l0 0c19.8 27.1 39.7 54.4 49.2 86.2H272zM192 512c44.2 0 80-35.8 80-80V416H112v16c0 44.2 35.8 80 80 80zM112 176c0 8.8-7.2 16-16 16s-16-7.2-16-16c0-61.9 50.1-112 112-112c8.8 0 16 7.2 16 16s-7.2 16-16 16c-44.2 0-80 35.8-80 80z"/>
