@@ -45,7 +45,7 @@
 }
 
 .dutch-flag {
-    height: 5vh;
+    height: 30px;
     background-color: white;
     position: relative;
     border-radius: 15px;
@@ -75,7 +75,7 @@
 }
 
 .uk-flag {
-    height: 40px;
+    height: 30px;
     position: relative;
     border-radius: 10px;
     background-color: #012169;
