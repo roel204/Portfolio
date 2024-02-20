@@ -36,7 +36,10 @@ const ProjectsPage = () => {
             container.scrollTo({left: scrollPosition, behavior: 'instant'});
         };
 
-        window.addEventListener('mousemove', handleMouseMove);
+        // Check if it's not a mobile device
+        if (!window.matchMedia('(pointer: coarse)').matches) {
+            window.addEventListener('mousemove', handleMouseMove);
+        }
 
         return () => {
             window.removeEventListener('mousemove', handleMouseMove);
@@ -49,15 +52,27 @@ const ProjectsPage = () => {
             pageTitle: "My Projects",
             code: "View Code",
             streamTeam: "Streamteam is a Tailored Learning Environment (TLE) project for the CMGT study at Rotterdam University of Applied Sciences. The project focuses on the existing IP-car, a car controlled via a server with a live feed, which is intended for use in daily activities within care homes. Through this software, the IP-car can connect to a guide who can see a live feed and take control of the car with a controller via the same connection. It is a delivery to VindiQu and FoxConnect. VindiQu already offers livestream daily activities to care homes, and FoxConnect is the developer of the first IP-car, originally intended for private use by people with mobility impairments.",
+            reactTasks: "",
+            pcShowcase: "",
+            hungryFish: "",
+            hennie: "",
+            parrotFarm: "",
+            rockPS: "",
         },
         nl: {
             pageTitle: 'Mijn Projecten',
             code: 'Bekijk Code',
             streamTeam: "Streamteam is een Tailored Learning Environment (TLE) project voor de studie CMGT, Hogeschool Rotterdam. Het project focust op de bestaande IP-car, een via een server te besturen auto met een livefeed, die moet worden ingezet voor dagbesteding binnen zorghuizen. De IP-car kan via deze software verbinden met een gids, die een live beeld te zien krijgt en controle van de auto kan overnemen met een controller via dezelfde verbinding. Het is een oplevering aan VindiQu en FoxConnect. VindiQu biedt al livestream dagbesteding aan zorghuizen, en FoxConnect is de ontwikkelaar van de eerste IP-car, origineel bedoeld voor particulier gebruik van mensen met een motorische beperking.",
+            reactTasks: "",
+            pcShowcase: "",
+            hungryFish: "",
+            hennie: "",
+            parrotFarm: "",
+            rockPS: "",
         },
     };
 
-    const projects = [
+    const projectsCards = [
         {
             title: 'Stream Team', githubLink: 'https://github.com/faroeq33/TLE1',
             tags: 'TLE1 Laravel JS',
@@ -121,8 +136,8 @@ const ProjectsPage = () => {
             <h1 className="gradientText text-5xl sm:text-9xl pb-5">{texts[language].pageTitle}</h1>
 
             <div className="flex overflow-x-auto scrollbar-hide py-24 border-b border-cgreen" ref={containerRef}>
-                {projects.map((project, index) => (
-                    <a href={`#${index}`} key={index} className="w-96 h-[40vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative transition scale-95 sm:hover:scale-110">
+                {projectsCards.map((project, index) => (
+                    <a href={`#${index}`} key={index} className="w-[75vw] sm:w-[20vw] h-[40vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative transition scale-95 sm:hover:scale-110">
                         {/* Title */}
                         <h2 className="text-2xl font-semibold">{project.title}</h2>
 
@@ -133,9 +148,12 @@ const ProjectsPage = () => {
                             ))}
                         </div>
 
+                        {/* shortDesc */}
+                        <p className="mt-8 text-xl">{project.desc[language]}</p>
+
                         {/* GitHub Link */}
                         {project.githubLink && (
-                            <a href={project.githubLink} target="_blank" className="absolute top-2 right-2 flex flex-col items-center p-2 group">
+                            <a href={project.githubLink} target="_blank" className="absolute bottom-2 right-2 flex flex-col items-center p-2 group">
                                 <svg className="w-10 h-10 text-[#151515] group-hover:text-white" aria-hidden="true"
                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
                                     <path
@@ -144,9 +162,6 @@ const ProjectsPage = () => {
                                 <span className="">{texts[language].code}</span>
                             </a>
                         )}
-
-                        {/* shortDesc */}
-                        <p className="mt-8 text-xl">{project.desc[language]}</p>
 
                         {/* Dropdown Arrow */}
                         <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
@@ -168,32 +183,32 @@ const ProjectsPage = () => {
 
             <div id="1" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">React Tasks</h3>
-                <p className="text-sm sm:text-lg">Desc</p>
+                <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
             </div>
 
             <div id="2" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">PC Showcase</h3>
-                <p className="text-sm sm:text-lg">Desc</p>
+                <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
             </div>
 
             <div id="3" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Hungry Fish</h3>
-                <p className="text-sm sm:text-lg">Desc</p>
+                <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
             </div>
 
             <div id="4" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Hennie's Hulp Pagina</h3>
-                <p className="text-sm sm:text-lg">Desc</p>
+                <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
             </div>
 
             <div id="5" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Parrotfarm Reserveringssysteem</h3>
-                <p className="text-sm sm:text-lg">Desc</p>
+                <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
             </div>
 
             <div id="6" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Rock Paper Scurvy</h3>
-                <p className="text-sm sm:text-lg">Desc</p>
+                <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
             </div>
 
         </div>
