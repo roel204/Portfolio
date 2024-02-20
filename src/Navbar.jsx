@@ -60,7 +60,7 @@ const Navbar = () => {
             <aside className="fixed top-0 left-0 z-40 w-[6vw] h-screen text-sm text-gray-900 dark:text-gray-200" aria-label="Sidebar">
                 <div className="h-full w-full flex flex-col items-center border-r-2 border-cgreen justify-between px-2 py-4 overflow-y-auto bg-green-200 dark:bg-[#252525]">
                     <a href="/Portfolio/">
-                        <img src="public/RHlogo.png" alt="Git Logo" className="w-full rounded object-contain transition duration-75 hover:scale-110"/>
+                        <img src="public/images/RHlogo.png" alt="RH Logo" className="w-full rounded object-contain transition duration-75 hover:scale-110"/>
                     </a>
                     <ul className="space-y-2 pb-4 font-medium w-full border-b border-gray-200 dark:border-gray-700">
                         <li>
@@ -182,7 +182,7 @@ const Navbar = () => {
                             <a href="https://forms.gle/NXLuRV2ut7Gw6gLa7" target="_blank" className="fixed bottom-4 right-4 bg-dgreen dark:bg-cgreen py-2 px-4 rounded-lg shadow-md z-50 transition hover:scale-125">Feedback?</a>
 
                             <a className="pb-[5vh]" href="/Portfolio/">
-                                <img src="public/RHlogo.png" alt="Git Logo" className="w-20 rounded object-contain"/>
+                                <img src="public/images/RHlogo.png" alt="RH Logo" className="w-20 rounded object-contain"/>
                             </a>
                             <ul className="space-y-4 pb-4 font-medium w-full border-b border-gray-200 dark:border-gray-700">
                                 <li>
