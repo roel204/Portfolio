@@ -122,7 +122,7 @@ const ProjectsPage = () => {
 
             <div className="flex overflow-x-auto scrollbar-hide py-24 border-b border-cgreen" ref={containerRef}>
                 {projects.map((project, index) => (
-                    <a href={`#${index}`} key={index} className="w-96 h-[40vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative z-10 transition scale-95 hover:scale-110">
+                    <a href={`#${index}`} key={index} className="w-96 h-[40vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative z-10 transition scale-95 sm:hover:scale-110">
                         {/* Title */}
                         <h2 className="text-2xl font-semibold">{project.title}</h2>
 
@@ -161,39 +161,39 @@ const ProjectsPage = () => {
                 ))}
             </div>
 
-            <div id="0" className="px-20 py-10 border-b border-cgreen">
-                <h3 className="text-5xl text-cgreen mb-4">Steam Team</h3>
-                <p>{texts[language].streamTeam}</p>
+            <div id="0" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+                <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Steam Team</h3>
+                <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
             </div>
 
-            <div id="1" className="px-20 py-10 border-b border-cgreen">
-                <h3 className="text-5xl text-cgreen mb-4">React Tasks</h3>
-                <p>Desc</p>
+            <div id="1" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+                <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">React Tasks</h3>
+                <p className="text-sm sm:text-lg">Desc</p>
             </div>
 
-            <div id="2" className="px-20 py-10 border-b border-cgreen">
-                <h3 className="text-5xl text-cgreen mb-4">PC Showcase</h3>
-                <p>Desc</p>
+            <div id="2" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+                <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">PC Showcase</h3>
+                <p className="text-sm sm:text-lg">Desc</p>
             </div>
 
-            <div id="3" className="px-20 py-10 border-b border-cgreen">
-                <h3 className="text-5xl text-cgreen mb-4">Hungry Fish</h3>
-                <p>Desc</p>
+            <div id="3" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+                <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Hungry Fish</h3>
+                <p className="text-sm sm:text-lg">Desc</p>
             </div>
 
-            <div id="4" className="px-20 py-10 border-b border-cgreen">
-                <h3 className="text-5xl text-cgreen mb-4">Hennie's Hulp Pagina</h3>
-                <p>Desc</p>
+            <div id="4" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+                <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Hennie's Hulp Pagina</h3>
+                <p className="text-sm sm:text-lg">Desc</p>
             </div>
 
-            <div id="5" className="px-20 py-10 border-b border-cgreen">
-            <h3 className="text-5xl text-cgreen mb-4">Parrotfarm Reserveringssysteem</h3>
-                <p>Desc</p>
+            <div id="5" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+                <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Parrotfarm Reserveringssysteem</h3>
+                <p className="text-sm sm:text-lg">Desc</p>
             </div>
 
-            <div id="6" className="px-20 py-10 border-b border-cgreen">
-                <h3 className="text-5xl text-cgreen mb-4">Rock Paper Scurvy</h3>
-                <p>Desc</p>
+            <div id="6" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+                <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Rock Paper Scurvy</h3>
+                <p className="text-sm sm:text-lg">Desc</p>
             </div>
 
         </div>

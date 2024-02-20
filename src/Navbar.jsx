@@ -244,7 +244,7 @@ const Navbar = () => {
                                     <span>{darkMode === 'off' ? 'Darkmode' : 'Lightmode'}</span>
                                 </button>
                                 <button className="flex w-full items-center p-2" onClick={toggleLanguage}>
-                                    <div className={`${language === 'nl' ? 'uk-flag' : 'dutch-flag'} w-[15%] mr-5`}></div>
+                                    <div className={`${language === 'nl' ? 'uk-flag' : 'dutch-flag'} mr-5`}></div>
                                     <span>{texts[language].languageButton}</span>
                                 </button>
                             </div>
