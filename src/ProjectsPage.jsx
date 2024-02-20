@@ -122,7 +122,7 @@ const ProjectsPage = () => {
 
             <div className="flex overflow-x-auto scrollbar-hide py-24 border-b border-cgreen" ref={containerRef}>
                 {projects.map((project, index) => (
-                    <a href={`#${index}`} key={index} className="w-96 h-[40vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative z-10 transition scale-95 sm:hover:scale-110">
+                    <a href={`#${index}`} key={index} className="w-96 h-[40vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative transition scale-95 sm:hover:scale-110">
                         {/* Title */}
                         <h2 className="text-2xl font-semibold">{project.title}</h2>
 
@@ -162,7 +162,7 @@ const ProjectsPage = () => {
             </div>
 
             <div id="0" className="px-5 sm:px-20 py-10 border-b border-cgreen">
-                <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Steam Team</h3>
+                <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Stream Team</h3>
                 <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
             </div>
 

@@ -160,7 +160,7 @@ const Navbar = () => {
             <>
                 <button
                     onClick={toggleMobileMenu}
-                    className={`fixed ${isOpen ? 'right-0' : 'left-0'}`}>
+                    className={`fixed ${isOpen ? 'right-0' : 'left-0'} z-50`}>
                     {isOpen ? (
                         // X icon for closing the menu
                         <svg
