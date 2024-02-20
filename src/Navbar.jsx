@@ -151,7 +151,7 @@ const Navbar = () => {
                 </div>
 
                 {/*Feedback Button*/}
-                <a href="#" className="fixed top-4 right-4 bg-dgreen dark:bg-cgreen py-2 px-4 rounded-lg shadow-md z-50 transition hover:scale-125">Feedback?</a>
+                <a href="https://forms.gle/NXLuRV2ut7Gw6gLa7" target="_blank" className="fixed top-4 right-4 bg-dgreen dark:bg-cgreen py-2 px-4 rounded-lg shadow-md z-50 transition hover:scale-125">Feedback?</a>
 
             </aside>
         );
@@ -177,6 +177,10 @@ const Navbar = () => {
                 {isOpen && (
                     <aside className="fixed top-0 left-0 z-40 w-[70vw] h-screen text-sm text-gray-900 dark:text-gray-200" aria-label="Sidebar">
                         <div className="h-full w-full flex flex-col items-center justify-center border-r-2 border-cgreen px-2 py-4 overflow-y-auto bg-green-200 dark:bg-[#252525]">
+
+                            {/*Feedback Button*/}
+                            <a href="https://forms.gle/NXLuRV2ut7Gw6gLa7" target="_blank" className="fixed bottom-4 right-4 bg-dgreen dark:bg-cgreen py-2 px-4 rounded-lg shadow-md z-50 transition hover:scale-125">Feedback?</a>
+
                             <a className="pb-[5vh]" href="/Portfolio/">
                                 <img src="public/RHlogo.png" alt="Git Logo" className="w-20 rounded object-contain"/>
                             </a>

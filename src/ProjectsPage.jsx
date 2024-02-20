@@ -133,7 +133,9 @@ const ProjectsPage = () => {
 
     return (
         <div className="sm:ml-[6vw]">
-            <h1 className="gradientText text-5xl sm:text-9xl pb-5">{texts[language].pageTitle}</h1>
+            <h1 id="top" className="gradientText text-5xl sm:text-9xl pb-5">{texts[language].pageTitle}</h1>
+
+            <a href={`#top`} className="fixed bottom-4 right-4 bg-dgreen dark:bg-cgreen pt-3 pb-2 px-4 rounded-lg">^</a>
 
             <div className="flex overflow-x-auto scrollbar-hide py-24 border-b border-cgreen" ref={containerRef}>
                 {projectsCards.map((project, index) => (
@@ -149,7 +151,7 @@ const ProjectsPage = () => {
                         </div>
 
                         {/* shortDesc */}
-                        <p className="mt-8 text-xl">{project.desc[language]}</p>
+                        <p className="mt-4 text-xl">{project.desc[language]}</p>
 
                         {/* GitHub Link */}
                         {project.githubLink && (
