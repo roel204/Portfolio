@@ -52,23 +52,23 @@ const ProjectsPage = () => {
             pageTitle: "My Projects",
             code: "View Code",
             streamTeam: "Streamteam is a Tailored Learning Environment (TLE) project for the CMGT study at Rotterdam University of Applied Sciences. The project focuses on the existing IP-car, a car controlled via a server with a live feed, which is intended for use in daily activities within care homes. Through this software, the IP-car can connect to a guide who can see a live feed and take control of the car with a controller via the same connection. It is a delivery to VindiQu and FoxConnect. VindiQu already offers livestream daily activities to care homes, and FoxConnect is the developer of the first IP-car, originally intended for private use by people with mobility impairments.",
-            reactTasks: "",
-            pcShowcase: "",
-            hungryFish: "",
-            hennie: "",
-            parrotFarm: "",
-            rockPS: "",
+            reactTasks: "This is my first school project using the React framework. I really liked how easy and custom it is, so i'm also using it for this Portfolio website. Tasks React is a CRUD application that uses my API i made with Express and MongoDB. You can easily look through all your tasks with pagination, and you're also able to star your favorite tasks to the top of the list.",
+            pcShowcase: "This is my first school project using the Laravel framework. I used it to make a simple CRUD application where people can post their PC's. Users can also place comments on a Computer and talk about it. I used Bootstrap for the CSS in this website.",
+            hungryFish: "First i made Hungry Fish as an Excalibur project for school. But later i recreated it with unity and improved it, adding way more features like upgrades and skins. The Unity game is still in development.",
+            hennie: "I made this CLE3 project with other students. We used JavaScript to build a web-app that displays information for elderly people. I also added a favorites system using Localstorage.",
+            parrotFarm: "I made a reservation system for the company Parrot Farm using PHP and MySQL. This was my first project where I used a database.",
+            rockPS: "For my very first project in my CMGT study, I created a physical device with the MicroBit controller together with other students. We made arcade cabinets and created a version of the game 'Rock Paper Scissors' with a pirate theme to it.",
         },
         nl: {
             pageTitle: 'Mijn Projecten',
             code: 'Bekijk Code',
             streamTeam: "Streamteam is een Tailored Learning Environment (TLE) project voor de studie CMGT, Hogeschool Rotterdam. Het project focust op de bestaande IP-car, een via een server te besturen auto met een livefeed, die moet worden ingezet voor dagbesteding binnen zorghuizen. De IP-car kan via deze software verbinden met een gids, die een live beeld te zien krijgt en controle van de auto kan overnemen met een controller via dezelfde verbinding. Het is een oplevering aan VindiQu en FoxConnect. VindiQu biedt al livestream dagbesteding aan zorghuizen, en FoxConnect is de ontwikkelaar van de eerste IP-car, origineel bedoeld voor particulier gebruik van mensen met een motorische beperking.",
-            reactTasks: "",
-            pcShowcase: "",
-            hungryFish: "",
-            hennie: "",
-            parrotFarm: "",
-            rockPS: "",
+            reactTasks: "Dit is mijn eerste school project waarbij ik het React-framework gebruik. Ik vond het makkelijk en gebruiksvriendelijk, dus ik gebruik het ook voor deze portfolio-website. Tasks React is een CRUD-applicatie die mijn API gebruikt, deze heb ik gemaakt met Express en MongoDB. Je kunt gemakkelijk door al je taken bladeren met paginering, en je kunt ook je favoriete taken bovenaan de lijst markeren.",
+            pcShowcase: "Dit is mijn eerste school project waarbij ik het Laravel-framework gebruik. Ik heb het gebruikt om een eenvoudige CRUD-applicatie te maken waar mensen hun pc's kunnen plaatsen. Gebruikers kunnen ook opmerkingen plaatsen over een computer en erover praten. Ik heb Bootstrap gebruikt voor de CSS op deze website.",
+            hungryFish: "Eerst heb ik Hungry Fish gemaakt als een Excalibur-project voor school. Maar later heb ik het opnieuw gemaakt met Unity en verbeterd, waarbij ik veel meer functies heb toegevoegd zoals upgrades en skins. De Unity game is nog in ontwikkeling.",
+            hennie: "Ik heb dit CLE3-project gemaakt met andere studenten. We hebben JavaScript gebruikt om een web-app te bouwen die informatie weergeeft voor ouderen. Ik heb ook een favorietensysteem toegevoegd met behulp van LocalStorage.",
+            parrotFarm: "Ik heb voor het bedrijf Parrot Farm een reserveringsysteem gemaakt met behulp van PHP en MySQL. Dit was mijn eerste project waar ik een database heb gebruikt.",
+            rockPS: "Voor mijn allereerste project op mijn CMGT studie heb ik samen met andere studenten een fysiek apparaat moeten maken met de MicroBit controller. Wij hebben arcade kastjes gemaakt en hierin een versie van de game 'Steen Papier Schaar' gemaakt in een piraten thema.",
         },
     };
 
@@ -185,32 +185,32 @@ const ProjectsPage = () => {
 
             <div id="1" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">React Tasks</h3>
-                <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
+                <p className="text-sm sm:text-lg">{texts[language].reactTasks}</p>
             </div>
 
             <div id="2" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">PC Showcase</h3>
-                <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
+                <p className="text-sm sm:text-lg">{texts[language].pcShowcase}</p>
             </div>
 
             <div id="3" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Hungry Fish</h3>
-                <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
+                <p className="text-sm sm:text-lg">{texts[language].hungryFish}</p>
             </div>
 
             <div id="4" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Hennie's Hulp Pagina</h3>
-                <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
+                <p className="text-sm sm:text-lg">{texts[language].hennie}</p>
             </div>
 
             <div id="5" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Parrotfarm Reserveringssysteem</h3>
-                <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
+                <p className="text-sm sm:text-lg">{texts[language].parrotFarm}</p>
             </div>
 
             <div id="6" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Rock Paper Scurvy</h3>
-                <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
+                <p className="text-sm sm:text-lg">{texts[language].rockPS}</p>
             </div>
 
         </div>
