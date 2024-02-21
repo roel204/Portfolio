@@ -2,6 +2,7 @@ import {useState, useEffect} from 'react';
 import {useLanguage} from './LanguageContext';
 import {Link} from "react-router-dom";
 
+
 const Navbar = () => {
     const [darkMode, setDarkMode] = useState('on');
     const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
