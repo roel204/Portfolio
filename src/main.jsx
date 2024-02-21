@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {RouterProvider, createHashRouter} from "react-router-dom";
 import './index.css'
 import App from './App.jsx'
 import HomePage from "./HomePage.jsx";
@@ -9,9 +9,9 @@ import SkillsPage from "./SkillsPage.jsx";
 import Navbar from "./Navbar.jsx";
 import {LanguageProvider} from "./LanguageContext.jsx";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
-        path: "/Portfolio/",
+        path: "/",
         element: (
             <LanguageProvider>
                 <Navbar />
@@ -20,15 +20,15 @@ const router = createBrowserRouter([
         ),
         children: [
             {
-                path: "/Portfolio/",
+                path: "/",
                 element: <HomePage />,
             },
             {
-                path: "/Portfolio/projects",
+                path: "/projects",
                 element: <ProjectsPage />,
             },
             {
-                path: "/Portfolio/skills",
+                path: "/skills",
                 element: <SkillsPage />,
             },
         ],
