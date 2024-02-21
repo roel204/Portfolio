@@ -1,5 +1,7 @@
 import {useRef, useEffect} from 'react';
 import {useLanguage} from './LanguageContext.jsx';
+import { HashLink } from 'react-router-hash-link';
+import {HashRouter} from "react-router-dom";
 
 const ProjectsPage = () => {
     const {language} = useLanguage();
@@ -134,12 +136,11 @@ const ProjectsPage = () => {
     return (
         <div className="sm:ml-[6vw]">
             <h1 id="top" className="gradientText text-5xl sm:text-9xl pb-5">{texts[language].pageTitle}</h1>
-
-            <a href={`#top`} className="fixed bottom-4 right-4 bg-dgreen dark:bg-cgreen pt-3 pb-2 px-4 rounded-lg">^</a>
+            <HashLink to={`/projects#top`} className="fixed bottom-4 right-4 bg-dgreen dark:bg-cgreen pt-3 pb-2 px-4 rounded-lg">^</HashLink>
 
             <div className="flex overflow-x-auto scrollbar-hide py-24 border-b border-cgreen" ref={containerRef}>
                 {projectsCards.map((project, index) => (
-                    <a href={`#${index}`} key={index} className="w-[75vw] sm:w-[20vw] h-[40vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative transition scale-95 sm:hover:scale-110">
+                    <HashLink to={`/projects#${index}`} key={index} className="w-[75vw] sm:w-[20vw] h-[40vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative transition scale-95 sm:hover:scale-110">
                         {/* Title */}
                         <h2 className="text-2xl font-semibold">{project.title}</h2>
 
@@ -173,7 +174,7 @@ const ProjectsPage = () => {
                                     d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/>
                             </svg>
                         </div>
-                    </a>
+                    </HashLink>
 
                 ))}
             </div>
