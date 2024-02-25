@@ -50,7 +50,7 @@ const ProjectsPage = () => {
 
     const texts = {
         en: {
-            pageTitle: "My Projects",
+            pageTitle: "MY PROJECTS",
             code: "View Code",
             streamTeam: "Streamteam is a Tailored Learning Environment (TLE) project for the CMGT study at Rotterdam University of Applied Sciences. The project focuses on the existing IP-car, a car controlled via a server with a live feed, which is intended for use in daily activities within care homes. Through this software, the IP-car can connect to a guide who can see a live feed and take control of the car with a controller via the same connection. It is a delivery to VindiQu and FoxConnect. VindiQu already offers livestream daily activities to care homes, and FoxConnect is the developer of the first IP-car, originally intended for private use by people with mobility impairments.",
             reactTasks: "This is my first school project using the React framework. I really liked how easy and custom it is, so i'm also using it for this Portfolio website. Tasks React is a CRUD application that uses my API i made with Express and MongoDB. You can easily look through all your tasks with pagination, and you're also able to star your favorite tasks to the top of the list.",
@@ -61,7 +61,7 @@ const ProjectsPage = () => {
             rockPS: "For my very first project in my CMGT study, I created a physical device with the MicroBit controller together with other students. We made arcade cabinets and created a version of the game 'Rock Paper Scissors' with a pirate theme to it.",
         },
         nl: {
-            pageTitle: 'Mijn Projecten',
+            pageTitle: 'MIJN PROJECTEN',
             code: 'Bekijk Code',
             streamTeam: "Streamteam is een Tailored Learning Environment (TLE) project voor de studie CMGT, Hogeschool Rotterdam. Het project focust op de bestaande IP-car, een via een server te besturen auto met een livefeed, die moet worden ingezet voor dagbesteding binnen zorghuizen. De IP-car kan via deze software verbinden met een gids, die een live beeld te zien krijgt en controle van de auto kan overnemen met een controller via dezelfde verbinding. Het is een oplevering aan VindiQu en FoxConnect. VindiQu biedt al livestream dagbesteding aan zorghuizen, en FoxConnect is de ontwikkelaar van de eerste IP-car, origineel bedoeld voor particulier gebruik van mensen met een motorische beperking.",
             reactTasks: "Dit is mijn eerste school project waarbij ik het React-framework gebruik. Ik vond het makkelijk en gebruiksvriendelijk, dus ik gebruik het ook voor deze portfolio-website. Tasks React is een CRUD-applicatie die mijn API gebruikt, deze heb ik gemaakt met Express en MongoDB. Je kunt gemakkelijk door al je taken bladeren met paginering, en je kunt ook je favoriete taken bovenaan de lijst markeren.",
@@ -134,10 +134,10 @@ const ProjectsPage = () => {
 
     return (
         <div className="sm:ml-[6vw]">
-            <h1 id="top" className="gradientText text-5xl sm:text-9xl pb-5">{texts[language].pageTitle}</h1>
+            <h1 id="top" className="gradientText text-4xl sm:text-8xl pt-[6vh]">{texts[language].pageTitle}</h1>
             <HashLink to={`/projects#top`} className="fixed bottom-4 right-4 bg-dgreen dark:bg-cgreen pt-3 pb-2 px-4 rounded-lg">^</HashLink>
 
-            <div className="flex overflow-x-auto scrollbar-hide py-24 border-b border-cgreen" ref={containerRef}>
+            <div className="flex overflow-x-auto scrollbar-hide py-[10vh] border-b border-cgreen" ref={containerRef}>
                 {projectsCards.map((project, index) => (
                     <HashLink to={`/projects#${index}`} key={index} className="w-[75vw] sm:w-[20vw] h-[40vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative transition scale-95 sm:hover:scale-110">
                         {/* Title */}

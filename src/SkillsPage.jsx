@@ -6,16 +6,16 @@ const SkillsPage = () => {
 
     const texts = {
         en: {
-            pageTitle: "My Skills",
+            pageTitle: "MY SKILLS",
         },
         nl: {
-            pageTitle: 'Mijn Skills',
+            pageTitle: 'MIJN SKILLS',
         },
     };
 
     return (
         <div className="sm:ml-[6vw] sm:min-h-screen">
-            <h1 className="gradientText text-5xl sm:text-9xl pb-5">{texts[language].pageTitle}</h1>
+            <h1 className="gradientText text-5xl sm:text-8xl pt-[6vh]">{texts[language].pageTitle}</h1>
 
             <div className="flex mt-24 justify-center text-xs sm:text-base">
                 {/* First Column */}
