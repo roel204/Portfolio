@@ -16,7 +16,7 @@ export const LanguageProvider = ({ children }) => {
     };
 
     useEffect(() => {
-        const savedLanguage = localStorage.getItem('language') || 'en';
+        const savedLanguage = localStorage.getItem('language') || navigator.language.split('-')[0];
         setLanguage(savedLanguage);
     }, [language]);
 
