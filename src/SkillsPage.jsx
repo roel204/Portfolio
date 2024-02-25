@@ -14,7 +14,7 @@ const SkillsPage = () => {
     };
 
     return (
-        <div className="sm:ml-[6vw] sm:h-screen">
+        <div className="sm:ml-[6vw] sm:min-h-screen">
             <h1 className="gradientText text-5xl sm:text-9xl pb-5">{texts[language].pageTitle}</h1>
 
             <div className="flex mt-24 justify-center text-xs sm:text-base">
@@ -65,27 +65,37 @@ const SkillsPage = () => {
                 {/* Fourth Column */}
                 <div className="flex flex-col items-center border-r border-gray-600 px-1 sm:px-6">
                     <div className="my-2 group flex flex-col items-center">
-                        <img src="public/images/logos/js.png" alt="Js Logo" className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
+                        <img src="public/images/logos/js.png" alt="Js Logo"
+                             className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                         <p className="text-center sm:opacity-0 transition group-hover:opacity-100">JavaScript</p>
                     </div>
                     <div className="my-2 group flex flex-col items-center">
-                        <img src="public/images/logos/nodejs.png" alt="NodeJs Logo" className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
+                        <img src="public/images/logos/nodejs.png" alt="NodeJs Logo"
+                             className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                         <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Node.js</p>
                     </div>
                     <div className="my-2 group flex flex-col items-center">
-                        <img src="public/images/logos/vite.png" alt="Vite Logo" className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
+                        <img src="public/images/logos/vite.png" alt="Vite Logo"
+                             className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                         <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Vite</p>
                     </div>
                     <div className="my-2 group flex flex-col items-center">
-                        <img src="public/images/logos/react.png" alt="React Logo" className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
+                        <img src="public/images/logos/react.png" alt="React Logo"
+                             className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                         <p className="text-center sm:opacity-0 transition group-hover:opacity-100">React</p>
+                    </div>
+                    <div className="my-2 group flex flex-col items-center">
+                        <img src="public/images/logos/express.png" alt="Express Logo"
+                             className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
+                        <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Express</p>
                     </div>
                 </div>
 
                 {/* Fifth Column */}
                 <div className="flex flex-col items-center border-r border-gray-600 px-1 sm:px-6">
                     <div className="my-2 group flex flex-col items-center">
-                        <img src="public/images/logos/php.png" alt="Php Logo" className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
+                        <img src="public/images/logos/php.png" alt="Php Logo"
+                             className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                         <p className="text-center sm:opacity-0 transition group-hover:opacity-100">PHP</p>
                     </div>
                     <div className="my-2 group flex flex-col items-center">

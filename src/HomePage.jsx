@@ -16,7 +16,7 @@ const HomePage = () => {
     };
 
     return (
-        <div className="sm:ml-[6vw] flex justify-center items-center h-screen">
+        <div className="sm:ml-[6vw] flex justify-center items-center min-h-screen">
             <div className="text-center">
                 <h2 className="text-4xl font-bold mb-4">{texts[language].greet}</h2>
                 <h1 className="gradientText text-5xl sm:text-9xl pb-10">Roel Hoogendoorn</h1>
