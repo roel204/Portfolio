@@ -1,7 +1,6 @@
 import {useRef, useEffect} from 'react';
 import {useLanguage} from './LanguageContext.jsx';
 import { HashLink } from 'react-router-hash-link';
-import {HashRouter} from "react-router-dom";
 
 const ProjectsPage = () => {
     const {language} = useLanguage();
@@ -156,7 +155,7 @@ const ProjectsPage = () => {
 
                         {/* GitHub Link */}
                         {project.githubLink && (
-                            <a href={project.githubLink} target="_blank" className="absolute bottom-2 right-2 flex flex-col items-center p-2 group">
+                            <a href={project.githubLink} onClick={(event) => event.stopPropagation()} target="_blank" className="absolute bottom-2 right-2 flex flex-col items-center p-2 group">
                                 <svg className="w-10 h-10 text-[#151515] group-hover:text-white" aria-hidden="true"
                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
                                     <path
