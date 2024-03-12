@@ -14,12 +14,11 @@ const SkillsPage = () => {
     };
 
     return (
-        <div className="sm:ml-[6vw] flex justify-center items-center min-h-screen">
-            <div className="p-10 bg-green-50/75 rounded-3xl dark:bg-black/75">
+        <div className="sm:ml-[6vw] flex justify-center items-center max-w-full min-h-screen">
+            <div className="py-10 sm:px-10 bg-green-50/75 rounded-3xl dark:bg-black/75">
                 <h1 className="gradientText text-5xl sm:text-8xl">{texts[language].pageTitle}</h1>
 
-
-                <div className="flex mt-24 justify-center text-xs sm:text-base">
+                <div className="flex mt-[5vh] justify-center text-xs sm:text-base">
                     {/* First Column */}
                     <div className="flex flex-col items-center border-r border-gray-600 px-1 sm:px-6">
                         <div className="my-2 group flex flex-col items-center">

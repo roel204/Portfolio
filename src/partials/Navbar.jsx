@@ -193,7 +193,7 @@ const Navbar = () => {
                         <a href="https://forms.gle/NXLuRV2ut7Gw6gLa7" target="_blank" className="fixed bottom-4 right-4 bg-dgreen dark:bg-cgreen py-2 px-4 rounded-lg shadow-md z-50">Feedback?</a>
 
                         <Link to="/" onClick={toggleMobileMenu} className="pb-[5vh]">
-                            <img src="../../public/images/RHlogo.png" alt="RH Logo" className="w-20 rounded object-contain"/>
+                            <img src="public/images/RHlogo.png" alt="RH Logo" className="w-20 rounded object-contain"/>
                         </Link>
                         <ul className="space-y-4 pb-4 font-medium w-full border-b border-gray-200 dark:border-gray-700">
                             <li>
