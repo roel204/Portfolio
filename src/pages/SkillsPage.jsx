@@ -6,17 +6,24 @@ const SkillsPage = () => {
 
     const texts = {
         en: {
-            pageTitle: "MY SKILLS",
+            codeTitle: "CODE SKILLS",
+            codeDesc: "I have learned multiple programming languages, frameworks and other programs.\nI have learned most of these from my study, but some are also self-taught because it's interesting to me.",
+            pcTitle: "PC BUILDING",
+            pcDesc: "I have built multiple PC's..."
         },
         nl: {
-            pageTitle: 'MIJN SKILLS',
+            codeTitle: 'CODE SKILLS',
+            codeDesc: "Ik heb meerdere programmeertalen, frameworks en andere programma's geleerd.\nDe meeste heb ik tijdens mijn studie geleerd, maar sommige heb ik zelf geleerd omdat ik het interessant vind.",
+            pcTitle: "PC BOUWEN",
+            pcDesc: "Ik heb meerdere PC's in elkaar gezet..."
         },
     };
 
     return (
-        <div className="sm:ml-[6vw] flex justify-center items-center max-w-full min-h-screen">
+        <div className="sm:ml-[6vw] flex flex-col justify-center items-center max-w-full min-h-screen">
             <div className="py-10 sm:px-10 bg-green-50/75 rounded-3xl dark:bg-black/75">
-                <h1 className="gradientText text-5xl sm:text-8xl">{texts[language].pageTitle}</h1>
+                <h1 className="gradientText text-5xl sm:text-8xl pb-5">{texts[language].codeTitle}</h1>
+                <p className="text-gray-400 text-center px-4 sm:whitespace-pre-line">{texts[language].codeDesc}</p>
 
                 <div className="flex mt-[5vh] justify-center text-xs sm:text-base">
                     {/* First Column */}
@@ -128,6 +135,11 @@ const SkillsPage = () => {
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <div className="py-10 mt-[5vh] sm:px-10 bg-green-50/75 rounded-3xl dark:bg-black/75">
+                <h1 className="gradientText text-5xl sm:text-8xl pb-5">{texts[language].pcTitle}</h1>
+                <p className="text-gray-400 text-center px-4 sm:whitespace-pre-line">{texts[language].pcDesc}</p>
             </div>
         </div>
     );
