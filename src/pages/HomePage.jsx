@@ -1,5 +1,5 @@
 import React from 'react';
-import {useLanguage} from "./LanguageContext.jsx";
+import {useLanguage} from "../context/LanguageContext.jsx";
 
 const HomePage = () => {
     const {language} = useLanguage();

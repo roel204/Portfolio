@@ -1,5 +1,5 @@
 import {useRef, useEffect} from 'react';
-import {useLanguage} from './LanguageContext.jsx';
+import {useLanguage} from '../context/LanguageContext.jsx';
 import { HashLink } from 'react-router-hash-link';
 
 const ProjectsPage = () => {
