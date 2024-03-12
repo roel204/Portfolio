@@ -133,7 +133,7 @@ const ProjectsPage = () => {
     ];
 
     return (
-        <div className="sm:ml-[6vw]">
+        <div className="sm:ml-[6vw] bg-green-100/75 dark:bg-black/75">
             <h1 id="top" className="gradientText text-4xl sm:text-8xl pt-[6vh]">{texts[language].pageTitle}</h1>
             <HashLink to={`/projects#top`} className="fixed bottom-4 right-4 bg-dgreen dark:bg-cgreen pt-3 pb-2 px-4 rounded-lg">^</HashLink>
 

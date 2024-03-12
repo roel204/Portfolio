@@ -59,7 +59,7 @@ const Navbar = () => {
     if (!isMobile) {
         return (
             <aside className="fixed top-0 left-0 z-40 w-[6vw] h-screen text-sm text-gray-900 dark:text-gray-200" aria-label="Sidebar">
-                <div className="h-full w-full flex flex-col items-center border-r-2 border-cgreen justify-between px-2 py-4 overflow-y-auto bg-green-200 dark:bg-[#252525]">
+                <div className="h-full w-full flex flex-col items-center border-r-2 border-cgreen justify-between px-2 py-4 overflow-y-auto bg-green-50/75 dark:bg-black/75">
                     <Link to="/">
                         <img src="public/images/RHlogo.png" alt="RH Logo" className="w-full rounded object-contain transition duration-75 hover:scale-110"/>
                     </Link>

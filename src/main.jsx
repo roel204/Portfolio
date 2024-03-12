@@ -7,6 +7,7 @@ import HomePage from "./HomePage.jsx";
 import ProjectsPage from "./ProjectsPage.jsx";
 import SkillsPage from "./SkillsPage.jsx";
 import Navbar from "./Navbar.jsx";
+import Background from "./Background.jsx";
 import {LanguageProvider} from "./LanguageContext.jsx";
 
 const router = createHashRouter([
@@ -15,6 +16,7 @@ const router = createHashRouter([
         element: (
             <LanguageProvider>
                 <Navbar />
+                <Background />
                 <App />
             </LanguageProvider>
         ),
