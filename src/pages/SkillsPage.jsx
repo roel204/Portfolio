@@ -20,7 +20,7 @@ const SkillsPage = () => {
     };
 
     return (
-        <div className="sm:ml-[6vw] flex flex-col justify-center items-center max-w-full min-h-screen">
+        <div className="sm:ml-[6vw] mt-[5vh] flex flex-col justify-center items-center max-w-full min-h-screen">
             <div className="py-10 sm:px-10 bg-green-50/75 rounded-3xl dark:bg-black/75">
                 <h1 className="gradientText text-5xl sm:text-8xl pb-5">{texts[language].codeTitle}</h1>
                 <p className="text-gray-400 text-center px-4 sm:whitespace-pre-line">{texts[language].codeDesc}</p>
