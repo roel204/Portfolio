@@ -11,7 +11,7 @@ const SkillsPage = () => {
             pcTitle: "PC BUILDING",
             pcDesc: "I have built multiple computers and love searching for the perfect parts that will fit the build.",
             roelTitle: "My Computer",
-            roelDesc: "I built this computer together with a friend. I watched a lot of tutorials and searched for all the best parts to buy.",
+            roelDesc: "I watched a lot of tutorials and searched for all the best parts to buy before I built my computer, eventually I made it together with a friend. I also 3D-printed custom cable management to make it look perfect!",
             jitseTitle: "My little brother Jitse's PC",
             jitseDesc: "My little brother wanted a computer, so I made a simple integrated graphics build. He later bought an RX6600 for me to install.",
             vincentTitle: "My little brother Vincent's PC",
@@ -23,7 +23,7 @@ const SkillsPage = () => {
             pcTitle: "PC BOUWEN",
             pcDesc: "Ik heb meerdere computers gebouwd en vind het leuk om op zoek te gaan naar de perfecte onderdelen die bij de computer passen.",
             roelTitle: "Mijn Computer",
-            roelDesc: "Ik heb deze computer samen met een vriend gebouwd. Ik heb naar veel tutorials gekeken en gezocht naar de beste onderdelen om te kopen.",
+            roelDesc: "Ik heb veel tutorials gekeken en gezocht naar de beste onderdelen om te kopen en uiteindelijk samen met een vriend mijn computer gebouwd. Ook heb ik de cable management mooi gemaakt door custom houders te 3D-printen.",
             jitseTitle: "De PC voor mijn broertje Jitse",
             jitseDesc: "Mijn broertje wilde een computer, dus heb ik een eenvoudige build met geïntegreerde graphics gemaakt. Later kocht hij een RX6600 voor mij om te installeren.",
             vincentTitle: "De PC voor mijn broertje Vincent",
@@ -42,22 +42,22 @@ const SkillsPage = () => {
                     {/* First Column */}
                     <div className="flex flex-col items-center border-r border-gray-600 px-1 sm:px-6">
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/git.png" alt="Git Logo"
+                            <img src={"images/logos/git.png"} alt="Git Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100 ">GIT</p>
                         </div>
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/photoshop.png" alt="Photoshop Logo"
+                            <img src={"images/logos/photoshop.png"} alt="Photoshop Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Photoshop</p>
                         </div>
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/miro.png" alt="Miro Logo"
+                            <img src={"images/logos/miro.png"} alt="Miro Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Miro</p>
                         </div>
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/unity.png" alt="Unity Logo"
+                            <img src={"images/logos/unity.png"} alt="Unity Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Unity</p>
                         </div>
@@ -66,7 +66,7 @@ const SkillsPage = () => {
                     {/* Second Column */}
                     <div className="flex flex-col items-center border-r border-gray-600 px-1 sm:px-6">
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/html.png" alt="Html Logo"
+                            <img src={"images/logos/html.png"} alt="Html Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">HTML</p>
                         </div>
@@ -75,17 +75,17 @@ const SkillsPage = () => {
                     {/* Third Column */}
                     <div className="flex flex-col items-center border-r border-gray-600 px-1 sm:px-6">
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/css.png" alt="Css Logo"
+                            <img src={"images/logos/css.png"} alt="Css Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">CSS</p>
                         </div>
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/bootstrap.png" alt="Bootstrap Logo"
+                            <img src={"images/logos/bootstrap.png"} alt="Bootstrap Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Bootstrap</p>
                         </div>
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/tailwind.png" alt="Tailwind Logo"
+                            <img src={"images/logos/tailwind.png"} alt="Tailwind Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Tailwind</p>
                         </div>
@@ -94,27 +94,27 @@ const SkillsPage = () => {
                     {/* Fourth Column */}
                     <div className="flex flex-col items-center border-r border-gray-600 px-1 sm:px-6">
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/js.png" alt="Js Logo"
+                            <img src={"images/logos/js.png"} alt="Js Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">JavaScript</p>
                         </div>
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/nodejs.png" alt="NodeJs Logo"
+                            <img src={"images/logos/nodejs.png"} alt="NodeJs Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Node.js</p>
                         </div>
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/vite.png" alt="Vite Logo"
+                            <img src={"images/logos/vite.png"} alt="Vite Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Vite</p>
                         </div>
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/react.png" alt="React Logo"
+                            <img src={"images/logos/react.png"} alt="React Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">React</p>
                         </div>
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/express.png" alt="Express Logo"
+                            <img src={"images/logos/express.png"} alt="Express Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Express</p>
                         </div>
@@ -123,12 +123,12 @@ const SkillsPage = () => {
                     {/* Fifth Column */}
                     <div className="flex flex-col items-center border-r border-gray-600 px-1 sm:px-6">
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/php.png" alt="Php Logo"
+                            <img src={"images/logos/php.png"} alt="Php Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">PHP</p>
                         </div>
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/laravel.png" alt="Laravel Logo"
+                            <img src={"images/logos/laravel.png"} alt="Laravel Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Laravel</p>
                         </div>
@@ -137,12 +137,12 @@ const SkillsPage = () => {
                     {/* Sixth Column */}
                     <div className="flex flex-col items-center px-1 sm:px-6">
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/mysql.png" alt="MySql Logo"
+                            <img src={"images/logos/mysql.png"} alt="MySql Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">MySQL</p>
                         </div>
                         <div className="my-2 group flex flex-col items-center">
-                            <img src="public/images/logos/mongodb.png" alt="MondoDB Logo"
+                            <img src={"images/logos/mongodb.png"} alt="MondoDB Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">MongoDB</p>
                         </div>
@@ -173,7 +173,7 @@ const SkillsPage = () => {
                         </div>
                     </div>
                     <div className="flex w-[40%]">
-                        <img src="public/images/roelPCsm.png" alt="Vincent's PC" className="sm:max-w-[10vw] sm:mr-5 ml-auto object-contain transition sm:hover:scale-125"/>
+                        <img src={"images/roelPCsm.png"} alt="Roel's PC" className="sm:max-w-[10vw] sm:mr-5 ml-auto object-contain transition sm:hover:scale-125"/>
                     </div>
                 </div>
 
@@ -196,7 +196,7 @@ const SkillsPage = () => {
                         </div>
                     </div>
                     <div className="flex w-[40%]">
-                        <img src="public/images/jitsePCsm.png" alt="Vincent's PC" className="sm:max-w-[10vw] sm:mr-5 ml-auto object-contain transition sm:hover:scale-125"/>
+                        <img src={"images/jitsePCsm.png"} alt="Jitse's PC" className="sm:max-w-[10vw] sm:mr-5 ml-auto object-contain transition sm:hover:scale-125"/>
                     </div>
                 </div>
 
@@ -219,7 +219,7 @@ const SkillsPage = () => {
                         </div>
                     </div>
                     <div className="flex w-[40%]">
-                        <img src="public/images/vincentPCsm.png" alt="Vincent's PC" className="sm:max-w-[10vw] sm:mr-5 ml-auto object-contain transition sm:hover:scale-125"/>
+                        <img src={"images/vincentPCsm.png"} alt="Vincent's PC" className="sm:max-w-[10vw] sm:mr-5 ml-auto object-contain transition sm:hover:scale-125"/>
                     </div>
                 </div>
 

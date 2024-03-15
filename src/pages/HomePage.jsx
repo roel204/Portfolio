@@ -7,11 +7,11 @@ const HomePage = () => {
     const texts = {
         en: {
             greet: "Hello I'm:",
-            extraText: "I am a programming/design student in the CMGT program at Rotterdam University of Applied Sciences.",
+            extraText: "I'm a 'Creative Full stack developer' student on the CMGT course at Rotterdam University of Applied Sciences.",
         },
         nl: {
             greet: 'Hoi ik ben:',
-            extraText: 'Ik ben een programmeer/design student op de opleiding CMGT aan Hogeschool Rotterdam.',
+            extraText: "Ik ben een 'Creative Full stack developer' student op de opleiding CMGT aan Hogeschool Rotterdam.",
         },
     };
 
