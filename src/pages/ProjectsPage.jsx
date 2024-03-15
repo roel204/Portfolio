@@ -59,6 +59,7 @@ const ProjectsPage = () => {
             hennie: "I made this CLE3 project with other students. We used JavaScript to build a web-app that displays information for elderly people. I also added a favorites system using Localstorage.",
             parrotFarm: "I made a reservation system for the company Parrot Farm using PHP and MySQL. This was my first project where I used a database.",
             rockPS: "For my very first project in my CMGT study, I created a physical device with the MicroBit controller together with other students. We made arcade cabinets and created a version of the game 'Rock Paper Scissors' with a pirate theme to it.",
+            spellAI: "This is my first experience with coding AI (ChatLLM). I built a website where the AI will correct your input text. It will mark the changes in red so you can easily see what has changed. There are also some other features like: Voice to text, Multiple models to choose from, a field for instructions like 'make it sound professional', everything is also saved into local storage so you don't lose your text if you reload the page.",
         },
         nl: {
             pageTitle: 'MIJN PROJECTEN',
@@ -70,10 +71,19 @@ const ProjectsPage = () => {
             hennie: "Ik heb dit CLE3-project gemaakt met andere studenten. We hebben JavaScript gebruikt om een web-app te bouwen die informatie weergeeft voor ouderen. Ik heb ook een favorietensysteem toegevoegd met behulp van LocalStorage.",
             parrotFarm: "Ik heb voor het bedrijf Parrot Farm een reserveringsysteem gemaakt met behulp van PHP en MySQL. Dit was mijn eerste project waar ik een database heb gebruikt.",
             rockPS: "Voor mijn allereerste project op mijn CMGT studie heb ik samen met andere studenten een fysiek apparaat moeten maken met de MicroBit controller. Wij hebben arcade kastjes gemaakt en hierin een versie van de game 'Steen Papier Schaar' gemaakt in een piraten thema.",
+            spellAI: "Dit is mijn eerste ervaring met het coderen van AI (ChatLLM). Ik heb een website gebouwd waar de AI je invoertekst zal corrigeren. Het zal de wijzigingen in het rood markeren zodat je gemakkelijk kunt zien wat er is veranderd. Er zijn ook enkele andere functies, zoals: Spraak naar tekst, Meerdere modellen om uit te kiezen, een veld voor instructies zoals 'laat het professioneel klinken', alles wordt ook opgeslagen in local storage zodat je je tekst niet kwijtraakt als je de pagina herlaad.",
         },
     };
 
     const projectsCards = [
+        {
+            title: 'SpellAI', githubLink: 'https://github.com/roel204/SpellAI',
+            tags: 'PRG8 AI ChatLLM',
+            desc: {
+                en: "An AI (ChatLLM) application that will correct the spelling of your text.",
+                nl: 'Een AI (ChatLLM) app die de spelling in jouw text verbeterd.',
+            },
+        },
         {
             title: 'Stream Team', githubLink: 'https://github.com/faroeq33/TLE1',
             tags: 'TLE1 Laravel JS',
@@ -139,7 +149,8 @@ const ProjectsPage = () => {
 
             <div className="flex overflow-x-auto scrollbar-hide py-[10vh] border-b border-cgreen" ref={containerRef}>
                 {projectsCards.map((project, index) => (
-                    <HashLink to={`/projects#${index}`} key={index} className="w-[75vw] sm:w-[20vw] h-[40vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative transition scale-95 sm:hover:scale-110">
+                    <HashLink to={`/projects#${index}`} key={index}
+                              className="w-[75vw] sm:w-[20vw] h-[40vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative transition scale-95 sm:hover:scale-110">
                         {/* Title */}
                         <h2 className="text-2xl font-semibold">{project.title}</h2>
 
@@ -179,36 +190,41 @@ const ProjectsPage = () => {
             </div>
 
             <div id="0" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+                <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">SpellAI</h3>
+                <p className="text-sm sm:text-lg">{texts[language].spellAI}</p>
+            </div>
+
+            <div id="1" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Stream Team</h3>
                 <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
             </div>
 
-            <div id="1" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+            <div id="2" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">React Tasks</h3>
                 <p className="text-sm sm:text-lg">{texts[language].reactTasks}</p>
             </div>
 
-            <div id="2" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+            <div id="3" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">PC Showcase</h3>
                 <p className="text-sm sm:text-lg">{texts[language].pcShowcase}</p>
             </div>
 
-            <div id="3" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+            <div id="4" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Hungry Fish</h3>
                 <p className="text-sm sm:text-lg">{texts[language].hungryFish}</p>
             </div>
 
-            <div id="4" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+            <div id="5" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Hennie's Hulp Pagina</h3>
                 <p className="text-sm sm:text-lg">{texts[language].hennie}</p>
             </div>
 
-            <div id="5" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+            <div id="6" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Parrotfarm Reserveringssysteem</h3>
                 <p className="text-sm sm:text-lg">{texts[language].parrotFarm}</p>
             </div>
 
-            <div id="6" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+            <div id="7" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Rock Paper Scurvy</h3>
                 <p className="text-sm sm:text-lg">{texts[language].rockPS}</p>
             </div>
