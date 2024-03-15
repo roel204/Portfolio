@@ -1,7 +1,6 @@
 import {useRef, useEffect} from 'react';
-import {useLanguage} from './LanguageContext.jsx';
+import {useLanguage} from '../context/LanguageContext.jsx';
 import { HashLink } from 'react-router-hash-link';
-import {HashRouter} from "react-router-dom";
 
 const ProjectsPage = () => {
     const {language} = useLanguage();
@@ -51,7 +50,7 @@ const ProjectsPage = () => {
 
     const texts = {
         en: {
-            pageTitle: "My Projects",
+            pageTitle: "MY PROJECTS",
             code: "View Code",
             streamTeam: "Streamteam is a Tailored Learning Environment (TLE) project for the CMGT study at Rotterdam University of Applied Sciences. The project focuses on the existing IP-car, a car controlled via a server with a live feed, which is intended for use in daily activities within care homes. Through this software, the IP-car can connect to a guide who can see a live feed and take control of the car with a controller via the same connection. It is a delivery to VindiQu and FoxConnect. VindiQu already offers livestream daily activities to care homes, and FoxConnect is the developer of the first IP-car, originally intended for private use by people with mobility impairments.",
             reactTasks: "This is my first school project using the React framework. I really liked how easy and custom it is, so i'm also using it for this Portfolio website. Tasks React is a CRUD application that uses my API i made with Express and MongoDB. You can easily look through all your tasks with pagination, and you're also able to star your favorite tasks to the top of the list.",
@@ -60,9 +59,10 @@ const ProjectsPage = () => {
             hennie: "I made this CLE3 project with other students. We used JavaScript to build a web-app that displays information for elderly people. I also added a favorites system using Localstorage.",
             parrotFarm: "I made a reservation system for the company Parrot Farm using PHP and MySQL. This was my first project where I used a database.",
             rockPS: "For my very first project in my CMGT study, I created a physical device with the MicroBit controller together with other students. We made arcade cabinets and created a version of the game 'Rock Paper Scissors' with a pirate theme to it.",
+            spellAI: "This is my first experience with coding AI (ChatLLM). I built a website where the AI will correct your input text. It will mark the changes in red so you can easily see what has changed. There are also some other features like: Voice to text, Multiple models to choose from, a field for instructions like 'make it sound professional', everything is also saved into local storage so you don't lose your text if you reload the page.",
         },
         nl: {
-            pageTitle: 'Mijn Projecten',
+            pageTitle: 'MIJN PROJECTEN',
             code: 'Bekijk Code',
             streamTeam: "Streamteam is een Tailored Learning Environment (TLE) project voor de studie CMGT, Hogeschool Rotterdam. Het project focust op de bestaande IP-car, een via een server te besturen auto met een livefeed, die moet worden ingezet voor dagbesteding binnen zorghuizen. De IP-car kan via deze software verbinden met een gids, die een live beeld te zien krijgt en controle van de auto kan overnemen met een controller via dezelfde verbinding. Het is een oplevering aan VindiQu en FoxConnect. VindiQu biedt al livestream dagbesteding aan zorghuizen, en FoxConnect is de ontwikkelaar van de eerste IP-car, origineel bedoeld voor particulier gebruik van mensen met een motorische beperking.",
             reactTasks: "Dit is mijn eerste school project waarbij ik het React-framework gebruik. Ik vond het makkelijk en gebruiksvriendelijk, dus ik gebruik het ook voor deze portfolio-website. Tasks React is een CRUD-applicatie die mijn API gebruikt, deze heb ik gemaakt met Express en MongoDB. Je kunt gemakkelijk door al je taken bladeren met paginering, en je kunt ook je favoriete taken bovenaan de lijst markeren.",
@@ -71,10 +71,19 @@ const ProjectsPage = () => {
             hennie: "Ik heb dit CLE3-project gemaakt met andere studenten. We hebben JavaScript gebruikt om een web-app te bouwen die informatie weergeeft voor ouderen. Ik heb ook een favorietensysteem toegevoegd met behulp van LocalStorage.",
             parrotFarm: "Ik heb voor het bedrijf Parrot Farm een reserveringsysteem gemaakt met behulp van PHP en MySQL. Dit was mijn eerste project waar ik een database heb gebruikt.",
             rockPS: "Voor mijn allereerste project op mijn CMGT studie heb ik samen met andere studenten een fysiek apparaat moeten maken met de MicroBit controller. Wij hebben arcade kastjes gemaakt en hierin een versie van de game 'Steen Papier Schaar' gemaakt in een piraten thema.",
+            spellAI: "Dit is mijn eerste ervaring met het coderen van AI (ChatLLM). Ik heb een website gebouwd waar de AI je invoertekst zal corrigeren. Het zal de wijzigingen in het rood markeren zodat je gemakkelijk kunt zien wat er is veranderd. Er zijn ook enkele andere functies, zoals: Spraak naar tekst, Meerdere modellen om uit te kiezen, een veld voor instructies zoals 'laat het professioneel klinken', alles wordt ook opgeslagen in local storage zodat je je tekst niet kwijtraakt als je de pagina herlaad.",
         },
     };
 
     const projectsCards = [
+        {
+            title: 'SpellAI', githubLink: 'https://github.com/roel204/SpellAI',
+            tags: 'PRG8 AI ChatLLM',
+            desc: {
+                en: "An AI (ChatLLM) application that will correct the spelling of your text.",
+                nl: 'Een AI (ChatLLM) app die de spelling in jouw text verbeterd.',
+            },
+        },
         {
             title: 'Stream Team', githubLink: 'https://github.com/faroeq33/TLE1',
             tags: 'TLE1 Laravel JS',
@@ -134,13 +143,14 @@ const ProjectsPage = () => {
     ];
 
     return (
-        <div className="sm:ml-[6vw]">
-            <h1 id="top" className="gradientText text-5xl sm:text-9xl pb-5">{texts[language].pageTitle}</h1>
+        <div className="sm:ml-[6vw] bg-green-100/75 dark:bg-black/75">
+            <h1 id="top" className="gradientText text-4xl sm:text-8xl pt-[6vh]">{texts[language].pageTitle}</h1>
             <HashLink to={`/projects#top`} className="fixed bottom-4 right-4 bg-dgreen dark:bg-cgreen pt-3 pb-2 px-4 rounded-lg">^</HashLink>
 
-            <div className="flex overflow-x-auto scrollbar-hide py-24 border-b border-cgreen" ref={containerRef}>
+            <div className="flex overflow-x-auto scrollbar-hide py-[10vh] border-b border-cgreen" ref={containerRef}>
                 {projectsCards.map((project, index) => (
-                    <HashLink to={`/projects#${index}`} key={index} className="w-[75vw] sm:w-[20vw] h-[40vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative transition scale-95 sm:hover:scale-110">
+                    <HashLink to={`/projects#${index}`} key={index}
+                              className="w-[75vw] sm:w-[20vw] h-[40vh] flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative transition scale-95 sm:hover:scale-110">
                         {/* Title */}
                         <h2 className="text-2xl font-semibold">{project.title}</h2>
 
@@ -156,7 +166,7 @@ const ProjectsPage = () => {
 
                         {/* GitHub Link */}
                         {project.githubLink && (
-                            <a href={project.githubLink} target="_blank" className="absolute bottom-2 right-2 flex flex-col items-center p-2 group">
+                            <a href={project.githubLink} onClick={(event) => event.stopPropagation()} target="_blank" className="absolute bottom-2 right-2 flex flex-col items-center p-2 group">
                                 <svg className="w-10 h-10 text-[#151515] group-hover:text-white" aria-hidden="true"
                                      xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
                                     <path
@@ -180,36 +190,41 @@ const ProjectsPage = () => {
             </div>
 
             <div id="0" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+                <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">SpellAI</h3>
+                <p className="text-sm sm:text-lg">{texts[language].spellAI}</p>
+            </div>
+
+            <div id="1" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Stream Team</h3>
                 <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
             </div>
 
-            <div id="1" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+            <div id="2" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">React Tasks</h3>
                 <p className="text-sm sm:text-lg">{texts[language].reactTasks}</p>
             </div>
 
-            <div id="2" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+            <div id="3" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">PC Showcase</h3>
                 <p className="text-sm sm:text-lg">{texts[language].pcShowcase}</p>
             </div>
 
-            <div id="3" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+            <div id="4" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Hungry Fish</h3>
                 <p className="text-sm sm:text-lg">{texts[language].hungryFish}</p>
             </div>
 
-            <div id="4" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+            <div id="5" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Hennie's Hulp Pagina</h3>
                 <p className="text-sm sm:text-lg">{texts[language].hennie}</p>
             </div>
 
-            <div id="5" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+            <div id="6" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Parrotfarm Reserveringssysteem</h3>
                 <p className="text-sm sm:text-lg">{texts[language].parrotFarm}</p>
             </div>
 
-            <div id="6" className="px-5 sm:px-20 py-10 border-b border-cgreen">
+            <div id="7" className="px-5 sm:px-20 py-10 border-b border-cgreen">
                 <h3 className="text-3xl sm:text-5xl text-cgreen mb-4">Rock Paper Scurvy</h3>
                 <p className="text-sm sm:text-lg">{texts[language].rockPS}</p>
             </div>

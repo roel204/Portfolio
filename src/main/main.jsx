@@ -1,13 +1,14 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {RouterProvider, createHashRouter} from "react-router-dom";
-import './index.css'
+import '../style/index.css'
 import App from './App.jsx'
-import HomePage from "./HomePage.jsx";
-import ProjectsPage from "./ProjectsPage.jsx";
-import SkillsPage from "./SkillsPage.jsx";
-import Navbar from "./Navbar.jsx";
-import {LanguageProvider} from "./LanguageContext.jsx";
+import HomePage from "../pages/HomePage.jsx";
+import ProjectsPage from "../pages/ProjectsPage.jsx";
+import SkillsPage from "../pages/SkillsPage.jsx";
+import Navbar from "../partials/Navbar.jsx";
+import Background from "../style/Background.jsx";
+import {LanguageProvider} from "../context/LanguageContext.jsx";
 
 const router = createHashRouter([
     {
@@ -15,6 +16,7 @@ const router = createHashRouter([
         element: (
             <LanguageProvider>
                 <Navbar />
+                <Background />
                 <App />
             </LanguageProvider>
         ),

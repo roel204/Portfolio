@@ -1,18 +1,24 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import '../../node_modules/tailwindcss/base.css';
+@import '../../node_modules/tailwindcss/components.css';
+@import '../../node_modules/tailwindcss/utilities.css';
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 :root {
-    background-color: rgb(220 252 231);
+    --color-bgd1: rgb(5, 30, 5);
+    --color-bgd2: rgb(5, 20, 5);
+    --color-bgl1: rgb(220 252 231);
+    --color-bgl2: rgb(220 252 231);
+    background: linear-gradient(40deg, var(--color-bgl1), var(--color-bgl2));
     color: black;
 }
 
 .dark {
-    background-color: #151515;
+    background: linear-gradient(40deg, var(--color-bgd1), var(--color-bgd2));
     color: white;
 }
 
 .gradientText {
+    font-family: "Archivo Black", sans-serif;
     font-weight: 800;
     letter-spacing: 1px;
     text-align: center;
