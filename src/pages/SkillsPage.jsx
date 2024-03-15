@@ -11,7 +11,7 @@ const SkillsPage = () => {
             pcTitle: "PC BUILDING",
             pcDesc: "I have built multiple computers and love searching for the perfect parts that will fit the build.",
             roelTitle: "My Computer",
-            roelDesc: "I built this computer together with a friend. I looked at a lot of tutorials and searched for all the best parts to buy.",
+            roelDesc: "I built this computer together with a friend. I watched a lot of tutorials and searched for all the best parts to buy.",
             jitseTitle: "My little brother Jitse's PC",
             jitseDesc: "My little brother wanted a computer, so I made a simple integrated graphics build. He later bought an RX6600 for me to install.",
             vincentTitle: "My little brother Vincent's PC",
@@ -150,12 +150,12 @@ const SkillsPage = () => {
                 </div>
             </div>
 
-            <div className="py-10 my-[5vh] sm:px-10 sm:w-[50vw] bg-green-50/75 rounded-3xl dark:bg-black/75">
+            <div className="py-10 my-[5vh] sm:px-10 sm:w-[50vw] rounded-3xl bg-green-50/75 dark:bg-black/75">
                 <h1 className="gradientText text-5xl sm:text-8xl pb-5">{texts[language].pcTitle}</h1>
                 <p className="text-gray-400 text-center px-4 sm:whitespace-pre-line">{texts[language].pcDesc}</p>
 
                 {/*Roel Computer*/}
-                <div className="border-2 border-cgreen rounded-t-2xl p-4 mt-[5vh] text-center bg-black/[.5]">
+                <div className="border-2 border-cgreen rounded-t-2xl p-4 mt-[5vh] text-center bg-white/50 dark:bg-black/50">
                     <h3 className="text-2xl font-bold">{texts[language].roelTitle}</h3>
                 </div>
                 <div className="flex justify-between border-x-2 border-b-2 border-cgreen rounded-b-2xl p-2">
@@ -178,7 +178,7 @@ const SkillsPage = () => {
                 </div>
 
                 {/*Jitse Computer*/}
-                <div className="border-2 border-cgreen rounded-t-2xl p-4 mt-[5vh] text-center bg-black/[.5]">
+                <div className="border-2 border-cgreen rounded-t-2xl p-4 mt-[5vh] text-center bg-white/50 dark:bg-black/50">
                     <h3 className="text-2xl font-bold">{texts[language].jitseTitle}</h3>
                 </div>
                 <div className="flex justify-between border-x-2 border-b-2 border-cgreen rounded-b-2xl p-2">
@@ -191,7 +191,7 @@ const SkillsPage = () => {
                             <p><span className="text-gray-400">GPU:</span> Asrock RX6600</p>
                             <p><span className="text-gray-400">RAM:</span> Team Group Delta 16GB</p>
                             <p><span className="text-gray-400">MOBO:</span> Asrock B450M Pro4</p>
-                            <p><span className="text-gray-400">PSU:</span> EVGA Gold 450</p>
+                            <p><span className="text-gray-400">PSU:</span> EVGA Gold 450 GM</p>
                             <p><span className="text-gray-400">CASE:</span> Aerocool Hive</p>
                         </div>
                     </div>
@@ -201,7 +201,7 @@ const SkillsPage = () => {
                 </div>
 
                 {/*Vincent Computer*/}
-                <div className="border-2 border-cgreen rounded-t-2xl p-4 mt-[5vh] text-center bg-black/[.5]">
+                <div className="border-2 border-cgreen rounded-t-2xl p-4 mt-[5vh] text-center bg-white/50 dark:bg-black/50">
                     <h3 className="text-2xl font-bold">{texts[language].vincentTitle}</h3>
                 </div>
                 <div className="flex justify-between border-x-2 border-b-2 border-cgreen rounded-b-2xl p-2">
@@ -212,7 +212,7 @@ const SkillsPage = () => {
                         <div className="p-2 text-sm sm:columns-2">
                                 <p><span className="text-gray-400">CPU:</span> Ryzen 5 5500</p>
                                 <p><span className="text-gray-400">GPU:</span> Asrock RX6600</p>
-                                <p><span className="text-gray-400">RAM:</span> Corsair Vengeance 8gb</p>
+                                <p><span className="text-gray-400">RAM:</span> Corsair Vengeance 8GB</p>
                                 <p><span className="text-gray-400">MOBO:</span> Asus Prime B550M-K</p>
                                 <p><span className="text-gray-400">PSU:</span> Seasonic G12 GM-650</p>
                                 <p><span className="text-gray-400">CASE:</span> MSI MAG Forge M100R</p>
