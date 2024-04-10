@@ -15,7 +15,7 @@ const SkillsPage = () => {
             jitseTitle: "My little brother Jitse's PC",
             jitseDesc: "My little brother wanted a computer, so I made a simple integrated graphics build. He later bought an RX6600 for me to install.",
             vincentTitle: "My little brother Vincent's PC",
-            vincentDesc: "My other little brother also wanted a computer, so he took a loan and I built one for him."
+            vincentDesc: "My other little brother also wanted a computer, so we picked the parts together and I built it for him."
         },
         nl: {
             codeTitle: 'CODE SKILLS',
@@ -27,19 +27,19 @@ const SkillsPage = () => {
             jitseTitle: "De PC voor mijn broertje Jitse",
             jitseDesc: "Mijn broertje wilde een computer, dus heb ik een eenvoudige build met geïntegreerde graphics gemaakt. Later kocht hij een RX6600 voor mij om te installeren.",
             vincentTitle: "De PC voor mijn broertje Vincent",
-            vincentDesc: "Mijn andere broertje wilde ook een computer, dus hij nam een lening en ik bouwde er een voor hem."
+            vincentDesc: "Mijn andere broertje wilde ook een computer, dus ik heb samen met hem de onderdelen uitgekozen en daarna gebouwd."
 
         },
     };
 
     return (
         <div className="sm:ml-[6vw] mt-[5vh] flex flex-col justify-center items-center max-w-full min-h-screen">
-            <div className="py-10 sm:px-10 sm:w-[50vw] bg-green-50/75 rounded-3xl dark:bg-black/75">
+            <div className="py-10 sm:px-10 sm:w-[60vw] bg-green-50/75 rounded-3xl dark:bg-black/75">
                 <h1 className="gradientText text-5xl sm:text-8xl pb-5">{texts[language].codeTitle}</h1>
                 <p className="text-gray-400 text-center px-4 sm:whitespace-pre-line">{texts[language].codeDesc}</p>
 
                 <div className="flex mt-[5vh] justify-center text-xs sm:text-base">
-                    {/* First Column */}
+                    {/* Column 1 */}
                     <div className="flex flex-col items-center border-r border-gray-600 px-1 sm:px-6">
                         <div className="my-2 group flex flex-col items-center">
                             <img src={"images/logos/git.png"} alt="Git Logo"
@@ -63,17 +63,13 @@ const SkillsPage = () => {
                         </div>
                     </div>
 
-                    {/* Second Column */}
+                    {/* Column 2 */}
                     <div className="flex flex-col items-center border-r border-gray-600 px-1 sm:px-6">
                         <div className="my-2 group flex flex-col items-center">
                             <img src={"images/logos/html.png"} alt="Html Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
                             <p className="text-center sm:opacity-0 transition group-hover:opacity-100">HTML</p>
                         </div>
-                    </div>
-
-                    {/* Third Column */}
-                    <div className="flex flex-col items-center border-r border-gray-600 px-1 sm:px-6">
                         <div className="my-2 group flex flex-col items-center">
                             <img src={"images/logos/css.png"} alt="Css Logo"
                                  className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
@@ -91,7 +87,7 @@ const SkillsPage = () => {
                         </div>
                     </div>
 
-                    {/* Fourth Column */}
+                    {/* Column 3 */}
                     <div className="flex flex-col items-center border-r border-gray-600 px-1 sm:px-6">
                         <div className="my-2 group flex flex-col items-center">
                             <img src={"images/logos/js.png"} alt="Js Logo"
@@ -120,7 +116,7 @@ const SkillsPage = () => {
                         </div>
                     </div>
 
-                    {/* Fifth Column */}
+                    {/* Column 4 */}
                     <div className="flex flex-col items-center border-r border-gray-600 px-1 sm:px-6">
                         <div className="my-2 group flex flex-col items-center">
                             <img src={"images/logos/php.png"} alt="Php Logo"
@@ -134,7 +130,7 @@ const SkillsPage = () => {
                         </div>
                     </div>
 
-                    {/* Sixth Column */}
+                    {/* Column 5 */}
                     <div className="flex flex-col items-center px-1 sm:px-6">
                         <div className="my-2 group flex flex-col items-center">
                             <img src={"images/logos/mysql.png"} alt="MySql Logo"
@@ -150,7 +146,7 @@ const SkillsPage = () => {
                 </div>
             </div>
 
-            <div className="py-10 my-[5vh] sm:px-10 sm:w-[50vw] rounded-3xl bg-green-50/75 dark:bg-black/75">
+            <div className="py-10 my-[5vh] sm:px-10 sm:w-[60vw] rounded-3xl bg-green-50/75 dark:bg-black/75">
                 <h1 className="gradientText text-5xl sm:text-8xl pb-5">{texts[language].pcTitle}</h1>
                 <p className="text-gray-400 text-center px-4 sm:whitespace-pre-line">{texts[language].pcDesc}</p>
 
