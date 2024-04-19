@@ -7,11 +7,11 @@ const HomePage = () => {
     const texts = {
         en: {
             greet: "Hello I'm:",
-            extraText: "I'm a 'Creative Full stack developer' student on the CMGT course at Rotterdam University of Applied Sciences.",
+            extraText: "I'm a Creative Developer student on the CMGT course at Rotterdam University of Applied Sciences.",
         },
         nl: {
             greet: 'Hoi ik ben:',
-            extraText: "Ik ben een 'Creative Full stack developer' student op de opleiding CMGT aan Hogeschool Rotterdam.",
+            extraText: "Ik ben een Creative Developer student op de opleiding CMGT aan Hogeschool Rotterdam.",
         },
     };
 
@@ -20,7 +20,7 @@ const HomePage = () => {
             <div className="text-center sm:text-left py-20 sm:px-20 rounded-3xl bg-green-50/75 dark:bg-black/75">
                 <h2 className="text-2xl sm:text-3xl font-bold mb-4 pl-1">{texts[language].greet}</h2>
                 <h1 className="gradientText text-3xl sm:text-8xl pb-10">ROEL HOOGENDOORN</h1>
-                <p className="text-gray-400 text-sm sm:text-lg pl-1">{texts[language].extraText}</p>
+                <p className="text-gray-400 text-sm sm:text-lg pl-1 text-center">{texts[language].extraText}</p>
             </div>
         </div>
     );
