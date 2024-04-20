@@ -3,7 +3,7 @@ import {useLanguage} from "../context/LanguageContext.jsx";
 
 const SkillsPage = () => {
     const {language} = useLanguage();
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1240);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -11,7 +11,7 @@ const SkillsPage = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 640);
+            setIsMobile(window.innerWidth < 1240);
         };
 
         window.addEventListener('resize', handleResize);
@@ -50,10 +50,10 @@ const SkillsPage = () => {
     };
 
     return (
-        <div className="sm:ml-[6vw] mt-[5vh] flex flex-col justify-center items-center max-w-full min-h-screen">
-            <div className="py-10 sm:px-10 sm:w-[60vw] rounded-3xl bg-green-50/75 dark:bg-black/75">
-                <h1 className="gradientText text-5xl sm:text-8xl pb-5">{texts[language].codeTitle}</h1>
-                <p className="text-gray-400 text-center px-4 sm:whitespace-pre-line">{texts[language].codeDesc}</p>
+        <div className="xl:ml-[6vw] mt-[5vh] flex flex-col justify-center items-center max-w-full min-h-screen">
+            <div className="py-10 xl:px-10 xl:w-[60vw] rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <h1 className="gradientText text-5xl xl:text-8xl pb-5">{texts[language].codeTitle}</h1>
+                <p className="text-gray-400 text-center px-4 xl:whitespace-pre-line">{texts[language].codeDesc}</p>
 
                 {isMobile ? (
                     // Content for mobile
@@ -177,133 +177,133 @@ const SkillsPage = () => {
                     </div>
                 ) : (
                     // Content for PC
-                    <div className="flex flex-row gap-1 sm:gap-8 mt-[5vh] justify-center text-[0.6rem] sm:text-base">
+                    <div className="flex flex-row gap-1 xl:gap-8 mt-[5vh] justify-center text-[0.6rem] xl:text-base">
                         {/* Column 1 */}
                         <div className="flex flex-col items-center">
-                            <div className="pt-6 mb-2 px-3 sm:px-4 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
+                            <div className="pt-6 mb-2 px-3 xl:px-4 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
                                 <img src={"images/logos/git.png"} alt="Git Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100 ">GIT</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100 ">GIT</p>
                             </div>
-                            <div className="pt-6 mb-2 px-3 sm:px-4 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
+                            <div className="pt-6 mb-2 px-3 xl:px-4 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
                                 <img src={"images/logos/photoshop.png"} alt="Photoshop Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Photoshop</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Photoshop</p>
                             </div>
-                            <div className="pt-6 mb-2 px-3 sm:px-4 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
+                            <div className="pt-6 mb-2 px-3 xl:px-4 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
                                 <img src={"images/logos/miro.png"} alt="Miro Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Miro</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Miro</p>
                             </div>
                         </div>
 
                         {/* Column 2 */}
                         <div className="flex flex-col items-center">
-                            <div className="pt-6 mb-2 px-3 sm:px-4 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
+                            <div className="pt-6 mb-2 px-3 xl:px-4 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
                                 <img src={"images/logos/html.png"} alt="Html Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">HTML</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">HTML</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
                                 <img src={"images/logos/css.png"} alt="Css Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">CSS</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">CSS</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 group flex flex-col items-center">
                                 <img src={"images/logos/bootstrap.png"} alt="Bootstrap Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Bootstrap</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Bootstrap</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
                                 <img src={"images/logos/tailwind.png"} alt="Tailwind Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Tailwind</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Tailwind</p>
                             </div>
                         </div>
 
                         {/* Column 3 */}
                         <div className="flex flex-col items-center">
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
                                 <img src={"images/logos/js.png"} alt="Js Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">JavaScript</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">JavaScript</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 group flex flex-col items-center">
                                 <img src={"images/logos/nodejs.png"} alt="NodeJs Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Node.js</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Node.js</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 group flex flex-col items-center">
                                 <img src={"images/logos/vite.png"} alt="Vite Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Vite</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Vite</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 group flex flex-col items-center">
                                 <img src={"images/logos/react.png"} alt="React Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">React</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">React</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
                                 <img src={"images/logos/express.png"} alt="Express Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Express</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Express</p>
                             </div>
                         </div>
 
                         {/* Column 4 */}
                         <div className="flex flex-col items-center">
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
                                 <img src={"images/logos/php.png"} alt="Php Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">PHP</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">PHP</p>
                             </div>
-                            <div className="pt-6 mb-2 px-3 sm:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
+                            <div className="pt-6 mb-2 px-3 xl:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
                                 <img src={"images/logos/laravel.png"} alt="Laravel Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Laravel</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Laravel</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
                                 <img src={"images/logos/mysql.png"} alt="MySql Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">MySQL</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">MySQL</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
                                 <img src={"images/logos/mongodb.png"} alt="MondoDB Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">MongoDB</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">MongoDB</p>
                             </div>
                         </div>
 
                         {/* Column 5 */}
                         <div className="flex flex-col items-center">
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
                                 <img src={"images/logos/langchain.png"} alt="Langchain Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Lang Chain</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Lang Chain</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 group flex flex-col items-center">
                                 <img src={"images/logos/mediapipe.png"} alt="Mediapipe Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Mediapipe</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Mediapipe</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
                                 <img src={"images/logos/ml5.png"} alt="ML5 Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">ML5</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">ML5</p>
                             </div>
                         </div>
 
                         {/* Column 6 */}
                         <div className="flex flex-col items-center">
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
                                 <img src={"images/logos/csharp.png"} alt="C sharp Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">C#</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">C#</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 sm:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
                                 <img src={"images/logos/unity.png"} alt="Unity Logo"
-                                     className="w-10 h-10 sm:w-[5vw] sm:h-[9vh] object-contain transition duration-75 sm:group-hover:scale-125 sm:group-hover:-translate-y-2"/>
-                                <p className="text-center sm:opacity-0 transition group-hover:opacity-100">Unity</p>
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Unity</p>
                             </div>
                         </div>
                     </div>
@@ -312,9 +312,9 @@ const SkillsPage = () => {
 
             </div>
 
-            <div className="py-10 my-[5vh] sm:px-10 sm:w-[60vw] rounded-3xl bg-green-50/75 dark:bg-black/75">
-                <h1 className="gradientText text-5xl sm:text-8xl pb-5">{texts[language].pcTitle}</h1>
-                <p className="text-gray-400 text-center px-4 sm:whitespace-pre-line">{texts[language].pcDesc}</p>
+            <div className="py-10 my-[5vh] xl:px-10 xl:w-[60vw] rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <h1 className="gradientText text-5xl xl:text-8xl pb-5">{texts[language].pcTitle}</h1>
+                <p className="text-gray-400 text-center px-4 xl:whitespace-pre-line">{texts[language].pcDesc}</p>
 
                 {/*Roel Computer*/}
                 <div className="border-2 border-cgreen rounded-t-2xl p-4 mt-[5vh] text-center bg-white/50 dark:bg-black/50">
@@ -325,7 +325,7 @@ const SkillsPage = () => {
                         <div className="p-2">
                             <p>{texts[language].roelDesc}</p>
                         </div>
-                        <div className="p-2 text-sm sm:columns-2">
+                        <div className="p-2 text-sm xl:columns-2">
                             <p><span className="text-gray-400">CPU:</span> Ryzen 5 2600X</p>
                             <p><span className="text-gray-400">GPU:</span> Gigabyte RX590</p>
                             <p><span className="text-gray-400">RAM:</span> Team Group Delta 16GB</p>
@@ -335,7 +335,7 @@ const SkillsPage = () => {
                         </div>
                     </div>
                     <div className="flex w-[40%]">
-                        <img src={"images/roelPCsm.png"} alt="Roel's PC" className="sm:max-w-[10vw] sm:mr-5 ml-auto object-contain transition sm:hover:scale-125"/>
+                        <img src={"images/roelPCsm.png"} alt="Roel's PC" className="xl:max-w-[10vw] xl:mr-5 ml-auto object-contain transition xl:hover:scale-125"/>
                     </div>
                 </div>
 
@@ -348,7 +348,7 @@ const SkillsPage = () => {
                         <div className="p-2">
                             <p>{texts[language].jitseDesc}</p>
                         </div>
-                        <div className="p-2 text-sm sm:columns-2">
+                        <div className="p-2 text-sm xl:columns-2">
                             <p><span className="text-gray-400">CPU:</span> Ryzen 5 3400G</p>
                             <p><span className="text-gray-400">GPU:</span> Asrock RX6600</p>
                             <p><span className="text-gray-400">RAM:</span> Team Group Delta 16GB</p>
@@ -358,7 +358,7 @@ const SkillsPage = () => {
                         </div>
                     </div>
                     <div className="flex w-[40%]">
-                        <img src={"images/jitsePCsm.png"} alt="Jitse's PC" className="sm:max-w-[10vw] sm:mr-5 ml-auto object-contain transition sm:hover:scale-125"/>
+                        <img src={"images/jitsePCsm.png"} alt="Jitse's PC" className="xl:max-w-[10vw] xl:mr-5 ml-auto object-contain transition xl:hover:scale-125"/>
                     </div>
                 </div>
 
@@ -371,7 +371,7 @@ const SkillsPage = () => {
                         <div className="p-2">
                             <p>{texts[language].vincentDesc}</p>
                         </div>
-                        <div className="p-2 text-sm sm:columns-2">
+                        <div className="p-2 text-sm xl:columns-2">
                             <p><span className="text-gray-400">CPU:</span> Ryzen 5 5500</p>
                             <p><span className="text-gray-400">GPU:</span> Asrock RX6600</p>
                             <p><span className="text-gray-400">RAM:</span> Corsair Vengeance 8GB</p>
@@ -381,7 +381,7 @@ const SkillsPage = () => {
                         </div>
                     </div>
                     <div className="flex w-[40%]">
-                        <img src={"images/vincentPCsm.png"} alt="Vincent's PC" className="sm:max-w-[10vw] sm:mr-5 ml-auto object-contain transition sm:hover:scale-125"/>
+                        <img src={"images/vincentPCsm.png"} alt="Vincent's PC" className="xl:max-w-[10vw] xl:mr-5 ml-auto object-contain transition xl:hover:scale-125"/>
                     </div>
                 </div>
 

@@ -4,7 +4,7 @@ import {Link, useLocation} from "react-router-dom";
 
 const Navbar = () => {
     const [darkMode, setDarkMode] = useState('on');
-    const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1240);
     const {language, toggleLanguage} = useLanguage();
     const [isOpen, setIsOpen] = useState(false);
     let location = useLocation();
@@ -22,7 +22,7 @@ const Navbar = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            setIsMobile(window.innerWidth < 640);
+            setIsMobile(window.innerWidth < 1240);
         };
 
         window.addEventListener('resize', handleResize);
@@ -47,12 +47,12 @@ const Navbar = () => {
 
     const texts = {
         en: {
-            languageButton: 'Dutch',
+            languageButton: 'English',
             projects: 'Projects',
             skills: 'Skills',
         },
         nl: {
-            languageButton: 'English',
+            languageButton: 'Dutch',
             projects: 'Projecten',
             skills: 'Skills',
         },
@@ -156,7 +156,7 @@ const Navbar = () => {
                             <span>{darkMode === 'off' ? 'Darkmode' : 'Lightmode'}</span>
                         </button>
                         <button className="flex flex-col w-full items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group" onClick={toggleLanguage}>
-                            <div className={`${language === 'nl' ? 'uk-flag' : 'dutch-flag'} w-[80%] transition group-hover:scale-110`}></div>
+                            <div className={`${language === 'en' ? 'uk-flag' : 'dutch-flag'} w-[80%] transition group-hover:scale-110`}></div>
                             <span>{texts[language].languageButton}</span>
                         </button>
                     </div>
@@ -187,7 +187,7 @@ const Navbar = () => {
                         </svg>
                     )}
                 </button>
-                <aside className={`fixed top-0 z-40 w-[70vw] h-screen text-sm text-gray-900 dark:text-gray-200 transition duration-700 ${isOpen ? 'translate-x-0' : '-translate-x-96'}`}
+                <aside className={`fixed top-0 z-40 w-screen h-screen text-sm text-gray-900 dark:text-gray-200 transition duration-700 ${isOpen ? 'translate-x-0' : '-translate-x-[100vw]'}`}
                        aria-label="Sidebar">
                     <div className="h-full w-full flex flex-col items-center justify-center border-r-2 border-cgreen px-2 py-4 overflow-y-auto bg-green-200 dark:bg-[#252525]">
 
@@ -269,7 +269,7 @@ const Navbar = () => {
                                 <span>{darkMode === 'off' ? 'Darkmode' : 'Lightmode'}</span>
                             </button>
                             <button className="flex w-full items-center p-2" onClick={toggleLanguage}>
-                                <div className={`${language === 'nl' ? 'uk-flag' : 'dutch-flag'} mr-5`}></div>
+                                <div className={`${language === 'en' ? 'uk-flag' : 'dutch-flag'} mr-5`}></div>
                                 <span>{texts[language].languageButton}</span>
                             </button>
                         </div>

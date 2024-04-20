@@ -125,9 +125,9 @@ const ProjectsPage = () => {
     ];
 
     return (
-        <div className="sm:ml-[6vw]">
+        <div className="xl:ml-[6vw]">
             <div className="bg-green-100/75 dark:bg-black/75">
-                <h1 id="top" className="gradientText text-4xl sm:text-8xl pt-[6vh]">{texts[language].pageTitle}</h1>
+                <h1 id="top" className="gradientText text-4xl xl:text-8xl pt-[6vh]">{texts[language].pageTitle}</h1>
             </div>
 
             <HashLink to={`/projects#top`} className="z-10 fixed bottom-4 right-4 bg-dgreen dark:bg-cgreen pt-3 pb-2 px-4 rounded-lg">^</HashLink>
@@ -136,7 +136,7 @@ const ProjectsPage = () => {
             <div className="flex overflow-x-auto scrollbar-hide py-[4vh] border-b border-cgreen bg-green-100/75 dark:bg-black/75" ref={containerRef}>
                 {projectsCards.map((project, index) => (
                     <HashLink to={`/projects#${index}`} key={index}
-                              className="w-[75vw] sm:w-[20vw] h-52 flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative transition scale-95 sm:hover:scale-110">
+                              className="w-[75vw] xl:w-[20vw] h-52 flex-shrink-0 flex flex-col mx-6 bg-dgreen dark:bg-cgreen rounded-lg p-6 relative transition scale-95 xl:hover:scale-110">
                         {/* Title */}
                         <h2 className="text-2xl font-semibold">{project.title}</h2>
 
@@ -148,7 +148,7 @@ const ProjectsPage = () => {
                         </div>
 
                         {/* shortDesc */}
-                        <p className="mt-4 text-sm sm:text-base">{project.desc[language]}</p>
+                        <p className="mt-4 text-sm xl:text-base">{project.desc[language]}</p>
 
                         {/* Dropdown Arrow */}
                         <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
@@ -165,10 +165,10 @@ const ProjectsPage = () => {
 
             <div className="flex flex-col justify-center items-center mt-[5vh] max-w-full min-h-screen">
 
-                <div id="0" className="py-10 my-6 px-5 sm:px-10 sm:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="0" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
-                    <h3 className="text-3xl sm:text-5xl font-bold text-cgreen mb-8">Flex Counter</h3>
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">Flex Counter</h3>
 
                     {/* Links */}
                     <div className="flex flex-row absolute top-5 right-5">
@@ -191,13 +191,13 @@ const ProjectsPage = () => {
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm sm:text-lg">{texts[language].spellAI}</p>
+                    <p className="text-sm xl:text-lg">{texts[language].spellAI}</p>
                 </div>
 
-                <div id="1" className="py-10 my-6 px-5 sm:px-10 sm:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="1" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
-                    <h3 className="text-3xl sm:text-5xl font-bold text-cgreen mb-8">SpellAI</h3>
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">SpellAI</h3>
 
                     {/* Links */}
                     <div className="flex flex-row absolute top-5 right-5">
@@ -220,13 +220,13 @@ const ProjectsPage = () => {
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm sm:text-lg">{texts[language].spellAI}</p>
+                    <p className="text-sm xl:text-lg">{texts[language].spellAI}</p>
                 </div>
 
-                <div id="2" className="py-10 my-6 px-5 sm:px-10 sm:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="2" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
-                    <h3 className="text-3xl sm:text-5xl font-bold text-cgreen mb-8">Stream Team</h3>
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">Stream Team</h3>
 
                     {/* Links */}
                     <div className="flex flex-row absolute top-5 right-5">
@@ -249,13 +249,13 @@ const ProjectsPage = () => {
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm sm:text-lg">{texts[language].streamTeam}</p>
+                    <p className="text-sm xl:text-lg">{texts[language].streamTeam}</p>
                 </div>
 
-                <div id="3" className="py-10 my-6 px-5 sm:px-10 sm:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="3" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
-                    <h3 className="text-3xl sm:text-5xl font-bold text-cgreen mb-8">PC Showcase</h3>
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">PC Showcase</h3>
 
                     {/* Links */}
                     <div className="flex flex-row absolute top-5 right-5">
@@ -270,13 +270,13 @@ const ProjectsPage = () => {
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm sm:text-lg">{texts[language].pcShowcase}</p>
+                    <p className="text-sm xl:text-lg">{texts[language].pcShowcase}</p>
                 </div>
 
-                <div id="4" className="py-10 my-6 px-5 sm:px-10 sm:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="4" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
-                    <h3 className="text-3xl sm:text-5xl font-bold text-cgreen mb-8">Hungry Fish</h3>
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">Hungry Fish</h3>
 
                     {/* Links */}
                     <div className="flex flex-row absolute top-5 right-5">
@@ -291,13 +291,13 @@ const ProjectsPage = () => {
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm sm:text-lg">{texts[language].hungryFish}</p>
+                    <p className="text-sm xl:text-lg">{texts[language].hungryFish}</p>
                 </div>
 
-                <div id="5" className="py-10 my-6 px-5 sm:px-10 sm:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="5" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
-                    <h3 className="text-2xl sm:text-5xl font-bold text-cgreen mb-8">Hennie's Hulp Pagina</h3>
+                    <h3 className="text-2xl xl:text-5xl font-bold text-cgreen mb-8">Hennie's Hulp Pagina</h3>
 
                     {/* Links */}
                     <div className="flex flex-row absolute top-5 right-5">
@@ -312,7 +312,7 @@ const ProjectsPage = () => {
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm sm:text-lg">{texts[language].hennie}</p>
+                    <p className="text-sm xl:text-lg">{texts[language].hennie}</p>
                 </div>
             </div>
         </div>
