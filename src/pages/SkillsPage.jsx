@@ -6,6 +6,10 @@ const SkillsPage = () => {
     const [isMobile, setIsMobile] = useState(window.innerWidth < 640);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth < 640);
         };

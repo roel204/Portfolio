@@ -7,6 +7,10 @@ const ProjectsPage = () => {
     const containerRef = useRef(null);
 
     useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
+
+    useEffect(() => {
         const handleMouseMove = (event) => {
             const container = containerRef.current;
             if (!container) return;
@@ -167,7 +171,7 @@ const ProjectsPage = () => {
                     <h3 className="text-3xl sm:text-5xl font-bold text-cgreen mb-8">Flex Counter</h3>
 
                     {/* Links */}
-                    <div className="flex flex-row absolute top-5 right-5 gap-3">
+                    <div className="flex flex-row absolute top-5 right-5">
                         <a href="https://github.com/roel204/FlexCounter" target="_blank" className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
                             <svg className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110" aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
@@ -196,7 +200,7 @@ const ProjectsPage = () => {
                     <h3 className="text-3xl sm:text-5xl font-bold text-cgreen mb-8">SpellAI</h3>
 
                     {/* Links */}
-                    <div className="flex flex-row absolute top-5 right-5 gap-3">
+                    <div className="flex flex-row absolute top-5 right-5">
                         <a href="https://github.com/roel204/SpellAI" target="_blank" className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
                             <svg className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110" aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
@@ -225,7 +229,7 @@ const ProjectsPage = () => {
                     <h3 className="text-3xl sm:text-5xl font-bold text-cgreen mb-8">Stream Team</h3>
 
                     {/* Links */}
-                    <div className="flex flex-row absolute top-5 right-5 gap-3">
+                    <div className="flex flex-row absolute top-5 right-5">
                         <a href="https://github.com/faroeq33/TLE1" target="_blank" className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
                             <svg className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110" aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
@@ -254,7 +258,7 @@ const ProjectsPage = () => {
                     <h3 className="text-3xl sm:text-5xl font-bold text-cgreen mb-8">PC Showcase</h3>
 
                     {/* Links */}
-                    <div className="flex flex-row absolute top-5 right-5 gap-3">
+                    <div className="flex flex-row absolute top-5 right-5">
                         <a href="https://github.com/roel204/PCshowcase" target="_blank" className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
                             <svg className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110" aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
@@ -275,7 +279,7 @@ const ProjectsPage = () => {
                     <h3 className="text-3xl sm:text-5xl font-bold text-cgreen mb-8">Hungry Fish</h3>
 
                     {/* Links */}
-                    <div className="flex flex-row absolute top-5 right-5 gap-3">
+                    <div className="flex flex-row absolute top-5 right-5">
                         {/*<a href="https://github.com/roel204/PCshowcase" target="_blank" className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">*/}
                         {/*    <svg className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110" aria-hidden="true"*/}
                         {/*        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">*/}
@@ -293,10 +297,10 @@ const ProjectsPage = () => {
                 <div id="5" className="py-10 my-6 px-5 sm:px-10 sm:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
-                    <h3 className="text-3xl sm:text-5xl font-bold text-cgreen mb-8">Hennie's Hulp Pagina</h3>
+                    <h3 className="text-2xl sm:text-5xl font-bold text-cgreen mb-8">Hennie's Hulp Pagina</h3>
 
                     {/* Links */}
-                    <div className="flex flex-row absolute top-5 right-5 gap-3">
+                    <div className="flex flex-row absolute top-5 right-5">
                         <a href="https://github.com/roel204/CLE3" target="_blank" className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">
                             <svg className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110" aria-hidden="true"
                                  xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">

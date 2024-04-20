@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {useLanguage} from "../context/LanguageContext.jsx";
 
 const HomePage = () => {
     const {language} = useLanguage();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     const texts = {
         en: {
