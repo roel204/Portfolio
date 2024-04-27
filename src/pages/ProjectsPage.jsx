@@ -63,11 +63,11 @@ const ProjectsPage = () => {
         },
         nl: {
             pageTitle: 'MIJN PROJECTEN',
-            flexCounter: "Machine Learning app om bicep curls te tellen met je webcam.",
+            flexCounter: "Deze App/Website gebruikt MachineLearning om bicep curls te tellen. Het gebruikt Mediapipe om de positie van de armen te tracken en laat dit ook aan de gebruiker zien. De curls worden geteld door een getrained ML5 Neural Netword, er zijn ook andere manieren beschikbaar om te tellen, zoals KNN en een simpel logic script. De website heb ik met React en Tailwind gemaakt, ik vind deze frameworks fijn om mee te werken, ookal had ik vaak problemen met React.",
             spellAI: "Dit is mijn eerste ervaring met het coderen van AI (ChatLLM). Ik heb een website gebouwd waar de AI je invoertekst zal corrigeren. Het zal de wijzigingen in het rood markeren zodat je gemakkelijk kunt zien wat er is veranderd. Er zijn ook enkele andere functies, zoals: Spraak naar tekst, Meerdere modellen om uit te kiezen, een veld voor instructies zoals 'laat het professioneel klinken', alles wordt ook opgeslagen in local storage zodat je je tekst niet kwijtraakt als je de pagina herlaad.",
             streamTeam: "Streamteam is een Tailored Learning Environment (TLE) project voor de studie CMGT, Hogeschool Rotterdam. Het project focust op de bestaande IP-car, een via een server te besturen auto met een livefeed, die moet worden ingezet voor dagbesteding binnen zorghuizen. De IP-car kan via deze software verbinden met een gids, die een live beeld te zien krijgt en controle van de auto kan overnemen met een controller via dezelfde verbinding. Het is een oplevering aan VindiQu en FoxConnect. VindiQu biedt al livestream dagbesteding aan zorghuizen, en FoxConnect is de ontwikkelaar van de eerste IP-car, origineel bedoeld voor particulier gebruik van mensen met een motorische beperking.",
-            pcShowcase: "Dit is mijn eerste school project waarbij ik het Laravel-framework gebruik. Ik heb het gebruikt om een eenvoudige CRUD-applicatie te maken waar mensen hun pc's kunnen plaatsen. Gebruikers kunnen ook opmerkingen plaatsen over een computer en erover praten. Ik heb Bootstrap gebruikt voor de CSS op deze website.",
-            hungryFish: "Eerst heb ik Hungry Fish gemaakt als een Excalibur-project voor school. Maar later heb ik het opnieuw gemaakt met Unity en verbeterd, waarbij ik veel meer functies heb toegevoegd zoals upgrades en skins. De Unity game is nog in ontwikkeling.",
+            pcShowcase: "Dit is mijn eerste school project waarbij ik een framework heb gebruikt om een website te maken, het was de opdracht om Laravel te gebruiken. Ik heb het gebruikt om een eenvoudige CRUD-applicatie te maken waar mensen hun pc's kunnen plaatsen. Gebruikers kunnen ook opmerkingen plaatsen over een computer en erover praten. Ik heb Bootstrap gebruikt voor de CSS op deze website.",
+            hungryFish: "Eerst heb ik Hungry Fish gemaakt als een Excalibur-project voor school gemaakt. Maar later heb ik het zelfstandig opnieuw gemaakt met Unity en verbeterd, waarbij ik veel meer functies heb toegevoegd zoals upgrades en skins. De Unity game is nog in ontwikkeling, ik wil het graag uitbreiden zodat ik het kan plaatsen op Google Play.",
         },
     };
 
@@ -76,7 +76,7 @@ const ProjectsPage = () => {
             title: 'Flex Counter',
             tags: 'PRG8.5 Machine-Learning',
             desc: {
-                en: "Machine Learning application that helps you track your bicep curls using your webcam.",
+                en: "Machine Learning application that counts your bicep curls using your webcam.",
                 nl: 'Machine Learning app om bicep curls te tellen met je webcam.',
             },
         },
@@ -106,7 +106,7 @@ const ProjectsPage = () => {
         },
         {
             title: 'Hungry Fish',
-            tags: 'Unity',
+            tags: 'Unity (PRG4)',
             desc: {
                 en: 'A simple fish game made with Unity.',
                 nl: 'Een game over vissen gemaakt met Unity.',
