@@ -74,7 +74,7 @@ const ProjectsPage = () => {
     const projectsCards = [
         {
             title: 'Flex Counter',
-            tags: 'PRG8.5 Machine-Learning',
+            tags: 'Machine-Learning CMGT-Project',
             desc: {
                 en: "Machine Learning application that counts your bicep curls using your webcam.",
                 nl: 'Machine Learning app om bicep curls te tellen met je webcam.',
@@ -82,7 +82,7 @@ const ProjectsPage = () => {
         },
         {
             title: 'SpellAI',
-            tags: 'PRG8 AI ChatLLM',
+            tags: 'AI ChatLLM CMGT-Project',
             desc: {
                 en: "An AI (ChatLLM) application that will correct the spelling of your text.",
                 nl: 'Een AI (ChatLLM) app die de spelling in jouw text verbeterd.',
@@ -90,7 +90,7 @@ const ProjectsPage = () => {
         },
         {
             title: 'Stream Team',
-            tags: 'TLE1 Laravel JS',
+            tags: 'Laravel Teamwork CMGT-Project',
             desc: {
                 en: "A website to control Fox-Connect's IP-Car.",
                 nl: 'Een website om de IP-Car van Fox-Connect te besturen.',
@@ -98,7 +98,7 @@ const ProjectsPage = () => {
         },
         {
             title: 'PC Showcase',
-            tags: 'PRG5 Laravel',
+            tags: 'Laravel CMGT-Project',
             desc: {
                 en: 'A website made with Laravel to show your custom PC builds.',
                 nl: 'Een website gemaakt met Laravel om je eigen PC te posten.',
@@ -106,7 +106,7 @@ const ProjectsPage = () => {
         },
         {
             title: 'Hungry Fish',
-            tags: 'Unity (PRG4)',
+            tags: 'Unity Personal-Project',
             desc: {
                 en: 'A simple fish game made with Unity.',
                 nl: 'Een game over vissen gemaakt met Unity.',
