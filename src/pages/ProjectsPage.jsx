@@ -65,13 +65,21 @@ const ProjectsPage = () => {
             pageTitle: 'MIJN PROJECTEN',
             flexCounter: "Flex Counter is een website/app die gebruikmaakt van Machine Learning om het aantal bicep curls te tellen tijdens een trainingssessie. Door gebruik te maken van Mediapipe voor armpositie tracking, krijgt de gebruiker real-time feedback. Het tellen van de curls wordt mogelijk gemaakt door een getraind ML5 Neural Network, met de optie voor KNN en Logic. Deze webapplicatie is ontwikkeld met React en Tailwind CSS, waardoor een responsive gebruikerservaring wordt geboden. Ik heb tijdens het maken van deze website veel geleerd over React en Tailwind.",
             spellAI: "Met SpellAI heb ik mijn eerste stappen gezet in het ontwikkelen van een AI-applicatie, gericht op het corrigeren van geschreven tekst. Deze webapplicatie biedt een simpele interface waar gebruikers hun tekst kunnen invoeren om verbeterd te worden. Naast de basisfunctionaliteit biedt spellAI extra opties, zoals spraak-naar-tekst om het schrijven van nieuwe tekst makkelijk te maken, keuze uit meerdere modellen, en de mogelijkheid om specifieke instructies te geven. Alle ingevoerde tekst wordt lokaal opgeslagen zodat er niks verloren gaat als de browser gesloten wordt.",
-            streamTeam: "Streamteam is een Tailored Learning Environment (TLE) project voor de studie CMGT, Hogeschool Rotterdam. Het project focust op de bestaande IP-car, een via een server te besturen auto met een livefeed, die moet worden ingezet voor dagbesteding binnen zorghuizen. De IP-car kan via deze software verbinden met een gids, die een live beeld te zien krijgt en controle van de auto kan overnemen met een controller via dezelfde verbinding. Het is een oplevering aan VindiQu en FoxConnect. VindiQu biedt al livestream dagbesteding aan zorghuizen, en FoxConnect is de ontwikkelaar van de eerste IP-car, origineel bedoeld voor particulier gebruik van mensen met een motorische beperking.",
+            streamTeam: "Streamteam is een TLE (Tailored Learning Environment) project voor de studie CMGT, Hogeschool Rotterdam. Het project focust op de bestaande IP-car, een via een server te besturen auto met een livefeed, die moet worden ingezet voor dagbesteding binnen zorghuizen. De IP-car kan via deze software verbinden met een gids, die een live beeld te zien krijgt en controle van de auto kan overnemen met een controller via dezelfde verbinding. Het is een oplevering aan VindiQu en FoxConnect. VindiQu biedt al livestream dagbesteding aan zorghuizen, en FoxConnect is de ontwikkelaar van de eerste IP-car, origineel bedoeld voor particulier gebruik van mensen met een motorische beperking.",
             pcShowcase: "Het PcShowcase project is mijn eerste ervaring met het gebruik van frameworks. Voor dit schoolproject heb ik Laravel gebruikt om een eenvoudige CRUD-applicatie te maken, waar gebruikers hun computers kunnen posten. Het platform biedt ook de mogelijkheid om comments te plaatsen. Ik heb Bootstrap gebruikt voor de styling van de website, waardoor een strak en gebruiksvriendelijk ontwerp ontstaat.",
             hungryFish: "Hungry Fish begon als een schoolproject in Excalibur. Tijdens de zomervakantie besloot ik om deze game opnieuw te bouwen in Unity, waarbij ik mijn vaardigheden in game-ontwikkeling verder ontwikkelde. Ik heb de game ook verbeterd door upgrades, skins en andere game mechanics toe te voegen. Momenteel werk ik aan het verbeteren van het spel zodat ik het kan plaatsen op Google Play.",
         },
     };
 
     const projectsCards = [
+        {
+            title: 'Reef Keep',
+            tags: 'Unity Teamwork CMGT-Project',
+            desc: {
+                en: "A game where you can manage your own Aquatic Ecosystem.",
+                nl: 'Aquatiesche Ecosysteem simulator game',
+            },
+        },
         {
             title: 'Flex Counter',
             tags: 'Machine-Learning CMGT-Project',
@@ -158,6 +166,110 @@ const ProjectsPage = () => {
                 <div id="0" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">Reef Keep</h3>
+
+                    {/* Links */}
+                    <div className="flex flex-row absolute top-5 right-5">
+                        <span className="">Work in progress</span>
+                    </div>
+
+                    {/* Description */}
+                    {language === 'nl' ? (
+                        <p className="text-sm xl:text-lg">
+                            Reef Keep is een TLE (Tailored Learning Environment) project waarin ik samen met mijn team een game heb ontwikkeld in Unity. Onze opdracht vanuit school was om Machine
+                            Learning
+                            toe te passen en bij te dragen aan een van de SDG’s (Sustainable Development Goals). Wij kozen voor het doel ‘Life Below Water’, met een focus op het sub-doel: ‘Protect and
+                            Restore Ecosystems’.<br></br><br></br>
+
+                            <strong>Mijn Rol in het Project</strong><br></br>
+                            In dit project vervulde ik de rol van ‘Ondernemende Technoloog’. Dit hield in dat ik mij bezighield met 'Ondernemende' taken waaronder:
+                            <ul className="list-disc list-inside ml-2">
+                                <li>Team Leiderschap</li>
+                                <li>Kansen in de markt</li>
+                                <li>Value propositions</li>
+                                <li>Jobs to be done</li>
+                                <li>Business models</li>
+                            </ul>
+                            Daarnaast las ik het boek ‘How to F*ck up your Startup’ van Kim Hvidkjaer om mijn kennis te verdiepen.<br></br><br></br>
+
+                            <strong>Ontwikkelingsproces</strong><br></br>
+                            We begonnen met een brainstormsessie over game design. Nadat we kozen voor een ecosysteem simulator, verzamelde iedereen ideeën op een Miro-bord. Deze bespraken we
+                            vervolgens om te beoordelen welke ideeën geschikt waren voor de game. Ik werkte deze ideeën uit in een Gameplay Design Document en vertaalde ze naar User Stories. Samen met
+                            het
+                            team bepaalden we wie welke taken zou uitvoeren en stelde ik een MoSCoW-prioritering op voor de User Stories.<br></br><br></br>
+
+                            <strong>Technische Bijdragen</strong><br></br>
+                            Tot nu toe heb ik de meeste functies van de game geprogrammeerd, waaronder:
+                            <ul className="list-disc list-inside ml-2">
+                                <li>Parallax code voor de achtergrond</li>
+                                <li>Code voor de camerabeweging</li>
+                                <li>Het plaatsen en bewegen van onderwaterobjecten, die opgeslagen worden in JSON</li>
+                                <li>Code voor taalwisselingen in de game</li>
+                                <li>Een GameManager die de in-game currency beheert</li>
+                                <li>Code voor verschillende gebouwen</li>
+                            </ul><br></br>
+
+                            <strong>Data Management Design</strong><br></br>
+                            Ik stelde een Data Management Design op om duidelijk te maken hoe en wat we in de game zouden opslaan. Dit voorkwam dat teamleden verschillende methodes gebruikten die niet
+                            goed zouden samenwerken.<br></br><br></br>
+
+                            <strong>Teamwerk en Ondersteuning</strong><br></br>
+                            Ik hielp mijn teamleden regelmatig met codeproblemen en andere uitdagingen. Ook reviewde ik veel van de User Stories wanneer een teamgenoot klaar was. Ik bekeek hun branch,
+                            testte de feature en gaf gerichte feedback.<br></br><br></br>
+
+                            <strong>Huidige Status</strong><br></br>
+                            We zijn nog steeds bezig met dit project en hopen zo snel mogelijk ons MVP af te hebben zodat we kunnen testen.
+                        </p>
+                    ) : (
+                        <p className="text-sm xl:text-lg">
+                            Reef Keep is a TLE (Tailored Learning Environment) project where I, along with my team, developed a game in Unity. Our school assignment was to apply Machine Learning and
+                            contribute to one of the SDGs (Sustainable Development Goals). We chose the goal 'Life Below Water,' focusing on the sub-goal 'Protect and Restore
+                            Ecosystems.'<br></br><br></br>
+
+                            <strong>My Role in the Project</strong><br></br>
+                            In this project, I served as the ‘Ondernemende Technoloog.’ This meant that I was involved in 'Entrepreneurial' tasks including:
+                            <ul className="list-disc list-inside ml-2">
+                                <li>Team Leadership</li>
+                                <li>Market opportunities</li>
+                                <li>Value propositions</li>
+                                <li>Jobs to be done</li>
+                                <li>Business models</li>
+                            </ul>
+                            Additionally, I read the book ‘How to F*ck up your Startup’ by Kim Hvidkjaer to deepen my knowledge.<br></br><br></br>
+
+                            <strong>Development Process</strong><br></br>
+                            We started with a brainstorming session on game design. After choosing to build an ecosystem simulator, everyone gathered ideas on a Miro board. We then discussed these ideas to
+                            evaluate which were suitable for the game. I elaborated these ideas in a Gameplay Design Document and translated them into User Stories. Together with the team, we decided
+                            who would work on which tasks and I created a MoSCoW prioritization for the User Stories.<br></br><br></br>
+
+                            <strong>Technical Contributions</strong><br></br>
+                            So far, I have programmed most of the game’s features, including:
+                            <ul className="list-disc list-inside ml-2">
+                                <li>Parallax code for the background</li>
+                                <li>Code for camera movement</li>
+                                <li>Placing and moving underwater objects, stored in JSON</li>
+                                <li>Code for changing the game’s language</li>
+                                <li>A GameManager that manages the in-game currency</li>
+                                <li>Code for various buildings</li>
+                            </ul><br></br>
+
+                            <strong>Data Management Design</strong><br></br>
+                            I created a Data Management Design to clarify how and what we would store in the game. This prevented team members from using different methods that wouldn’t work well
+                            together.<br></br><br></br>
+
+                            <strong>Teamwork and Support</strong><br></br>
+                            I regularly helped my team members with code issues and other challenges. I also reviewed many of the User Stories when a team member finished. I checked their Branch,
+                            tested the feature, and provided constructive feedback.<br></br><br></br>
+
+                            <strong>Current Status</strong><br></br>
+                            We are still working on this project and hope to have our MVP ready as soon as possible so we can start testing.
+                        </p>
+                    )}
+                </div>
+
+                <div id="1" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+
+                    {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">Flex Counter</h3>
 
                     {/* Links */}
@@ -184,7 +296,7 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].flexCounter}</p>
                 </div>
 
-                <div id="1" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="2" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">SpellAI</h3>
@@ -213,7 +325,7 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].spellAI}</p>
                 </div>
 
-                <div id="2" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="3" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">Stream Team</h3>
@@ -242,7 +354,7 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].streamTeam}</p>
                 </div>
 
-                <div id="3" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="4" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">PC Showcase</h3>
@@ -263,21 +375,14 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].pcShowcase}</p>
                 </div>
 
-                <div id="4" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="5" className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">Hungry Fish</h3>
 
                     {/* Links */}
                     <div className="flex flex-row absolute top-5 right-5">
-                        {/*<a href="https://github.com/roel204/PCshowcase" target="_blank" className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group">*/}
-                        {/*    <svg className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110" aria-hidden="true"*/}
-                        {/*        xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 576 512">*/}
-                        {/*        <path*/}
-                        {/*            d="M420.6 301.9a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m-265.1 0a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m273.7-144.5 47.9-83a10 10 0 1 0 -17.3-10h0l-48.5 84.1a301.3 301.3 0 0 0 -246.6 0L116.2 64.5a10 10 0 1 0 -17.3 10h0l47.9 83C64.5 202.2 8.2 285.6 0 384H576c-8.2-98.5-64.5-181.8-146.9-226.6"/>*/}
-                        {/*    </svg>*/}
-                        <span className="">Work in Progress</span>
-                        {/*</a>*/}
+                        <span className="">On pause</span>
                     </div>
 
                     {/* Description */}
