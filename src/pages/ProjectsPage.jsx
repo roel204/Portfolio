@@ -59,7 +59,7 @@ const ProjectsPage = () => {
             spellAI: "With SpellAI, I took my first steps in developing an AI application, aimed at correcting written text. This web application offers a simple interface where users can input their text to be improved. In addition to the basic functionality, SpellAI offers extra options such as speech-to-text to facilitate the writing of new text, a choice of multiple models, and the ability to give specific instructions. All entered text is stored locally to prevent loss if the browser is closed.",
             streamTeam: "Streamteam is a Tailored Learning Environment (TLE) project for the CMGT study at Rotterdam University of Applied Sciences. The project focuses on the existing IP-car, a car controlled via a server with a live feed, which is intended for use in daily activities within care homes. Through this software, the IP-car can connect to a guide who can see a live feed and take control of the car with a controller via the same connection. It is a delivery to VindiQu and FoxConnect. VindiQu already offers livestream daily activities to care homes, and FoxConnect is the developer of the first IP-car, originally intended for private use by people with mobility impairments.",
             pcShowcase: "The PcShowcase project is my first experience with frameworks. For this school project, I used Laravel to create a simple CRUD application where users can post their computers. The platform also offers the ability to post comments. I used Bootstrap for the styling of the website, resulting in a sleek and user-friendly design.",
-            hungryFish: "Hungry Fish began as a school project in Excalibur. During the summer break, I decided to rebuild this game in Unity, further improving my skills in game development. I also enhanced the game by adding upgrades, skins, and other game mechanics. Currently, I am working on improving the game so that I can publish it on Google Play.",
+            hungryFish: "Hungry Fish began as a school project in Excalibur. During the 2023 summer break, I decided to rebuild this game in Unity, further improving my skills in game development. I later improved the game by adding upgrades, skins, and other game mechanics. During the 2024 summer break i further improved the game by adding new sprites and improving the code by using the things i learnt from making Reef Keep.",
         },
         nl: {
             pageTitle: 'MIJN PROJECTEN',
@@ -67,14 +67,22 @@ const ProjectsPage = () => {
             spellAI: "Met SpellAI heb ik mijn eerste stappen gezet in het ontwikkelen van een AI-applicatie, gericht op het corrigeren van geschreven tekst. Deze webapplicatie biedt een simpele interface waar gebruikers hun tekst kunnen invoeren om verbeterd te worden. Naast de basisfunctionaliteit biedt spellAI extra opties, zoals spraak-naar-tekst om het schrijven van nieuwe tekst makkelijk te maken, keuze uit meerdere modellen, en de mogelijkheid om specifieke instructies te geven. Alle ingevoerde tekst wordt lokaal opgeslagen zodat er niks verloren gaat als de browser gesloten wordt.",
             streamTeam: "Streamteam is een TLE (Tailored Learning Environment) project voor de studie CMGT, Hogeschool Rotterdam. Het project focust op de bestaande IP-car, een via een server te besturen auto met een livefeed, die moet worden ingezet voor dagbesteding binnen zorghuizen. De IP-car kan via deze software verbinden met een gids, die een live beeld te zien krijgt en controle van de auto kan overnemen met een controller via dezelfde verbinding. Het is een oplevering aan VindiQu en FoxConnect. VindiQu biedt al livestream dagbesteding aan zorghuizen, en FoxConnect is de ontwikkelaar van de eerste IP-car, origineel bedoeld voor particulier gebruik van mensen met een motorische beperking.",
             pcShowcase: "Het PcShowcase project is mijn eerste ervaring met het gebruik van frameworks. Voor dit schoolproject heb ik Laravel gebruikt om een eenvoudige CRUD-applicatie te maken, waar gebruikers hun computers kunnen posten. Het platform biedt ook de mogelijkheid om comments te plaatsen. Ik heb Bootstrap gebruikt voor de styling van de website, waardoor een strak en gebruiksvriendelijk ontwerp ontstaat.",
-            hungryFish: "Hungry Fish begon als een schoolproject in Excalibur. Tijdens de zomervakantie besloot ik om deze game opnieuw te bouwen in Unity, waarbij ik mijn vaardigheden in game-ontwikkeling verder ontwikkelde. Ik heb de game ook verbeterd door upgrades, skins en andere game mechanics toe te voegen. Momenteel werk ik aan het verbeteren van het spel zodat ik het kan plaatsen op Google Play.",
+            hungryFish: "Hungry Fish begon als een schoolproject in Excalibur. Tijdens de zomervakantie in 2023 besloot ik om deze game opnieuw te bouwen in Unity, waarbij ik mijn vaardigheden in game-ontwikkeling verder ontwikkelde. Later heb ik de game verbeterd door upgrades, skins en andere game mechanics toe te voegen. In de zomervakantie van 2024 heb ik de game nog meer geupdate door sprites en code van Reef Keep toe te voegen en een deel van de code opnieuw te schrijven.",
         },
     };
 
     const projectsCards = [
         {
+            title: 'Hungry Fish',
+            tags: 'Unity, Personal Project',
+            desc: {
+                en: 'A simple fish game made with Unity.',
+                nl: 'Een game over vissen gemaakt met Unity.',
+            },
+        },
+        {
             title: 'Reef Keep',
-            tags: 'Unity Teamwork CMGT-Project',
+            tags: 'Unity, Teamwork, CMGT Project',
             desc: {
                 en: "A game where you can manage your own Aquatic Ecosystem.",
                 nl: 'Aquatiesche Ecosysteem simulator game',
@@ -82,7 +90,7 @@ const ProjectsPage = () => {
         },
         {
             title: 'Flex Counter',
-            tags: 'Machine-Learning CMGT-Project',
+            tags: 'Machine Learning, CMGT Project',
             desc: {
                 en: "Machine Learning application that counts your bicep curls using your webcam.",
                 nl: 'Machine Learning app om bicep curls te tellen met je webcam.',
@@ -90,7 +98,7 @@ const ProjectsPage = () => {
         },
         {
             title: 'SpellAI',
-            tags: 'AI ChatLLM CMGT-Project',
+            tags: 'AI, ChatLLM, CMGT Project',
             desc: {
                 en: "An AI (ChatLLM) application that will correct the spelling of your text.",
                 nl: 'Een AI (ChatLLM) app die de spelling in jouw text verbeterd.',
@@ -98,7 +106,7 @@ const ProjectsPage = () => {
         },
         {
             title: 'Stream Team',
-            tags: 'Laravel Teamwork CMGT-Project',
+            tags: 'Laravel, Teamwork, CMGT Project',
             desc: {
                 en: "A website to control Fox-Connect's IP-Car.",
                 nl: 'Een website om de IP-Car van Fox-Connect te besturen.',
@@ -106,18 +114,10 @@ const ProjectsPage = () => {
         },
         {
             title: 'PC Showcase',
-            tags: 'Laravel CMGT-Project',
+            tags: 'Laravel, CMGT Project',
             desc: {
                 en: 'A website made with Laravel to show your custom PC builds.',
                 nl: 'Een website gemaakt met Laravel om je eigen PC te posten.',
-            },
-        },
-        {
-            title: 'Hungry Fish',
-            tags: 'Unity Personal-Project',
-            desc: {
-                en: 'A simple fish game made with Unity.',
-                nl: 'Een game over vissen gemaakt met Unity.',
             },
         },
     ];
@@ -143,7 +143,7 @@ const ProjectsPage = () => {
 
                         {/* Tags */}
                         <div className="flex mt-2">
-                            {project.tags.split(' ').map((tag, tagIndex) => (
+                            {project.tags.split(', ').map((tag, tagIndex) => (
                                 <div key={tagIndex}
                                      className="bg-[#151515] text-white rounded-full px-2 py-1 text-xs mr-2">{tag}</div>
                             ))}
@@ -168,6 +168,46 @@ const ProjectsPage = () => {
             <div className="flex flex-col justify-center items-center mt-[5vh] max-w-full min-h-screen">
 
                 <div id="0"
+                     className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+
+                    {/* Project Title */}
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">Hungry Fishies</h3>
+
+                    {/* Links */}
+                    <div className="flex flex-row absolute top-5 right-5">
+                        <a href="https://github.com/roel204/HungryFishies" target="_blank"
+                           className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
+                           rel="noreferrer">
+                            <svg
+                                className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/>
+                            </svg>
+                            <span className="">Code</span>
+                        </a>
+                        <a href="https://roel204.itch.io/hungry-fishies" target="_blank"
+                           className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
+                           rel="noreferrer">
+                            <svg
+                                className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M420.6 301.9a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m-265.1 0a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m273.7-144.5 47.9-83a10 10 0 1 0 -17.3-10h0l-48.5 84.1a301.3 301.3 0 0 0 -246.6 0L116.2 64.5a10 10 0 1 0 -17.3 10h0l47.9 83C64.5 202.2 8.2 285.6 0 384H576c-8.2-98.5-64.5-181.8-146.9-226.6"/>
+                            </svg>
+                            <span className="">Download</span>
+                        </a>
+                    </div>
+
+                    {/* Description */}
+                    <p className="text-sm xl:text-lg">{texts[language].hungryFish}</p>
+                </div>
+
+                <div id="1"
                      className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
@@ -243,18 +283,13 @@ const ProjectsPage = () => {
                                 <li>En nog veel meer!</li>
                             </ul><br></br>
 
-                            {/*<strong>Data Management Design</strong><br></br>*/}
-                            {/*Ik stelde een Data Management Design op om duidelijk te maken hoe en wat we in de game*/}
-                            {/*zouden opslaan. Dit voorkwam dat teamleden verschillende methodes gebruikten die niet*/}
-                            {/*goed zouden samenwerken.<br></br><br></br>*/}
-
                             <strong>Teamwerk en Ondersteuning</strong><br></br>
                             Ik hielp mijn teamleden regelmatig met codeproblemen en andere uitdagingen. Ook reviewde ik
                             veel van de User Stories wanneer een teamgenoot klaar was. Ik bekeek hun branch,
                             testte de feature en gaf gerichte feedback.<br></br><br></br>
 
                             <strong>Toekomst</strong><br></br>
-                            Op dit moment is het project bijna klaar, ik wil in mijn eigen tijd graag doorwerken aan de
+                            Het project is klaar en we hebben een goed cijfer gekregen, als ik tijd heb wil ik doorwerken aan de
                             game zodat ik meer features kan toevoegen en het ook op de Playstore kan plaatsen.
                         </p>
                     ) : (
@@ -296,24 +331,19 @@ const ProjectsPage = () => {
                                 <li>Code for the Shop.</li>
                             </ul><br></br>
 
-                            {/*<strong>Data Management Design</strong><br></br>*/}
-                            {/*I created a Data Management Design to clarify how and what we would store in the game. This*/}
-                            {/*prevented team members from using different methods that wouldn’t work well*/}
-                            {/*together.<br></br><br></br>*/}
-
                             <strong>Teamwork and Support</strong><br></br>
                             I regularly helped my team members with code issues and other challenges. I also reviewed
                             many of the User Stories when a team member finished. I checked their Branch,
                             tested the feature, and provided constructive feedback.<br></br><br></br>
 
                             <strong>Future</strong><br></br>
-                            The game is almost finished! But i want to further improve the game in my own time. I want
+                            The game is finished and we got a good grade! If i have time i would like to further improve the game. I want
                             to add even more features and make it available on the Playstore.
                         </p>
                     )}
                 </div>
 
-                <div id="1"
+                <div id="2"
                      className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
@@ -351,7 +381,7 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].flexCounter}</p>
                 </div>
 
-                <div id="2"
+                <div id="3"
                      className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
@@ -389,7 +419,7 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].spellAI}</p>
                 </div>
 
-                <div id="3"
+                <div id="4"
                      className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
@@ -427,7 +457,7 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].streamTeam}</p>
                 </div>
 
-                <div id="4"
+                <div id="5"
                      className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
@@ -451,21 +481,6 @@ const ProjectsPage = () => {
 
                     {/* Description */}
                     <p className="text-sm xl:text-lg">{texts[language].pcShowcase}</p>
-                </div>
-
-                <div id="5"
-                     className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
-
-                    {/* Project Title */}
-                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">Hungry Fish</h3>
-
-                    {/* Links */}
-                    <div className="flex flex-row absolute top-5 right-5">
-                        <span className="">On pause</span>
-                    </div>
-
-                    {/* Description */}
-                    <p className="text-sm xl:text-lg">{texts[language].hungryFish}</p>
                 </div>
             </div>
         </div>
