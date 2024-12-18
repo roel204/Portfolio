@@ -81,6 +81,11 @@ const SkillsPage = () => {
                                 <p className="text-center">Tailwind</p>
                             </div>
                             <div className="mt-3 pt-3 pb-2 px-5 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                                <img src={"images/logos/openAi.png"} alt="Open AI Logo"
+                                     className="w-14 h-14 object-contain"/>
+                                <p className="text-center">Open AI</p>
+                            </div>
+                            <div className="pt-6 pb-2 px-5 bg-gray-600/25 group flex flex-col items-center">
                                 <img src={"images/logos/langchain.png"} alt="Langchain Logo"
                                      className="w-14 h-14 object-contain"/>
                                 <p className="text-center">Lang Chain</p>
@@ -152,6 +157,11 @@ const SkillsPage = () => {
                                 <img src={"images/logos/miro.png"} alt="Miro Logo"
                                      className="w-14 h-14 object-contain"/>
                                 <p className="text-center">Miro</p>
+                            </div>
+                            <div className="pt-3 mt-3 pb-2 px-5 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
+                                <img src={"images/logos/trello.png"} alt="Trello Logo"
+                                     className="w-14 h-14 object-contain"/>
+                                <p className="text-center">Trello</p>
                             </div>
                             <div className="pt-3 mt-3 pb-2 px-5 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
                                 <img src={"images/logos/php.png"} alt="Php Logo"
