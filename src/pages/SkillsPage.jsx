@@ -195,6 +195,11 @@ const SkillsPage = () => {
                                      className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
                                 <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Miro</p>
                             </div>
+                            <div className="pt-6 mb-2 px-3 xl:px-4 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
+                                <img src={"images/logos/trello.png"} alt="Trello Logo"
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Trello</p>
+                            </div>
                         </div>
 
                         {/* Column 2 */}
@@ -277,6 +282,11 @@ const SkillsPage = () => {
                         {/* Column 5 */}
                         <div className="flex flex-col items-center">
                             <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                                <img src={"images/logos/openAi.png"} alt="Open AI Logo"
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Open AI</p>
+                            </div>
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 group flex flex-col items-center">
                                 <img src={"images/logos/langchain.png"} alt="Langchain Logo"
                                      className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
                                 <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Lang Chain</p>
