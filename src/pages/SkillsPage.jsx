@@ -28,7 +28,7 @@ const SkillsPage = () => {
             pcTitle: "PC BUILDING",
             pcDesc: "I have built multiple computers and love searching for the perfect parts that will fit the build.",
             roelTitle: "My Computer",
-            roelDesc: "I watched a lot of tutorials and searched for all the best parts to buy before I built my computer, eventually I made it together with a friend. I also 3D-printed custom cable management to make it look perfect!",
+            roelDesc: "I watched a lot of tutorials and searched for all the best parts to buy before I built my computer, eventually I made it together with a friend. I also 3D-printed custom cable management to make it look perfect! In 2024 I upgraded my pc.",
             jitseTitle: "My little brother Jitse's PC",
             jitseDesc: "My little brother wanted a computer, so I made a simple integrated graphics build. He later bought an RX6600 for me to install.",
             vincentTitle: "My little brother Vincent's PC",
@@ -40,7 +40,7 @@ const SkillsPage = () => {
             pcTitle: "PC BOUWEN",
             pcDesc: "Ik heb meerdere computers gebouwd en vind het leuk om op zoek te gaan naar de perfecte onderdelen die bij de computer passen.",
             roelTitle: "Mijn Computer",
-            roelDesc: "Ik heb veel tutorials gekeken en gezocht naar de beste onderdelen om te kopen en uiteindelijk samen met een vriend mijn computer gebouwd. Ook heb ik de cable management mooi gemaakt door custom houders te 3D-printen.",
+            roelDesc: "Ik heb veel tutorials gekeken en gezocht naar de beste onderdelen om te kopen en uiteindelijk samen met een vriend mijn computer gebouwd. Ook heb ik de cable management mooi gemaakt door custom houders te 3D-printen. In 2024 heb ik mijn PC geupgrade.",
             jitseTitle: "De PC voor mijn broertje Jitse",
             jitseDesc: "Mijn broertje wilde een computer, dus heb ik een eenvoudige build met geïntegreerde graphics gemaakt. Later kocht hij een RX6600 voor mij om te installeren.",
             vincentTitle: "De PC voor mijn broertje Vincent",
@@ -81,6 +81,11 @@ const SkillsPage = () => {
                                 <p className="text-center">Tailwind</p>
                             </div>
                             <div className="mt-3 pt-3 pb-2 px-5 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                                <img src={"images/logos/openAi.png"} alt="Open AI Logo"
+                                     className="w-14 h-14 object-contain"/>
+                                <p className="text-center">Open AI</p>
+                            </div>
+                            <div className="pt-6 pb-2 px-5 bg-gray-600/25 group flex flex-col items-center">
                                 <img src={"images/logos/langchain.png"} alt="Langchain Logo"
                                      className="w-14 h-14 object-contain"/>
                                 <p className="text-center">Lang Chain</p>
@@ -153,6 +158,11 @@ const SkillsPage = () => {
                                      className="w-14 h-14 object-contain"/>
                                 <p className="text-center">Miro</p>
                             </div>
+                            <div className="pt-3 mt-3 pb-2 px-5 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
+                                <img src={"images/logos/trello.png"} alt="Trello Logo"
+                                     className="w-14 h-14 object-contain"/>
+                                <p className="text-center">Trello</p>
+                            </div>
                             <div className="pt-3 mt-3 pb-2 px-5 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
                                 <img src={"images/logos/php.png"} alt="Php Logo"
                                      className="w-14 h-14 object-contain"/>
@@ -194,6 +204,11 @@ const SkillsPage = () => {
                                 <img src={"images/logos/miro.png"} alt="Miro Logo"
                                      className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
                                 <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Miro</p>
+                            </div>
+                            <div className="pt-6 mb-2 px-3 xl:px-4 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
+                                <img src={"images/logos/trello.png"} alt="Trello Logo"
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Trello</p>
                             </div>
                         </div>
 
@@ -277,6 +292,11 @@ const SkillsPage = () => {
                         {/* Column 5 */}
                         <div className="flex flex-col items-center">
                             <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                                <img src={"images/logos/openAi.png"} alt="Open AI Logo"
+                                     className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
+                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Open AI</p>
+                            </div>
+                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 group flex flex-col items-center">
                                 <img src={"images/logos/langchain.png"} alt="Langchain Logo"
                                      className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2"/>
                                 <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Lang Chain</p>
@@ -326,10 +346,10 @@ const SkillsPage = () => {
                             <p>{texts[language].roelDesc}</p>
                         </div>
                         <div className="p-2 text-sm xl:columns-2">
-                            <p><span className="text-gray-400">CPU:</span> Ryzen 5 2600X</p>
-                            <p><span className="text-gray-400">GPU:</span> Gigabyte RX590</p>
+                            <p><span className="text-gray-400">CPU:</span> Ryzen 5 5600X</p>
+                            <p><span className="text-gray-400">GPU:</span> ASUS RTX 4060 (Thanks Megekko :D)</p>
                             <p><span className="text-gray-400">RAM:</span> Team Group Delta 16GB</p>
-                            <p><span className="text-gray-400">MOBO:</span> Asrock B450 Pro4</p>
+                            <p><span className="text-gray-400">MOBO:</span> Gigabyte B550 Gaming X V2</p>
                             <p><span className="text-gray-400">PSU:</span> CoolerM MWE Gold 650</p>
                             <p><span className="text-gray-400">CASE:</span> Antec NX600</p>
                         </div>
