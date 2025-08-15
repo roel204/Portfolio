@@ -169,9 +169,9 @@ const SkillsPage = () => {
                                 <p className="text-center">Miro</p>
                             </div>
                             <div className="skillSingle">
-                                <img src={"images/logos/trello.png"} alt="Trello Logo"
+                                <img src={"images/logos/backlogLogoCombined.png"} alt="Trello, ClickUP and Airtable Logo"
                                     className="w-14 h-14 object-contain" />
-                                <p className="text-center">Trello</p>
+                                <p className="text-center">Backlog</p>
                             </div>
                             <div className="skillTop">
                                 <img src={"images/logos/php.png"} alt="Php Logo"
@@ -216,9 +216,9 @@ const SkillsPage = () => {
                                 <p className="skillDesktopText">Miro</p>
                             </div>
                             <div className="skillSingle group">
-                                <img src={"images/logos/trello.png"} alt="Trello Logo"
+                                <img src={"images/logos/backlogLogoCombined.png"} alt="Trello, ClickUP and Airtable Logo"
                                     className="skillDesktopImage" />
-                                <p className="skillDesktopText">Trello</p>
+                                <p className="skillDesktopText">Backlog</p>
                             </div>
                         </div>
 
