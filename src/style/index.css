@@ -30,10 +30,10 @@
     animation: gradient 8s linear infinite;
 }
 
-.skillMobileSingle {
-    /* pt-3 mt-3 pb-2 px-5 bg-gray-600/25 rounded-3xl group flex flex-col items-center */
-    margin-top: 0.75rem;
-    padding-top: 0.75rem;
+.skillSingle {
+    /* pt-3 mt-3 pb-2 px-5 bg-gray-600/25 rounded-3xl flex flex-col items-center */
+    margin-top: 0.5rem;
+    padding-top: 1rem;
     padding-bottom: 0.5rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -44,10 +44,10 @@
     align-items: center;
 }
 
-.skillMobileTop {
-    /* pt-3 mt-3 pb-2 px-5 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center */
-    margin-top: 0.75rem;
-    padding-top: 0.75rem;
+.skillTop {
+    /* pt-3 mt-3 pb-2 px-5 bg-gray-600/25 rounded-t-3xl flex flex-col items-center */
+    margin-top: 0.5rem;
+    padding-top: 1rem;
     padding-bottom: 0.5rem;
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -59,8 +59,8 @@
     align-items: center;
 }
 
-.skillMobileCenter {
-    /* pt-6 pb-2 px-5 b g-gray-600/25 group flex flex-col items-center */
+.skillCenter {
+    /* pt-6 pb-2 px-5 b g-gray-600/25 flex flex-col items-center */
     padding-top: 1.5rem;
     padding-bottom: 0.5rem;
     padding-left: 1.25rem;
@@ -71,8 +71,8 @@
     align-items: center;
 }
 
-.skillMobileBottom {
-    /* pt-6 pb-2 px-5 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center */
+.skillBottom {
+    /* pt-6 pb-2 px-5 bg-gray-600/25 rounded-b-3xl flex flex-col items-center */
     padding-top: 1.5rem;
     padding-bottom: 0.75rem;
     padding-left: 1.25rem;
@@ -83,6 +83,40 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.skillDesktopImage {
+    /* w-10 h-10 xl: w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2 */
+    width: 2.5rem;
+    height: 2.5rem;
+
+    @media (min-width: 1280px) {
+        width: 5vw;
+        height: 9vh;
+    }
+
+    object-fit: contain;
+    transition: transform 0.075s;
+
+    @media (min-width: 1280px) {
+        .group:hover & {
+            transform: scale(1.15) translateY(-0.5rem);
+        }
+    }
+}
+
+.skillDesktopText {
+    /* text-center xl: opacity-0 transition group-hover:opacity-100 */
+    text-align: center;
+
+    @media (min-width: 1280px) {
+        opacity: 0;
+        transition: opacity 0.2s;
+
+        .group:hover & {
+            opacity: 1;
+        }
+    }
 }
 
 @keyframes gradient {

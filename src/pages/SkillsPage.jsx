@@ -60,42 +60,42 @@ const SkillsPage = () => {
                     <div className="flex flex-row gap-4 mt-[5vh] justify-center text-[0.6rem]">
                         {/* Column 1 */}
                         <div className="flex flex-col items-center">
-                            <div className="skillMobileSingle">
+                            <div className="skillSingle">
                                 <img src={"images/logos/html.png"} alt="Html Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">HTML</p>
                             </div>
-                            <div className="skillMobileTop">
+                            <div className="skillTop">
                                 <img src={"images/logos/css.png"} alt="Css Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">CSS</p>
                             </div>
-                            <div className="skillMobileCenter">
+                            <div className="skillCenter">
                                 <img src={"images/logos/bootstrap.png"} alt="Bootstrap Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">Bootstrap</p>
                             </div>
-                            <div className="skillMobileBottom">
+                            <div className="skillBottom">
                                 <img src={"images/logos/tailwind.png"} alt="Tailwind Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">Tailwind</p>
                             </div>
-                            <div className="skillMobileTop">
+                            <div className="skillTop">
                                 <img src={"images/logos/openAi.png"} alt="Open AI Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">Open AI</p>
                             </div>
-                            <div className="skillMobileCenter">
+                            <div className="skillCenter">
                                 <img src={"images/logos/langchain.png"} alt="Langchain Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">Lang Chain</p>
                             </div>
-                            <div className="skillMobileCenter">
+                            <div className="skillCenter">
                                 <img src={"images/logos/mediapipe.png"} alt="Mediapipe Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">Mediapipe</p>
                             </div>
-                            <div className="skillMobileBottom">
+                            <div className="skillBottom">
                                 <img src={"images/logos/ml5.png"} alt="ML5 Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">ML5</p>
@@ -104,37 +104,37 @@ const SkillsPage = () => {
 
                         {/* Column 2 */}
                         <div className="flex flex-col items-center">
-                            <div className="skillMobileTop">
+                            <div className="skillTop">
                                 <img src={"images/logos/js.png"} alt="Js Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">JavaScript</p>
                             </div>
-                            <div className="skillMobileCenter">
+                            <div className="skillCenter">
                                 <img src={"images/logos/nodejs.png"} alt="NodeJs Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">Node.js</p>
                             </div>
-                            <div className="skillMobileCenter">
+                            <div className="skillCenter">
                                 <img src={"images/logos/vite.png"} alt="Vite Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">Vite</p>
                             </div>
-                            <div className="skillMobileCenter">
+                            <div className="skillCenter">
                                 <img src={"images/logos/react.png"} alt="React Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">React</p>
                             </div>
-                            <div className="skillMobileBottom">
+                            <div className="skillBottom">
                                 <img src={"images/logos/express.png"} alt="Express Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">Express</p>
                             </div>
-                            <div className="skillMobileTop">
+                            <div className="skillTop">
                                 <img src={"images/logos/csharp.png"} alt="C sharp Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">C#</p>
                             </div>
-                            <div className="skillMobileBottom">
+                            <div className="skillBottom">
                                 <img src={"images/logos/unity.png"} alt="Unity Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">Unity</p>
@@ -143,42 +143,42 @@ const SkillsPage = () => {
 
                         {/* Column 3 */}
                         <div className="flex flex-col items-center">
-                            <div className="skillMobileSingle">
+                            <div className="skillSingle">
                                 <img src={"images/logos/git.png"} alt="Git Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center ">GIT</p>
                             </div>
-                            <div className="skillMobileSingle">
+                            <div className="skillSingle">
                                 <img src={"images/logos/photoshop.png"} alt="Photoshop Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">Photoshop</p>
                             </div>
-                            <div className="skillMobileSingle">
+                            <div className="skillSingle">
                                 <img src={"images/logos/miro.png"} alt="Miro Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">Miro</p>
                             </div>
-                            <div className="skillMobileSingle">
+                            <div className="skillSingle">
                                 <img src={"images/logos/trello.png"} alt="Trello Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">Trello</p>
                             </div>
-                            <div className="skillMobileTop">
+                            <div className="skillTop">
                                 <img src={"images/logos/php.png"} alt="Php Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">PHP</p>
                             </div>
-                            <div className="skillMobileBottom">
+                            <div className="skillBottom">
                                 <img src={"images/logos/laravel.png"} alt="Laravel Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">Laravel</p>
                             </div>
-                            <div className="skillMobileTop">
+                            <div className="skillTop">
                                 <img src={"images/logos/mysql.png"} alt="MySql Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">MySQL</p>
                             </div>
-                            <div className="skillMobileBottom">
+                            <div className="skillBottom">
                                 <img src={"images/logos/mongodb.png"} alt="MondoDB Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">MongoDB</p>
@@ -190,153 +190,144 @@ const SkillsPage = () => {
                     <div className="flex flex-row gap-1 xl:gap-8 mt-[5vh] justify-center text-[0.6rem] xl:text-base">
                         {/* Column 1 */}
                         <div className="flex flex-col items-center">
-                            <div className="pt-6 mb-2 px-3 xl:px-4 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
+                            <div className="skillSingle group">
                                 <img src={"images/logos/git.png"} alt="Git Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100 ">GIT</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText ">GIT</p>
                             </div>
-                            <div className="pt-6 mb-2 px-3 xl:px-4 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
+                            <div className="skillSingle group">
                                 <img src={"images/logos/photoshop.png"} alt="Photoshop Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Photoshop</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">Photoshop</p>
                             </div>
-                            <div className="pt-6 mb-2 px-3 xl:px-4 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
+                            <div className="skillSingle group">
                                 <img src={"images/logos/miro.png"} alt="Miro Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Miro</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">Miro</p>
                             </div>
-                            <div className="pt-6 mb-2 px-3 xl:px-4 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
+                            <div className="skillSingle group">
                                 <img src={"images/logos/trello.png"} alt="Trello Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Trello</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">Trello</p>
                             </div>
                         </div>
 
                         {/* Column 2 */}
                         <div className="flex flex-col items-center">
-                            <div className="pt-6 mb-2 px-3 xl:px-4 bg-gray-600/25 rounded-3xl group flex flex-col items-center">
+                            <div className="skillSingle group">
                                 <img src={"images/logos/html.png"} alt="Html Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">HTML</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">HTML</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                            <div className="skillTop group">
                                 <img src={"images/logos/css.png"} alt="Css Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">CSS</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">CSS</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 group flex flex-col items-center">
+                            <div className="skillCenter group">
                                 <img src={"images/logos/bootstrap.png"} alt="Bootstrap Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Bootstrap</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">Bootstrap</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
+                            <div className="skillBottom group">
                                 <img src={"images/logos/tailwind.png"} alt="Tailwind Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Tailwind</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">Tailwind</p>
                             </div>
                         </div>
 
                         {/* Column 3 */}
                         <div className="flex flex-col items-center">
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                            <div className="skillTop group">
                                 <img src={"images/logos/js.png"} alt="Js Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">JavaScript</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">JavaScript</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 group flex flex-col items-center">
+                            <div className="skillCenter group">
                                 <img src={"images/logos/nodejs.png"} alt="NodeJs Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Node.js</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">Node.js</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 group flex flex-col items-center">
+                            <div className="skillCenter group">
                                 <img src={"images/logos/vite.png"} alt="Vite Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Vite</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">Vite</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 group flex flex-col items-center">
+                            <div className="skillCenter group">
                                 <img src={"images/logos/react.png"} alt="React Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">React</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">React</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
+                            <div className="skillBottom group">
                                 <img src={"images/logos/express.png"} alt="Express Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Express</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">Express</p>
                             </div>
                         </div>
 
                         {/* Column 4 */}
                         <div className="flex flex-col items-center">
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                            <div className="skillTop group">
                                 <img src={"images/logos/php.png"} alt="Php Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">PHP</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">PHP</p>
                             </div>
-                            <div className="pt-6 mb-2 px-3 xl:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
+                            <div className="skillBottom group">
                                 <img src={"images/logos/laravel.png"} alt="Laravel Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Laravel</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">Laravel</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                            <div className="skillTop group">
                                 <img src={"images/logos/mysql.png"} alt="MySql Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">MySQL</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">MySQL</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
+                            <div className="skillBottom group">
                                 <img src={"images/logos/mongodb.png"} alt="MondoDB Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">MongoDB</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">MongoDB</p>
                             </div>
                         </div>
 
                         {/* Column 5 */}
                         <div className="flex flex-col items-center">
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                            <div className="skillTop group">
                                 <img src={"images/logos/openAi.png"} alt="Open AI Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Open AI</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">Open AI</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 group flex flex-col items-center">
+                            <div className="skillCenter group">
                                 <img src={"images/logos/langchain.png"} alt="Langchain Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Lang Chain</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">Lang Chain</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 group flex flex-col items-center">
+                            <div className="skillCenter group">
                                 <img src={"images/logos/mediapipe.png"} alt="Mediapipe Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Mediapipe</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">Mediapipe</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
+                            <div className="skillBottom group">
                                 <img src={"images/logos/ml5.png"} alt="ML5 Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">ML5</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">ML5</p>
                             </div>
                         </div>
 
                         {/* Column 6 */}
                         <div className="flex flex-col items-center">
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-t-3xl group flex flex-col items-center">
+                            <div className="skillTop group">
                                 <img src={"images/logos/csharp.png"} alt="C sharp Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">C#</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">C#</p>
                             </div>
-                            <div className="pt-6 pb-2 px-3 xl:px-4 bg-gray-600/25 rounded-b-3xl group flex flex-col items-center">
+                            <div className="skillBottom group">
                                 <img src={"images/logos/unity.png"} alt="Unity Logo"
-                                    className="w-10 h-10 xl:w-[5vw] xl:h-[9vh] object-contain transition duration-75 xl:group-hover:scale-125 xl:group-hover:-translate-y-2" />
-                                <p className="text-center xl:opacity-0 transition group-hover:opacity-100">Unity</p>
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">Unity</p>
                             </div>
                         </div>
                     </div>
                 )}
-
-
-            </div>
-
-            <div className="py-10 my-[5vh] xl:px-10 xl:w-[60vw] rounded-3xl bg-green-50/75 dark:bg-black/75">
-                <h1 className="gradientText text-5xl xl:text-8xl pb-5">{texts[language].pcTitle}</h1>
-                <p className="text-gray-400 text-center px-4 xl:whitespace-pre-line">{texts[language].pcDesc}</p>
-
-                {/*Roel Computer*/}
                 <div className="border-2 border-cgreen rounded-t-2xl p-4 mt-[5vh] text-center bg-white/50 dark:bg-black/50">
                     <h3 className="text-2xl font-bold">{texts[language].roelTitle}</h3>
                 </div>
