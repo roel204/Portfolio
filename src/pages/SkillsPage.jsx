@@ -134,10 +134,20 @@ const SkillsPage = () => {
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">C#</p>
                             </div>
-                            <div className="skillBottom">
+                            <div className="skillCenter">
                                 <img src={"images/logos/unity.png"} alt="Unity Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">Unity</p>
+                            </div>
+                            <div className="skillCenter">
+                                <img src={"images/logos/openXR.png"} alt="OpenXR Logo"
+                                    className="w-14 h-14 object-contain" />
+                                <p className="text-center">OpenXR (VR)</p>
+                            </div>
+                            <div className="skillBottom">
+                                <img src={"images/logos/steam.png"} alt="Steam Logo"
+                                    className="w-14 h-14 object-contain" />
+                                <p className="text-center">Steam</p>
                             </div>
                         </div>
 
@@ -320,10 +330,20 @@ const SkillsPage = () => {
                                     className="skillDesktopImage" />
                                 <p className="skillDesktopText">C#</p>
                             </div>
-                            <div className="skillBottom group">
+                            <div className="skillCenter group">
                                 <img src={"images/logos/unity.png"} alt="Unity Logo"
                                     className="skillDesktopImage" />
                                 <p className="skillDesktopText">Unity</p>
+                            </div>
+                            <div className="skillCenter group">
+                                <img src={"images/logos/openXR.png"} alt="OpenXR Logo"
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">OpenXR (VR)</p>
+                            </div>
+                            <div className="skillBottom group">
+                                <img src={"images/logos/steam.png"} alt="Steam Logo"
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">Steam</p>
                             </div>
                         </div>
                     </div>
