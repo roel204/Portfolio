@@ -73,6 +73,14 @@ const ProjectsPage = () => {
 
     const projectsCards = [
         {
+            title: 'Zero-G Guns',
+            tags: 'Unity, VR, Released Game',
+            desc: {
+                en: 'My biggest game yet! It offers a new way of moving in VR.',
+                nl: 'Mijn grootste game tot nu toe! Het biedt een nieuwe manier van bewegen in VR.',
+            },
+        },
+        {
             title: 'Hungry Fish',
             tags: 'Unity, Personal Project',
             desc: {
@@ -166,12 +174,82 @@ const ProjectsPage = () => {
             </div>
 
             <div className="flex flex-col justify-center items-center mt-[5vh] max-w-full min-h-screen">
+                {/* Full Projects */}
 
                 <div id="0"
                     className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
-                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">Hungry Fishies</h3>
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Zero-G Guns</h3>
+
+                    {/* Links */}
+                    <div className="flex flex-row absolute top-5 right-5">
+                        <a href="https://store.steampowered.com/app/3798450/ZeroG_Guns/" target="_blank"
+                            className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
+                            rel="noreferrer">
+                            <svg
+                                className="w-12 h-12 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110 pr-1"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewBox="0 0 570 570">
+                                <path
+                                    d="M568 320C568 457 456.8 568 319.6 568C205.8 568 110 491.7 80.6 387.6L175.8 426.9C182.2 459 210.7 483.3 244.7 483.3C283.9 483.3 316.6 450.9 314.9 409.8L399.4 349.6C451.5 350.9 495.2 308.7 495.2 256.1C495.2 204.5 453.2 162.6 401.5 162.6C349.8 162.6 307.8 204.6 307.8 256.1L307.8 257.3L248.6 343C233.1 342.1 217.9 346.4 205.1 355.1L72 300.1C82.2 172.4 189.1 72 319.6 72C456.8 72 568 183 568 320zM227.7 448.3L197.2 435.7C202.8 447.3 212.5 456.5 224.4 461.5C251.3 472.7 282.2 459.9 293.4 433.1C298.8 420.1 298.9 405.8 293.5 392.8C288.1 379.8 278 369.6 265 364.2C252.1 358.8 238.3 359 226.1 363.6L257.6 376.6C277.4 384.8 286.8 407.5 278.5 427.3C270.2 447.2 247.5 456.5 227.7 448.3zM401.5 193.8C435.9 193.8 463.8 221.7 463.8 256.1C463.8 290.5 435.9 318.4 401.5 318.4C367.1 318.4 339.2 290.5 339.2 256.1C339.2 221.7 367.1 193.8 401.5 193.8zM401.6 302.8C427.4 302.8 448.4 281.8 448.4 256C448.4 230.2 427.4 209.2 401.6 209.2C375.8 209.2 354.8 230.2 354.8 256C354.8 281.8 375.8 302.8 401.6 302.8z" />
+                            </svg>
+                            <span className="">Steam</span>
+                        </a>
+                    </div>
+
+                    {/* Description */}
+                    {language === 'nl' ? (
+                        <p className="text-sm xl:text-lg">
+                            Zero-G Guns begon als een idee dat ik een tijdje geleden had. Ik wilde een VR-game maken zonder de saaie joystick/teleport movement die de meeste andere VR games gebruiken.
+                            Ik kwam op het idee om beweging op basis van Physics in een Zero-Gravity omgeving te gebruiken, en daar wapen recoil aan toe te voegen.
+                            Ik had al eerder geprobeerd deze game te maken, maar op dat moment had ik nog niet genoeg kennis van Unity.
+                            <br /><br />
+                            Toen begon PLE (Personal Learning Environment), waar ik in mijn eentje een volledig MVP-project moest maken.
+                            Ik besloot deze game als mijn project te maken, omdat ik meer wilde leren over Unity en 3D game development.
+                            Ik begon met een prototype via Unity's XR Interaction Toolkit, waardoor ik de VR omgeving snel kon implementeren en het met een paar vrienden kon testen.
+                            Dit prototype zag er totaal anders uit dan de uiteindelijke game, maar het was een geweldige start en het liet mij het potentieel van de game zien.
+                            <br /><br />
+                            Het prototype liet me ook zien dat ik niet kon vertrouwen op de XR Interaction Toolkit voor de beweging, omdat die niet op physics gebaseerd was. Dus met wat hulp van YouTube tutorials
+                            heb ik mijn eigen bewegingssysteem gemaakt die Unity's physics gebruikt. Hierdoor kon ik eenvoudig wapen recoil en andere soorten beweging toevoegen.
+                            <br /><br />
+                            Tijdens de ontwikkeling van de game bleef ik playtesten met vrienden en onbekenden. Playtesten hielp me de game te verbeteren en liet zien wat belangrijk was voor de spelers.
+                            Het hielp ook problemen te identificeren die ik zelf niet kon zien omdat ik de developer was. Ik heb een Discord-server gemaakt waar mensen feedback kunnen geven,
+                            ik gebruik die ook om updates aan te kondigen.
+                            <br /><br />
+                            De game is nu beschikbaar op Steam, en ik ben van plan eraan te blijven werken wanneer ik de tijd heb. De game op Steam zetten kostte veel moeite,
+                            maar het heeft me veel geleerd over het proces van het uitbrengen en marketen van een game. Dat is zeker nuttig voor toekomstige games die ik ga maken.
+                        </p>
+                    ) : (
+                        <p className="text-sm xl:text-lg">
+                            Zero-G guns started as an idea I had a while ago. I wanted to make a VR game without the boring joystick/teleport controls most other VR games use.
+                            I came up with the idea to use physics based movement in Zero-Gravity, and add gun recoil movement to that.
+                            I tried making this game earlier but I didn't have much knowledge about Unity at that time.
+                            <br /><br />
+                            Then came PLE (Personal Learning Environment) where I needed to make an entire MVP project on my own.
+                            I decided to make this game as my project, because I wanted to learn more about Unity and 3D game development.
+                            I started by making a quick prototype using Unity's XR Interaction Toolkit, which allowed me to quickly implement the VR controls and test it with a few friends.
+                            This prototype looked so different from the final game, but it was a great start and it showed me the potential of the game.
+                            <br /><br />
+                            The prototype also showed me I couldn't rely on the XR Interaction Toolkit for the movement, because it wasn't physics based. So with some help from YouTube tutorials
+                            I made my own movement system that uses Unity's physics system. This allowed me to easily add gun recoil and other types of movement.
+                            <br /><br />
+                            While developing the game I kept playtesting it with friends and strangers. Playtesting helped me improve the game and showed what was important for the players.
+                            It also helped identifying probelms that I couldn't see myself becasue I made the game. I created a Discord server where people can give feedback, I also use it to to announce updates.
+                            <br /><br />
+                            The game is now available on Steam, and I plan to keep working on it when I have the time. Putting the game on Steam took a lot of effort,
+                            but it thought me a lot about the process of publishing a game and marketing it. Which is definetely useful for any future games I will make.
+                        </p>
+                    )}
+                </div>
+
+                <div id="1"
+                    className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+
+                    {/* Project Title */}
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Hungry Fishies</h3>
 
                     {/* Links */}
                     <div className="flex flex-row absolute top-5 right-5">
@@ -207,11 +285,11 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].hungryFish}</p>
                 </div>
 
-                <div id="1"
+                <div id="2"
                     className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
-                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">Reef Keep</h3>
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Reef Keep</h3>
 
                     {/* Links */}
                     <div className="flex flex-row absolute top-5 right-5">
@@ -334,7 +412,7 @@ const ProjectsPage = () => {
                             <strong>Teamwork and Support</strong><br></br>
                             I regularly helped my team members with code issues and other challenges. I also reviewed
                             many of the User Stories when a team member finished. I checked their Branch,
-                            tested the feature, and provided constructive feedback.<br></br><br></br>
+                            tested the feature and provided constructive feedback.<br></br><br></br>
 
                             <strong>Future</strong><br></br>
                             The game is finished and we got a good grade! If i have time i would like to further improve the game. I want
@@ -343,11 +421,11 @@ const ProjectsPage = () => {
                     )}
                 </div>
 
-                <div id="2"
+                <div id="3"
                     className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
-                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">Flex Counter</h3>
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Flex Counter</h3>
 
                     {/* Links */}
                     <div className="flex flex-row absolute top-5 right-5">
@@ -381,11 +459,11 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].flexCounter}</p>
                 </div>
 
-                <div id="3"
+                <div id="4"
                     className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
-                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">SpellAI</h3>
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">SpellAI</h3>
 
                     {/* Links */}
                     <div className="flex flex-row absolute top-5 right-5">
@@ -419,11 +497,11 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].spellAI}</p>
                 </div>
 
-                <div id="4"
+                <div id="5"
                     className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
-                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">Stream Team</h3>
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Stream Team</h3>
 
                     {/* Links */}
                     <div className="flex flex-row absolute top-5 right-5">
@@ -457,11 +535,11 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].streamTeam}</p>
                 </div>
 
-                <div id="5"
+                <div id="6"
                     className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
-                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-8">PC Showcase</h3>
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">PC Showcase</h3>
 
                     {/* Links */}
                     <div className="flex flex-row absolute top-5 right-5">
