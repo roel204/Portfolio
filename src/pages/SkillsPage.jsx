@@ -24,7 +24,7 @@ const SkillsPage = () => {
     const texts = {
         en: {
             codeTitle: "CODE SKILLS",
-            codeDesc: "I have learned multiple programming languages, frameworks and other programs.\nI have learned most of these from my study, but some are also self-taught because it's interesting to me.",
+            codeDesc: "I have learned multiple programming languages, frameworks and other programs.\nI have learned most of these from my study, but some are also self-taught because it's interesting to me.\nI love making games in Unity, I always try to keep my code clean and reusable.",
             pcTitle: "PC BUILDING",
             pcDesc: "I have built multiple computers and love searching for the perfect parts that will fit the build.",
             roelTitle: "My Computer",
@@ -36,7 +36,7 @@ const SkillsPage = () => {
         },
         nl: {
             codeTitle: 'CODE SKILLS',
-            codeDesc: "Ik heb meerdere programmeertalen, frameworks en andere programma's geleerd.\nDe meeste heb ik tijdens mijn studie geleerd, maar sommige heb ik zelf geleerd omdat ik het interessant vind.",
+            codeDesc: "Ik heb meerdere programmeertalen, frameworks en andere programma's geleerd.\nDe meeste heb ik tijdens mijn studie geleerd, maar sommige heb ik zelf geleerd omdat ik het interessant vind.\nIk hou ervan om games te maken in Unity, en ik probeer altijd mijn code overzichtelijk en herbruikbaar te houden.",
             pcTitle: "PC BOUWEN",
             pcDesc: "Ik heb meerdere computers gebouwd en vind het leuk om op zoek te gaan naar de perfecte onderdelen die bij de computer passen.",
             roelTitle: "Mijn Computer",
