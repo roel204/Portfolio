@@ -59,7 +59,6 @@ const ProjectsPage = () => {
             spellAI: "With SpellAI, I took my first steps in developing an AI application, aimed at correcting written text. This web application offers a simple interface where users can input their text to be improved. In addition to the basic functionality, SpellAI offers extra options such as speech-to-text to facilitate the writing of new text, a choice of multiple models, and the ability to give specific instructions. All entered text is stored locally to prevent loss if the browser is closed.",
             streamTeam: "Streamteam is a Tailored Learning Environment (TLE) project for the CMGT study at Rotterdam University of Applied Sciences. The project focuses on the existing IP-car, a car controlled via a server with a live feed, which is intended for use in daily activities within care homes. Through this software, the IP-car can connect to a guide who can see a live feed and take control of the car with a controller via the same connection. It is a delivery to VindiQu and FoxConnect. VindiQu already offers livestream daily activities to care homes, and FoxConnect is the developer of the first IP-car, originally intended for private use by people with mobility impairments.",
             pcShowcase: "The PcShowcase project is my first experience with frameworks. For this school project, I used Laravel to create a simple CRUD application where users can post their computers. The platform also offers the ability to post comments. I used Bootstrap for the styling of the website, resulting in a sleek and user-friendly design.",
-            hungryFish: "Hungry Fish began as a school project in Excalibur. During the 2023 summer break, I decided to rebuild this game in Unity, further improving my skills in game development. I later improved the game by adding upgrades, skins, and other game mechanics. During the 2024 summer break i further improved the game by adding new sprites and improving the code by using the things i learnt from making Reef Keep.",
         },
         nl: {
             pageTitle: 'MIJN PROJECTEN',
@@ -67,7 +66,6 @@ const ProjectsPage = () => {
             spellAI: "Met SpellAI heb ik mijn eerste stappen gezet in het ontwikkelen van een AI-applicatie, gericht op het corrigeren van geschreven tekst. Deze webapplicatie biedt een simpele interface waar gebruikers hun tekst kunnen invoeren om verbeterd te worden. Naast de basisfunctionaliteit biedt spellAI extra opties, zoals spraak-naar-tekst om het schrijven van nieuwe tekst makkelijk te maken, keuze uit meerdere modellen, en de mogelijkheid om specifieke instructies te geven. Alle ingevoerde tekst wordt lokaal opgeslagen zodat er niks verloren gaat als de browser gesloten wordt.",
             streamTeam: "Streamteam is een TLE (Tailored Learning Environment) project voor de studie CMGT, Hogeschool Rotterdam. Het project focust op de bestaande IP-car, een via een server te besturen auto met een livefeed, die moet worden ingezet voor dagbesteding binnen zorghuizen. De IP-car kan via deze software verbinden met een gids, die een live beeld te zien krijgt en controle van de auto kan overnemen met een controller via dezelfde verbinding. Het is een oplevering aan VindiQu en FoxConnect. VindiQu biedt al livestream dagbesteding aan zorghuizen, en FoxConnect is de ontwikkelaar van de eerste IP-car, origineel bedoeld voor particulier gebruik van mensen met een motorische beperking.",
             pcShowcase: "Het PcShowcase project is mijn eerste ervaring met het gebruik van frameworks. Voor dit schoolproject heb ik Laravel gebruikt om een eenvoudige CRUD-applicatie te maken, waar gebruikers hun computers kunnen posten. Het platform biedt ook de mogelijkheid om comments te plaatsen. Ik heb Bootstrap gebruikt voor de styling van de website, waardoor een strak en gebruiksvriendelijk ontwerp ontstaat.",
-            hungryFish: "Hungry Fish begon als een schoolproject in Excalibur. Tijdens de zomervakantie in 2023 besloot ik om deze game opnieuw te bouwen in Unity, waarbij ik mijn vaardigheden in game-ontwikkeling verder ontwikkelde. Later heb ik de game verbeterd door upgrades, skins en andere game mechanics toe te voegen. In de zomervakantie van 2024 heb ik de game nog meer geupdate door sprites en code van Reef Keep toe te voegen en een deel van de code opnieuw te schrijven.",
         },
     };
 
@@ -282,7 +280,23 @@ const ProjectsPage = () => {
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm xl:text-lg">{texts[language].hungryFish}</p>
+                    {language === 'nl' ? (
+                        <p className="text-sm xl:text-lg">
+                            Hungry Fish begon als een schoolproject in Excalibur.
+                            Tijdens de zomervakantie in 2023 besloot ik om deze game opnieuw te bouwen in Unity, waarbij ik mijn vaardigheden in game-ontwikkeling verder ontwikkelde.
+                            Later heb ik de game verbeterd door upgrades, skins en andere game mechanics toe te voegen.
+                            In de zomervakantie van 2024 heb ik de game nog meer geupdate door sprites en code van Reef Keep toe te voegen en een deel van de code opnieuw te schrijven.
+                            Dit is eigenlijk mijn 'test game' die ik gebruik om nieuwe dingen te leren en mijn code te verbeteren.
+                        </p>
+                    ) : (
+                        <p className="text-sm xl:text-lg">
+                            Hungry Fish began as a school project in Excalibur.
+                            During the 2023 summer break, I decided to rebuild this game in Unity, further improving my skills in game development.
+                            I later improved the game by adding upgrades, skins, and other game mechanics.
+                            During the 2024 summer break i further improved the game by adding new sprites and improving the code by using the things i learnt from making Reef Keep.
+                            This is basically my 'test game' that I use to learn new things and improve my code.
+                        </p>
+                    )}
                 </div>
 
                 <div id="2"
