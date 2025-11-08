@@ -96,7 +96,7 @@ const ProjectsPage = () => {
         },
         {
             title: 'Flex Counter',
-            tags: 'Machine Learning, CMGT Project',
+            tags: 'Machine Learning, CMGT Project, React',
             desc: {
                 en: "Machine Learning application that counts your bicep curls using your webcam.",
                 nl: 'Machine Learning app om bicep curls te tellen met je webcam.',
@@ -147,15 +147,14 @@ const ProjectsPage = () => {
                         <h2 className="text-2xl font-semibold">{project.title}</h2>
 
                         {/* Tags */}
-                        <div className="flex mt-2">
+                        <div className="flex flex-wrap gap-x-2 gap-y-1 mt-2">
                             {project.tags.split(', ').map((tag, tagIndex) => (
-                                <div key={tagIndex}
-                                    className="bg-[#151515] text-white rounded-full px-2 py-1 text-xs mr-2">{tag}</div>
+                                <div key={tagIndex} className="bg-[#151515] text-white rounded-full px-2 py-1 text-xs">{tag}</div>
                             ))}
                         </div>
 
                         {/* shortDesc */}
-                        <p className="mt-4 text-sm xl:text-base">{project.desc[language]}</p>
+                        <p className="mt-3 text-sm xl:text-base">{project.desc[language]}</p>
 
                         {/* Dropdown Arrow */}
                         <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
@@ -173,14 +172,13 @@ const ProjectsPage = () => {
             <div className="flex flex-col justify-center items-center mt-[5vh] max-w-full min-h-screen">
                 {/* Full Projects */}
 
-                <div id="0"
-                    className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="0" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Zero-G Guns</h3>
 
                     {/* Links */}
-                    <div className="flex flex-row absolute top-5 right-5">
+                    <div className="flex flex-row absolute bottom-5 xl:bottom-auto xl:top-5 xl:right-5">
                         <a href="https://store.steampowered.com/app/3798450/ZeroG_Guns/" target="_blank"
                             className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
                             rel="noreferrer">
@@ -242,14 +240,13 @@ const ProjectsPage = () => {
                     )}
                 </div>
 
-                <div id="1"
-                    className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="1" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Hungry Fishies</h3>
 
                     {/* Links */}
-                    <div className="flex flex-row absolute top-5 right-5">
+                    <div className="flex flex-row absolute bottom-5 xl:bottom-auto xl:top-5 xl:right-5">
                         <a href="https://github.com/roel204/HungryFishies" target="_blank"
                             className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
                             rel="noreferrer">
@@ -298,14 +295,13 @@ const ProjectsPage = () => {
                     )}
                 </div>
 
-                <div id="2"
-                    className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="2" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Reef Keep</h3>
 
                     {/* Links */}
-                    <div className="flex flex-row absolute top-5 right-5">
+                    <div className="flex flex-row absolute bottom-5 xl:bottom-auto xl:top-5 xl:right-5">
                         <a href="https://github.com/Matsdd/FishGame" target="_blank"
                             className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
                             rel="noreferrer">
@@ -434,14 +430,13 @@ const ProjectsPage = () => {
                     )}
                 </div>
 
-                <div id="3"
-                    className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="3" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Flex Counter</h3>
 
                     {/* Links */}
-                    <div className="flex flex-row absolute top-5 right-5">
+                    <div className="flex flex-row absolute bottom-5 xl:bottom-auto xl:top-5 xl:right-5">
                         <a href="https://github.com/roel204/FlexCounter" target="_blank"
                             className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
                             rel="noreferrer">
@@ -472,14 +467,13 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].flexCounter}</p>
                 </div>
 
-                <div id="4"
-                    className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="4" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">SpellAI</h3>
 
                     {/* Links */}
-                    <div className="flex flex-row absolute top-5 right-5">
+                    <div className="flex flex-row absolute bottom-5 xl:bottom-auto xl:top-5 xl:right-5">
                         <a href="https://github.com/roel204/SpellAI" target="_blank"
                             className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
                             rel="noreferrer">
@@ -510,14 +504,13 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].spellAI}</p>
                 </div>
 
-                <div id="5"
-                    className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="5" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Stream Team</h3>
 
                     {/* Links */}
-                    <div className="flex flex-row absolute top-5 right-5">
+                    <div className="flex flex-row absolute bottom-5 xl:bottom-auto xl:top-5 xl:right-5">
                         <a href="https://github.com/faroeq33/TLE1" target="_blank"
                             className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
                             rel="noreferrer">
@@ -548,14 +541,13 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].streamTeam}</p>
                 </div>
 
-                <div id="6"
-                    className="py-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="6" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">PC Showcase</h3>
 
                     {/* Links */}
-                    <div className="flex flex-row absolute top-5 right-5">
+                    <div className="flex flex-row absolute bottom-5 xl:bottom-auto xl:top-5 xl:right-5">
                         <a href="https://github.com/roel204/PCshowcase" target="_blank"
                             className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
                             rel="noreferrer">
