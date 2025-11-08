@@ -50,8 +50,8 @@ const SkillsPage = () => {
     };
 
     return (
-        <div className="xl:ml-[6vw] mt-[5vh] flex flex-col justify-center items-center max-w-full min-h-screen">
-            <div className="py-10 xl:px-10 xl:w-[60vw] rounded-3xl bg-green-50/75 dark:bg-black/75">
+        <div className="xl:ml-[6vw] flex flex-col justify-center items-center max-w-full min-h-screen">
+            <div className="py-10 my-10 xl:px-10 xl:w-[60vw] rounded-3xl bg-green-50/75 dark:bg-black/75">
                 <h1 className="gradientText text-5xl xl:text-8xl pb-5">{texts[language].codeTitle}</h1>
                 <p className="text-gray-400 text-center px-4 xl:whitespace-pre-line">{texts[language].codeDesc}</p>
 
@@ -348,11 +348,23 @@ const SkillsPage = () => {
                         </div>
                     </div>
                 )}
+            </div>
+
+            <div className="py-10 my-10 xl:px-10 xl:w-[60vw] rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <h1 className="gradientText text-5xl xl:text-8xl pb-5">{texts[language].pcTitle}</h1>
+                <p className="text-gray-400 text-center px-4 xl:whitespace-pre-line">{texts[language].pcDesc}</p>
+
+                {/*Roel Computer*/}
                 <div className="border-2 border-cgreen rounded-t-2xl p-4 mt-[5vh] text-center bg-white/50 dark:bg-black/50">
                     <h3 className="text-2xl font-bold">{texts[language].roelTitle}</h3>
                 </div>
-                <div className="flex justify-between border-x-2 border-b-2 border-cgreen rounded-b-2xl p-2">
-                    <div className="borr-2 flex flex-col justify-around w-[60%]">
+                <div className="flex flex-col xl:flex-row justify-between border-x-2 border-b-2 border-cgreen rounded-b-2xl p-2">
+
+                    <div className="flex justify-center w-full xl:w-auto order-first xl:order-last">
+                        <img src={"images/roelPCsm.png"} alt="Roel's PC" className="max-w-[30vw] xl:max-w-[10vw] xl:mr-5 mb-auto object-contain transition xl:hover:scale-125" />
+                    </div>
+                    
+                    <div className="borr-2 flex flex-col justify-around w-full xl:w-[60%]">
                         <div className="p-2">
                             <p>{texts[language].roelDesc}</p>
                         </div>
@@ -361,12 +373,9 @@ const SkillsPage = () => {
                             <p><span className="text-gray-400">GPU:</span> ASUS RTX 4060 (Thanks Megekko :D)</p>
                             <p><span className="text-gray-400">RAM:</span> Team Group Delta 16GB</p>
                             <p><span className="text-gray-400">MOBO:</span> Gigabyte B550 Gaming X V2</p>
-                            <p><span className="text-gray-400">PSU:</span> CoolerM MWE Gold 650</p>
+                            <p><span className="text-gray-400">PSU:</span> Cooler Master MWE Gold 650 V2</p>
                             <p><span className="text-gray-400">CASE:</span> Antec NX600</p>
                         </div>
-                    </div>
-                    <div className="flex w-[40%]">
-                        <img src={"images/roelPCsm.png"} alt="Roel's PC" className="xl:max-w-[10vw] xl:mr-5 ml-auto object-contain transition xl:hover:scale-125" />
                     </div>
                 </div>
 
@@ -374,8 +383,13 @@ const SkillsPage = () => {
                 <div className="border-2 border-cgreen rounded-t-2xl p-4 mt-[5vh] text-center bg-white/50 dark:bg-black/50">
                     <h3 className="text-2xl font-bold">{texts[language].jitseTitle}</h3>
                 </div>
-                <div className="flex justify-between border-x-2 border-b-2 border-cgreen rounded-b-2xl p-2">
-                    <div className="flex flex-col justify-around w-[60%]">
+                <div className="flex flex-col xl:flex-row justify-between border-x-2 border-b-2 border-cgreen rounded-b-2xl p-2">
+                    
+                    <div className="flex justify-center w-full xl:w-auto order-first xl:order-last">
+                        <img src={"images/jitsePCsm.png"} alt="Jitse's PC" className="max-w-[30vw] xl:max-w-[10vw] xl:mr-5 mb-auto object-contain transition xl:hover:scale-125" />
+                    </div>
+
+                    <div className="flex flex-col justify-around w-full xl:w-[60%]">
                         <div className="p-2">
                             <p>{texts[language].jitseDesc}</p>
                         </div>
@@ -388,17 +402,19 @@ const SkillsPage = () => {
                             <p><span className="text-gray-400">CASE:</span> Aerocool Hive</p>
                         </div>
                     </div>
-                    <div className="flex w-[40%]">
-                        <img src={"images/jitsePCsm.png"} alt="Jitse's PC" className="xl:max-w-[10vw] xl:mr-5 ml-auto object-contain transition xl:hover:scale-125" />
-                    </div>
                 </div>
 
                 {/*Vincent Computer*/}
                 <div className="border-2 border-cgreen rounded-t-2xl p-4 mt-[5vh] text-center bg-white/50 dark:bg-black/50">
                     <h3 className="text-2xl font-bold">{texts[language].vincentTitle}</h3>
                 </div>
-                <div className="flex justify-between border-x-2 border-b-2 border-cgreen rounded-b-2xl p-2">
-                    <div className="flex flex-col justify-around w-[60%]">
+                <div className="flex flex-col xl:flex-row justify-between border-x-2 border-b-2 border-cgreen rounded-b-2xl p-2">
+                    
+                    <div className="flex justify-center w-full xl:w-auto order-first xl:order-last">
+                        <img src={"images/vincentPCsm.png"} alt="Vincent's PC" className="max-w-[30vw] xl:max-w-[10vw] xl:mr-5 mb-auto object-contain transition xl:hover:scale-125" />
+                    </div>
+
+                    <div className="flex flex-col justify-around w-full xl:w-[60%]">
                         <div className="p-2">
                             <p>{texts[language].vincentDesc}</p>
                         </div>
@@ -410,9 +426,6 @@ const SkillsPage = () => {
                             <p><span className="text-gray-400">PSU:</span> Seasonic G12 GM-650</p>
                             <p><span className="text-gray-400">CASE:</span> MSI MAG Forge M100R</p>
                         </div>
-                    </div>
-                    <div className="flex w-[40%]">
-                        <img src={"images/vincentPCsm.png"} alt="Vincent's PC" className="xl:max-w-[10vw] xl:mr-5 ml-auto object-contain transition xl:hover:scale-125" />
                     </div>
                 </div>
 
