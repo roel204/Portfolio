@@ -134,8 +134,7 @@ const ProjectsPage = () => {
                 <h1 id="top" className="gradientText text-4xl xl:text-8xl pt-[6vh]">{texts[language].pageTitle}</h1>
             </div>
 
-            <HashLink to={`/projects#top`}
-                className="z-10 fixed bottom-4 right-4 bg-dgreen dark:bg-cgreen pt-3 pb-2 px-4 rounded-lg">^</HashLink>
+            <HashLink to={`/projects#top`} className="z-10 fixed bottom-4 right-4 bg-dgreen dark:bg-cgreen pt-3 pb-2 px-4 rounded-lg transition xl:hover:scale-125">^</HashLink>
 
             {/*Possibility for 'sticky top-0'*/}
             <div
