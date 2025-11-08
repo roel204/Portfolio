@@ -109,20 +109,20 @@ const SkillsPage = () => {
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">JavaScript</p>
                             </div>
-                            <div className="skillCenter">
-                                <img src={"images/logos/nodejs.png"} alt="NodeJs Logo"
-                                    className="w-14 h-14 object-contain" />
-                                <p className="text-center">Node.js</p>
-                            </div>
-                            <div className="skillCenter">
+                            {/* <div className="skillCenter">
                                 <img src={"images/logos/vite.png"} alt="Vite Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">Vite</p>
-                            </div>
+                            </div> */}
                             <div className="skillCenter">
                                 <img src={"images/logos/react.png"} alt="React Logo"
                                     className="w-14 h-14 object-contain" />
                                 <p className="text-center">React</p>
+                            </div>
+                            <div className="skillCenter">
+                                <img src={"images/logos/nodejs.png"} alt="NodeJs Logo"
+                                    className="w-14 h-14 object-contain" />
+                                <p className="text-center">Node.js</p>
                             </div>
                             <div className="skillBottom">
                                 <img src={"images/logos/express.png"} alt="Express Logo"
@@ -253,20 +253,20 @@ const SkillsPage = () => {
                                     className="skillDesktopImage" />
                                 <p className="skillDesktopText">JavaScript</p>
                             </div>
-                            <div className="skillCenter group">
-                                <img src={"images/logos/nodejs.png"} alt="NodeJs Logo"
-                                    className="skillDesktopImage" />
-                                <p className="skillDesktopText">Node.js</p>
-                            </div>
-                            <div className="skillCenter group">
+                            {/* <div className="skillCenter group">
                                 <img src={"images/logos/vite.png"} alt="Vite Logo"
                                     className="skillDesktopImage" />
                                 <p className="skillDesktopText">Vite</p>
-                            </div>
+                            </div> */}
                             <div className="skillCenter group">
                                 <img src={"images/logos/react.png"} alt="React Logo"
                                     className="skillDesktopImage" />
                                 <p className="skillDesktopText">React</p>
+                            </div>
+                            <div className="skillCenter group">
+                                <img src={"images/logos/nodejs.png"} alt="NodeJs Logo"
+                                    className="skillDesktopImage" />
+                                <p className="skillDesktopText">Node.js</p>
                             </div>
                             <div className="skillBottom group">
                                 <img src={"images/logos/express.png"} alt="Express Logo"
