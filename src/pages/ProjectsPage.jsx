@@ -71,59 +71,67 @@ const ProjectsPage = () => {
 
     const projectsCards = [
         {
-            title: 'Zero-G Guns',
-            tags: 'Unity, VR, Released Game',
+            title: "Flop 'n Drop",
+            tags: "Unity, Mobile, Released Game, Teamwork",
             desc: {
-                en: 'My biggest game yet! It offers a new way of moving in VR.',
-                nl: 'Mijn grootste game tot nu toe! Het biedt een nieuwe manier van bewegen in VR.',
+                en: "A mobile game made during the Game Design and Developmet Minor.",
+                nl: "Een mobiele game gemaakt tijdens de Game Design and Development Minor.",
             },
         },
         {
-            title: 'Hungry Fish',
-            tags: 'Unity, Personal Project',
+            title: "Zero-G Guns",
+            tags: "Unity, VR, Released Game",
             desc: {
-                en: 'A simple fish game made with Unity.',
-                nl: 'Een game over vissen gemaakt met Unity.',
+                en: "My biggest game yet! It offers a new way of moving in VR.",
+                nl: "Mijn grootste game tot nu toe! Het biedt een nieuwe manier van bewegen in VR.",
             },
         },
         {
-            title: 'Reef Keep',
-            tags: 'Unity, Teamwork, CMGT Project',
+            title: "Hungry Fish",
+            tags: "Unity, Personal Project",
+            desc: {
+                en: "A simple fish game made with Unity.",
+                nl: "Een game over vissen gemaakt met Unity.",
+            },
+        },
+        {
+            title: "Reef Keep",
+            tags: "Unity, Teamwork, CMGT Project",
             desc: {
                 en: "A game where you can manage your own Aquatic Ecosystem.",
-                nl: 'Aquatiesche Ecosysteem simulator game',
+                nl: "Aquatiesche Ecosysteem simulator game",
             },
         },
         {
-            title: 'Flex Counter',
-            tags: 'Machine Learning, CMGT Project, React',
+            title: "Flex Counter",
+            tags: "Machine Learning, CMGT Project, React",
             desc: {
                 en: "Machine Learning application that counts your bicep curls using your webcam.",
-                nl: 'Machine Learning app om bicep curls te tellen met je webcam.',
+                nl: "Machine Learning app om bicep curls te tellen met je webcam.",
             },
         },
         {
-            title: 'SpellAI',
-            tags: 'AI, ChatLLM, CMGT Project',
+            title: "SpellAI",
+            tags: "AI, ChatLLM, CMGT Project",
             desc: {
                 en: "An AI (ChatLLM) application that will correct the spelling of your text.",
-                nl: 'Een AI (ChatLLM) app die de spelling in jouw text verbeterd.',
+                nl: "Een AI (ChatLLM) app die de spelling in jouw text verbeterd.",
             },
         },
         {
-            title: 'Stream Team',
-            tags: 'Laravel, Teamwork, CMGT Project',
+            title: "Stream Team",
+            tags: "Laravel, Teamwork, CMGT Project",
             desc: {
                 en: "A website to control Fox-Connect's IP-Car.",
-                nl: 'Een website om de IP-Car van Fox-Connect te besturen.',
+                nl: "Een website om de IP-Car van Fox-Connect te besturen.",
             },
         },
         {
-            title: 'PC Showcase',
-            tags: 'Laravel, CMGT Project',
+            title: "PC Showcase",
+            tags: "Laravel, CMGT Project",
             desc: {
-                en: 'A website made with Laravel to show your custom PC builds.',
-                nl: 'Een website gemaakt met Laravel om je eigen PC te posten.',
+                en: "A website made with Laravel to show your custom PC builds.",
+                nl: "Een website gemaakt met Laravel om je eigen PC te posten.",
             },
         },
     ];
@@ -169,9 +177,86 @@ const ProjectsPage = () => {
                 ))}
             </div>
 
+            {/* Full Projects */}
             <div className="flex flex-col justify-center items-center mt-[5vh] max-w-full min-h-screen">
-                {/* Full Projects */}
 
+                {/* Flop 'n Drop */}
+                <div id="1" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+
+                    {/* Project Title */}
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Flop 'n Drop</h3>
+
+                    {/* Links */}
+                    <div className="flex flex-row absolute bottom-5 xl:bottom-auto xl:top-5 xl:right-5">
+                        <a href="https://play.google.com/store/apps/details?id=com.VisOpLand.FlopnDrop&pcampaignid=roel_portfolio" target="_blank"
+                            className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
+                            rel="noreferrer">
+                            <svg
+                                className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewBox="0 0 576 512">
+                                <path
+                                    d="M420.6 301.9a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m-265.1 0a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m273.7-144.5 47.9-83a10 10 0 1 0 -17.3-10h0l-48.5 84.1a301.3 301.3 0 0 0 -246.6 0L116.2 64.5a10 10 0 1 0 -17.3 10h0l47.9 83C64.5 202.2 8.2 285.6 0 384H576c-8.2-98.5-64.5-181.8-146.9-226.6" />
+                            </svg>
+                            <span className="">Download</span>
+                        </a>
+                    </div>
+
+                    {/* Description */}
+                    {language === 'nl' ? (  
+                        <p className="text-sm xl:text-lg">
+                            Tijdens de Game Design and Development Minor van 2025 aan de Hogeschool Rotterdam werkte ik samen met vier andere studenten aan de game Flop 'n Drop.
+                            In dit team van vijf was ik een van de twee developers die verantwoordelijk waren voor het programmeren van de game in Unity.
+                            <br /><br />
+                            Flop 'n Drop is een mobiele game waarin de speler een vis bestuurt die afdaalt naar de diepten van de oceaan.
+                            Deze vis kan niet zwemmen, dus de vis moet op platformen landen om te voorkomen dat er te veel snelheid wordt opgebouwd,
+                            wat bij de volgende landing schade kan veroorzaken.
+                            Tijdens het afdalen komen spelers langs verschillende biomes, elk met hun eigen obstakels en uitdagingen.
+                            <br /><br />
+                            Door op platformen te landen bouwt de speler een streak op, wat de score-multiplier verhoogt. Zodra de vis te veel schade heeft opgelopen, is het game over.
+                            De eindscore wordt bepaald op basis van de afgelegde afstand en de multiplier, en spelers kunnen hun score vergelijken met hun highscore.
+                            In de toekomst wil ik graag een global leaderboard toevoegen, zodat spelers wereldwijd kunnen strijden om de hoogste score.
+                            <br /><br />
+                            Ik heb ook het achievement system van de game ontworpen en ontwikkeld, dat spelers beloont voor het voltooien van uitdagingen.
+                            Sommige achievements zijn gewoon voor de lol, terwijl andere nieuwe unieke vissen en biomes ontgrendelen.
+                            <br />
+                            Ik heb dit achievement system flexibel en modulair opgebouwd, zodat het eenvoudig samenwerkt met andere onderdelen van de game.
+                            Het is makkelijk om nieuwe achievements toe te voegen, en het systeem kan zelfs worden hergebruikt in toekomstige projecten.
+                            <br /><br />
+                            Ik ben erg trots op wat we met Flop 'n Drop hebben bereikt tijdens deze minor.
+                            Het was een geweldige ervaring om in een team te werken en meer te leren over game development in Unity.
+                            Ook ben ik trots dat ik mijn eerste mobiele game heb uitgebracht op de Google Play Store!
+
+                        </p>
+                    ) : (
+                        <p className="text-sm xl:text-lg">
+                            During the 2025 Game Design and Development Minor at the Rotterdam University of Applied Sciences, I worked on Flop 'n Drop together with four other students.
+                            In this team of five, I was one of the two developers responsible for programming the game in Unity.
+                            <br /><br />
+                            Flop 'n Drop is a mobile game where the player controls a fish descending into the depths of the ocean.
+                            This fish can't swim so it needs to land on platforms to avoid building up too much speed, which can cause fall damage on the next landing.
+                            As players descend, they pass through multiple unique biomes, each introducing new obstacles and challenges.
+                            <br /><br />
+                            Landing on platforms builds up a streak, increasing the player's score multiplier. Once the fish takes too much damage, it's game over.
+                            The final score is based on the distance fallen and the multiplier, and players can compare it to their high score.
+                            In the future I'd like to add a global leaderboard, so players can compete worldwide.
+                            <br /><br />
+                            I also designed and developed the game's achievement system, which rewards players for completing challenges.
+                            Some achievements are just for fun, while others will unlock new unique fish and biomes.
+                            <br />
+                            I made this Achievement system very flexible and modular, so it could easily work together with other elements of the game.
+                            It also makes it easy to add new achievements, and the system could even be reused in future projects.
+                            <br /><br />
+                            Overall, I'm very proud of what we accomplished with Flop 'n Drop during this minor.
+                            It was a great experience working in a team and learning more about game development in Unity.
+                            I'm also very proud to have released my first mobile game on the Google Play Store!
+                        </p>
+                    )}
+                </div>
+
+                {/* Zero-G Guns */}
                 <div id="0" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
@@ -240,6 +325,7 @@ const ProjectsPage = () => {
                     )}
                 </div>
 
+                {/* Hungry Fishies */}
                 <div id="1" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
@@ -295,6 +381,7 @@ const ProjectsPage = () => {
                     )}
                 </div>
 
+                {/* Reef Keep */}
                 <div id="2" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
@@ -430,6 +517,7 @@ const ProjectsPage = () => {
                     )}
                 </div>
 
+                {/* Flex Counter */}
                 <div id="3" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
@@ -504,6 +592,7 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].spellAI}</p>
                 </div>
 
+                {/* Stream Team */}
                 <div id="5" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
@@ -541,6 +630,7 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].streamTeam}</p>
                 </div>
 
+                {/* PC Showcase */}
                 <div id="6" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
