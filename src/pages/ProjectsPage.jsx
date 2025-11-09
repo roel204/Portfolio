@@ -181,7 +181,7 @@ const ProjectsPage = () => {
             <div className="flex flex-col justify-center items-center mt-[5vh] max-w-full min-h-screen">
 
                 {/* Flop 'n Drop */}
-                <div id="1" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="0" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Flop 'n Drop</h3>
@@ -257,7 +257,7 @@ const ProjectsPage = () => {
                 </div>
 
                 {/* Zero-G Guns */}
-                <div id="0" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="1" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Zero-G Guns</h3>
@@ -326,7 +326,7 @@ const ProjectsPage = () => {
                 </div>
 
                 {/* Hungry Fishies */}
-                <div id="1" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="2" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Hungry Fishies</h3>
@@ -382,7 +382,7 @@ const ProjectsPage = () => {
                 </div>
 
                 {/* Reef Keep */}
-                <div id="2" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="3" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Reef Keep</h3>
@@ -518,7 +518,7 @@ const ProjectsPage = () => {
                 </div>
 
                 {/* Flex Counter */}
-                <div id="3" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="4" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Flex Counter</h3>
@@ -555,7 +555,7 @@ const ProjectsPage = () => {
                     <p className="text-sm xl:text-lg">{texts[language].flexCounter}</p>
                 </div>
 
-                <div id="4" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="5" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">SpellAI</h3>
@@ -593,7 +593,7 @@ const ProjectsPage = () => {
                 </div>
 
                 {/* Stream Team */}
-                <div id="5" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="6" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Stream Team</h3>
@@ -631,7 +631,7 @@ const ProjectsPage = () => {
                 </div>
 
                 {/* PC Showcase */}
-                <div id="6" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="7" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">PC Showcase</h3>
