@@ -58,14 +58,12 @@ const ProjectsPage = () => {
             flexCounter: "Flex Counter is a website/app that uses Machine Learning to count the number of bicep curls during a workout session. By using Mediapipe for arm position tracking, users receive real-time feedback. Counting the curls is done by a trained ML5 Neural Network, with the option for KNN and Logic. This web application is developed using React and Tailwind CSS, providing a responsive user experience. I learned a lot about React and Tailwind during the development of this website.",
             spellAI: "With SpellAI, I took my first steps in developing an AI application, aimed at correcting written text. This web application offers a simple interface where users can input their text to be improved. In addition to the basic functionality, SpellAI offers extra options such as speech-to-text to facilitate the writing of new text, a choice of multiple models, and the ability to give specific instructions. All entered text is stored locally to prevent loss if the browser is closed.",
             streamTeam: "Streamteam is a Tailored Learning Environment (TLE) project for the CMGT study at Rotterdam University of Applied Sciences. The project focuses on the existing IP-car, a car controlled via a server with a live feed, which is intended for use in daily activities within care homes. Through this software, the IP-car can connect to a guide who can see a live feed and take control of the car with a controller via the same connection. It is a delivery to VindiQu and FoxConnect. VindiQu already offers livestream daily activities to care homes, and FoxConnect is the developer of the first IP-car, originally intended for private use by people with mobility impairments.",
-            pcShowcase: "The PcShowcase project is my first experience with frameworks. For this school project, I used Laravel to create a simple CRUD application where users can post their computers. The platform also offers the ability to post comments. I used Bootstrap for the styling of the website, resulting in a sleek and user-friendly design.",
         },
         nl: {
             pageTitle: 'MIJN PROJECTEN',
             flexCounter: "Flex Counter is een website/app die gebruikmaakt van Machine Learning om het aantal bicep curls te tellen tijdens een trainingssessie. Door gebruik te maken van Mediapipe voor armpositie tracking, krijgt de gebruiker real-time feedback. Het tellen van de curls wordt mogelijk gemaakt door een getraind ML5 Neural Network, met de optie voor KNN en Logic. Deze webapplicatie is ontwikkeld met React en Tailwind CSS, waardoor een responsive gebruikerservaring wordt geboden. Ik heb tijdens het maken van deze website veel geleerd over React en Tailwind.",
             spellAI: "Met SpellAI heb ik mijn eerste stappen gezet in het ontwikkelen van een AI-applicatie, gericht op het corrigeren van geschreven tekst. Deze webapplicatie biedt een simpele interface waar gebruikers hun tekst kunnen invoeren om verbeterd te worden. Naast de basisfunctionaliteit biedt spellAI extra opties, zoals spraak-naar-tekst om het schrijven van nieuwe tekst makkelijk te maken, keuze uit meerdere modellen, en de mogelijkheid om specifieke instructies te geven. Alle ingevoerde tekst wordt lokaal opgeslagen zodat er niks verloren gaat als de browser gesloten wordt.",
             streamTeam: "Streamteam is een TLE (Tailored Learning Environment) project voor de studie CMGT, Hogeschool Rotterdam. Het project focust op de bestaande IP-car, een via een server te besturen auto met een livefeed, die moet worden ingezet voor dagbesteding binnen zorghuizen. De IP-car kan via deze software verbinden met een gids, die een live beeld te zien krijgt en controle van de auto kan overnemen met een controller via dezelfde verbinding. Het is een oplevering aan VindiQu en FoxConnect. VindiQu biedt al livestream dagbesteding aan zorghuizen, en FoxConnect is de ontwikkelaar van de eerste IP-car, origineel bedoeld voor particulier gebruik van mensen met een motorische beperking.",
-            pcShowcase: "Het PcShowcase project is mijn eerste ervaring met het gebruik van frameworks. Voor dit schoolproject heb ik Laravel gebruikt om een eenvoudige CRUD-applicatie te maken, waar gebruikers hun computers kunnen posten. Het platform biedt ook de mogelijkheid om comments te plaatsen. Ik heb Bootstrap gebruikt voor de styling van de website, waardoor een strak en gebruiksvriendelijk ontwerp ontstaat.",
         },
     };
 
@@ -124,14 +122,6 @@ const ProjectsPage = () => {
             desc: {
                 en: "A website to control Fox-Connect's IP-Car.",
                 nl: "Een website om de IP-Car van Fox-Connect te besturen.",
-            },
-        },
-        {
-            title: "PC Showcase",
-            tags: "Laravel, CMGT Project",
-            desc: {
-                en: "A website made with Laravel to show your custom PC builds.",
-                nl: "Een website gemaakt met Laravel om je eigen PC te posten.",
             },
         },
     ];
@@ -628,32 +618,6 @@ const ProjectsPage = () => {
 
                     {/* Description */}
                     <p className="text-sm xl:text-lg">{texts[language].streamTeam}</p>
-                </div>
-
-                {/* PC Showcase */}
-                <div id="7" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
-
-                    {/* Project Title */}
-                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">PC Showcase</h3>
-
-                    {/* Links */}
-                    <div className="flex flex-row absolute bottom-5 xl:bottom-auto xl:top-5 xl:right-5">
-                        <a href="https://github.com/roel204/PCshowcase" target="_blank"
-                            className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
-                            rel="noreferrer">
-                            <svg
-                                className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
-                                <path
-                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                            </svg>
-                            <span className="">Code</span>
-                        </a>
-                    </div>
-
-                    {/* Description */}
-                    <p className="text-sm xl:text-lg">{texts[language].pcShowcase}</p>
                 </div>
             </div>
         </div>
