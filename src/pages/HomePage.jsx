@@ -11,11 +11,11 @@ const HomePage = () => {
     const texts = {
         en: {
             greet: "Hello I'm:",
-            extraText: "I'm studying Creative Media and Game Technologies (CMGT) at Rotterdam University of Applied Sciences.\nI'm passionate about creative development and building games in Unity.",
+            extraText: "Creative Developer & CMGT Graduate from Rotterdam University of Applied Sciences\nI'm passionate about creating games and systems in Unity",
         },
         nl: {
             greet: 'Hoi ik ben:',
-            extraText: "Ik studeer Creative Media and Game Technologies (CMGT) aan de Hogeschool Rotterdam.\nIk heb een passie voor creative development en het maken van games in Unity.",
+            extraText: "Creative Developer & Afgestudeerd in CMGT aan de Hogeschool Rotterdam\nIk heb een passie voor het ontwikkelen van games en systemen in Unity",
         },
     };
 

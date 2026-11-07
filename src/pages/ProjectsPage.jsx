@@ -72,16 +72,16 @@ const ProjectsPage = () => {
             title: "Flop 'n Drop",
             tags: "Unity, Mobile, Released Game, Teamwork",
             desc: {
-                en: "A mobile game made during the Game Design and Developmet Minor.",
+                en: "A mobile game made during the Game Design and Development Minor.",
                 nl: "Een mobiele game gemaakt tijdens de Game Design and Development Minor.",
             },
         },
         {
             title: "Zero-G Guns",
-            tags: "Unity, VR, Released Game",
+            tags: "Unity, VR, Released Game, Solo",
             desc: {
-                en: "My biggest game yet! It offers a new way of moving in VR.",
-                nl: "Mijn grootste game tot nu toe! Het biedt een nieuwe manier van bewegen in VR.",
+                en: "My first VR game! Shows a new way of moving in VR.",
+                nl: "Mijn eerste VR game! Het biedt een nieuwe manier van bewegen in VR.",
             },
         },
         {
@@ -207,7 +207,6 @@ const ProjectsPage = () => {
                             <br /><br />
                             Door op platformen te landen bouwt de speler een streak op, wat de score-multiplier verhoogt. Zodra de vis te veel schade heeft opgelopen, is het game over.
                             De eindscore wordt bepaald op basis van de afgelegde afstand en de multiplier, en spelers kunnen hun score vergelijken met hun highscore.
-                            In de toekomst wil ik graag een global leaderboard toevoegen, zodat spelers wereldwijd kunnen strijden om de hoogste score.
                             <br /><br />
                             Ik heb ook het achievement system van de game ontworpen en ontwikkeld, dat spelers beloont voor het voltooien van uitdagingen.
                             Sommige achievements zijn gewoon voor de lol, terwijl andere nieuwe unieke vissen en biomes ontgrendelen.
@@ -218,7 +217,10 @@ const ProjectsPage = () => {
                             Ik ben erg trots op wat we met Flop 'n Drop hebben bereikt tijdens deze minor.
                             Het was een geweldige ervaring om in een team te werken en meer te leren over game development in Unity.
                             Ook ben ik trots dat ik mijn eerste mobiele game heb uitgebracht op de Google Play Store!
-
+                            <br /><br />
+                            Na mijn afstuderen nam ik de tijd om de game te verbeteren door de meest gevraagde feature toe te voegen: een online leaderboard.
+                            Gelukkig had ik deze online systemen al ontwikkeld tijdens mijn afstudeerproject Crystalline Cluster, dus die kon ik hergebruiken.
+                            Tijdens het toevoegen van het leaderboard heb ik ook veel andere verbeteringen doorgevoerd en alle bekende bugs opgelost, zodat de game perfect is voor de 2.0-release.
                         </p>
                     ) : (
                         <p className="text-sm xl:text-lg">
@@ -231,7 +233,6 @@ const ProjectsPage = () => {
                             <br /><br />
                             Landing on platforms builds up a streak, increasing the player's score multiplier. Once the fish takes too much damage, it's game over.
                             The final score is based on the distance fallen and the multiplier, and players can compare it to their high score.
-                            In the future I'd like to add a global leaderboard, so players can compete worldwide.
                             <br /><br />
                             I also designed and developed the game's achievement system, which rewards players for completing challenges.
                             Some achievements are just for fun, while others will unlock new unique fish and biomes.
@@ -242,6 +243,10 @@ const ProjectsPage = () => {
                             Overall, I'm very proud of what we accomplished with Flop 'n Drop during this minor.
                             It was a great experience working in a team and learning more about game development in Unity.
                             I'm also very proud to have released my first mobile game on the Google Play Store!
+                            <br /><br />
+                            After I graduated, I took the time to improve the game by adding the most requested feature: an online leaderboard.
+                            Luckily, I had already developed these online systems during my graduation project Crystalline Cluster, so I could reuse those.
+                            While adding the leaderboard, I also made a lot of other improvements and fixed all known bugs to make sure the game is perfect for its 2.0 release.
                         </p>
                     )}
                 </div>
@@ -310,7 +315,7 @@ const ProjectsPage = () => {
                             It also helped identifying probelms that I couldn't see myself becasue I made the game. I created a Discord server where people can give feedback, I also use it to to announce updates.
                             <br /><br />
                             The game is now available on Steam, and I plan to keep working on it when I have the time. Putting the game on Steam took a lot of effort,
-                            but it thought me a lot about the process of publishing a game and marketing it. Which is definetely useful for any future games I will make.
+                            but it tought me a lot about the process of publishing a game and marketing it. Which is definetely useful for any future games I will make.
                         </p>
                     )}
                 </div>
