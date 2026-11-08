@@ -225,6 +225,7 @@ const ProjectsPage = () => {
                             These packages have been the most useful to me. After I have released them, I may release more or create new useful packages from scratch.
                         </p>
                     )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2026 - now</p>
                 </div>
 
                 {/* Flop 'n Drop */}
@@ -306,6 +307,7 @@ const ProjectsPage = () => {
                             While adding the leaderboard, I also made a lot of other improvements and fixed all known bugs to make sure the game is perfect for its 2.0 release.
                         </p>
                     )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2025 - 2026</p>
                 </div>
 
                 {/* Zero-G Guns */}
@@ -375,6 +377,7 @@ const ProjectsPage = () => {
                             but it tought me a lot about the process of publishing a game and marketing it. Which is definetely useful for any future games I will make.
                         </p>
                     )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2025</p>
                 </div>
 
                 {/* Hungry Fishies */}
@@ -417,20 +420,21 @@ const ProjectsPage = () => {
                     {language === 'nl' ? (
                         <p className="text-sm xl:text-lg">
                             Hungry Fish begon als een schoolproject in Excalibur.
-                            Tijdens de zomervakantie in 2023 besloot ik om deze game opnieuw te bouwen in Unity, waarbij ik mijn vaardigheden in game-ontwikkeling verder ontwikkelde.
+                            Tijdens de zomervakantie in 2024 besloot ik om deze game opnieuw te bouwen in Unity, waarbij ik mijn vaardigheden in game-ontwikkeling verder ontwikkelde.
                             Later heb ik de game verbeterd door upgrades, skins en andere game mechanics toe te voegen.
-                            In de zomervakantie van 2024 heb ik de game nog meer geupdate door sprites en code van Reef Keep toe te voegen en een deel van de code opnieuw te schrijven.
+                            In de zomervakantie van 2025 heb ik de game nog meer geupdate door sprites en code van Reef Keep toe te voegen en een deel van de code opnieuw te schrijven.
                             Dit is eigenlijk mijn 'test game' die ik gebruik om nieuwe dingen te leren en mijn code te verbeteren.
                         </p>
                     ) : (
                         <p className="text-sm xl:text-lg">
                             Hungry Fish began as a school project in Excalibur.
-                            During the 2023 summer break, I decided to rebuild this game in Unity, further improving my skills in game development.
+                            During the 2024 summer break, I decided to rebuild this game in Unity, further improving my skills in game development.
                             I later improved the game by adding upgrades, skins, and other game mechanics.
-                            During the 2024 summer break i further improved the game by adding new sprites and improving the code by using the things i learnt from making Reef Keep.
+                            During the 2025 summer break i further improved the game by adding new sprites and improving the code by using the things i learnt from making Reef Keep.
                             This is basically my 'test game' that I use to learn new things and improve my code.
                         </p>
                     )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2023 - 2025</p>
                 </div>
 
                 {/* Reef Keep */}
@@ -567,6 +571,7 @@ const ProjectsPage = () => {
                             to add even more features and make it available on the Playstore.
                         </p>
                     )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2024</p>
                 </div>
 
                 {/* Flex Counter */}
@@ -613,6 +618,7 @@ const ProjectsPage = () => {
                             Flex Counter is a website/app that uses Machine Learning to count the number of bicep curls during a workout session. By using Mediapipe for arm position tracking, users receive real-time feedback. Counting the curls is done by a trained ML5 Neural Network, with the option for KNN and Logic. This web application is developed using React and Tailwind CSS, providing a responsive user experience. I learned a lot about React and Tailwind during the development of this website.
                         </p>
                     )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2024 - 2025</p>
                 </div>
 
                 {/* Extra Projects */}
@@ -664,6 +670,7 @@ const ProjectsPage = () => {
                             Streamteam is a Tailored Learning Environment (TLE) project for the CMGT study at Rotterdam University of Applied Sciences. The project focuses on the existing IP-car, a car controlled via a server with a live feed, which is intended for use in daily activities within care homes. Through this software, the IP-car can connect to a guide who can see a live feed and take control of the car with a controller via the same connection. It is a delivery to VindiQu and FoxConnect. VindiQu already offers livestream daily activities to care homes, and FoxConnect is the developer of the first IP-car, originally intended for private use by people with mobility impairments.
                         </p>
                     )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2023 - 2024</p>
                 </div>
             </div>
         </div>
