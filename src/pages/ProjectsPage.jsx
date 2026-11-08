@@ -65,6 +65,14 @@ const ProjectsPage = () => {
 
     const projectsCards = [
         {
+            title: "Unity Packages",
+            tags: "Unity, Coming soon",
+            desc: {
+                en: "My own packages on the Unity Asset Store!",
+                nl: "Mijn eigen packages op de Unity Asset Store!",
+            },
+        },
+        {
             title: "Flop 'n Drop",
             tags: "Unity, Mobile, Released Game, Teamwork",
             desc: {
@@ -150,8 +158,77 @@ const ProjectsPage = () => {
             {/* Full Projects */}
             <div className="flex flex-col justify-center items-center mt-[5vh] max-w-full min-h-screen">
 
-                {/* Flop 'n Drop */}
+                {/* Unity Packages */}
                 <div id="0" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+
+                    {/* Project Title */}
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Unity Packages</h3>
+
+                    {/* Links */}
+                    {/* <div className="flex flex-row absolute bottom-5 xl:bottom-auto xl:top-5 xl:right-5">
+                        <a href="https://assetstore.unity.com/publishers/165386" target="_blank"
+                            className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
+                            rel="noreferrer">
+                            <svg
+                                className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewBox="0 0 640 640">
+                                <path d="M339.6 155.6L419.7 202.4C422.6 204 422.7 208.6 419.7 210.2L324.5 265.8C321.6 267.5 318.2 267.4 315.5 265.8L220.3 210.2C217.4 208.6 217.3 203.9 220.3 202.4L300.4 155.6L300.4 64L96 183.4L96 422.2L174.4 376.4L174.4 282.8C174.3 279.5 178.2 277.1 181.1 278.9L276.3 334.5C279.2 336.2 280.8 339.2 280.8 342.3L280.8 453.5C280.9 456.8 277 459.2 274.1 457.4L194 410.8L115.6 456.6L320 576L524.4 456.6L446 410.8L365.9 457.6C363.1 459.3 359.1 457.1 359.2 453.7L359.2 342.5C359.2 339.2 361 336.2 363.7 334.7L458.9 279C461.7 277.3 465.7 279.5 465.6 282.9L465.6 376.5L544 422.3L544 183.5L339.6 64.1L339.6 155.7z" />
+                            </svg>
+                            <span className="">Store</span>
+                        </a>
+                    </div> */}
+
+                    {/* Description */}
+                    {language === 'nl' ? (
+                        <p className="text-sm xl:text-lg">
+                            Ik werk momenteel aan het uitbrengen van mijn eigen code packages op de Unity Asset Store!
+                            Ik heb altijd graag in losse systemen/packages gecodeerd om mijn games overzichtelijk te houden.
+                            Voor mij heeft elk nieuw systeem dat ik maakte de ontwikkeling van games versneld. Ik wil mijn packages uitbrengen zodat anderen hier ook van kunnen profiteren.
+                            <br /><br />
+                            De packages zijn nog niet live, maar zullen binnenkort beschikbaar zijn.
+                            Ik moet er eerst voor zorgen dat ze makkelijker te gebruiken zijn, en ze daarna door het reviewproces halen.
+                            <br /><br />
+                            Ik ben van plan om de volgende packages uit te brengen:
+                            <ul className="list-disc list-inside ml-2">
+                                <li>Data Manager | Sla eenvoudig elk soort data overal op.</li>
+                                <li>Sound Manager | Speel geluiden af en pas ze aan via code en GameObjects.</li>
+                                <li>Impact Manager | Laat elk soort effect verschijnen wanneer twee specifieke GameObjects botsen.</li>
+                                <li>Object Pool Manager | Beheer eenvoudig object pools. Dit systeem wordt gebruikt door de Impact Manager.</li>
+                                <li>Scene Transition Manager | Maakt het overgaan tussen scenes eenvoudig te beheren.</li>
+                                <li>Manager Initializer | Een klein hulpscript dat alle manager prefabs in een bepaalde volgorde spawnt.</li>
+                            </ul>
+                            <br />
+                            Deze packages zijn voor mij het nuttigst geweest. Nadat ik ze heb uitgebracht, breng ik misschien nog meer packages uit of maak ik hele nieuwe packages.
+                        </p>
+                    ) : (
+                        <p className="text-sm xl:text-lg">
+                            I'm currently working on releasing my own code packages on the Unity Asset Store!
+                            I have always loved coding in separate systems/packages to keep my games organized.
+                            For me, game development really sped up with each new package that I made. I want to release my packages so others can use them as well.
+                            <br /><br />
+                            The packages are not live yet, but they will be coming soon.
+                            I need to make sure they are easy to use for people other than me, and then put them through the review process.
+                            <br /><br />
+                            I'm planning to release the following packages:
+                            <ul className="list-disc list-inside ml-2">
+                                <li>Data Manager | Easily save any kind of data anywhere.</li>
+                                <li>Sound Manager | Play and manipulate sounds through code and GameObjects.</li>
+                                <li>Impact Manager | Spawn any kind of effect when two specific GameObjects collide.</li>
+                                <li>Object Pool Manager | Easily manage object pools. This package is used by the Impact Manager.</li>
+                                <li>Scene Transition Manager | Makes transitioning between scenes easy to manage.</li>
+                                <li>Manager Initializer | A small helper script that spawns all manager prefabs in a specified order.</li>
+                            </ul>
+                            <br />
+                            These packages have been the most useful to me. After I have released them, I may release more or create new useful packages from scratch.
+                        </p>
+                    )}
+                </div>
+
+                {/* Flop 'n Drop */}
+                <div id="1" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Flop 'n Drop</h3>
@@ -232,7 +309,7 @@ const ProjectsPage = () => {
                 </div>
 
                 {/* Zero-G Guns */}
-                <div id="1" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="2" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Zero-G Guns</h3>
@@ -301,7 +378,7 @@ const ProjectsPage = () => {
                 </div>
 
                 {/* Hungry Fishies */}
-                <div id="2" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="3" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Hungry Fishies</h3>
@@ -357,7 +434,7 @@ const ProjectsPage = () => {
                 </div>
 
                 {/* Reef Keep */}
-                <div id="3" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="4" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Reef Keep</h3>
@@ -493,7 +570,7 @@ const ProjectsPage = () => {
                 </div>
 
                 {/* Flex Counter */}
-                <div id="4" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <div id="5" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Flex Counter</h3>
