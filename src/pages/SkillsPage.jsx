@@ -368,8 +368,10 @@ const SkillsPage = () => {
                         Daardoor heb ik een workflow kunnen ontwikkelen waarmee ik kan profiteren van de snelheid en kennis van AI, en ik mijn code toch overzichtelijk en begrijpelijk houd.
                         <br /><br />
                         Ik gebruik AI vooral voor boilerplate, debugging en code reviews.
+                        <br />
                         Daarom noem ik AI een tool, geen oplossing. AI wordt steeds beter in programmeren, maar je kunt nog steeds niet verwachten dat het alles weet en kan. Ik betrap het nog regelmatig op fouten.
                         Zelfs met nieuwere modellen kan een wijziging op zichzelf kloppen en toch ergens anders in het project iets breken, omdat de AI mijn project niet zo goed kent als ik.
+                        <br />
                         Daarom lees ik alle gegenereerde code zelf door en gebruik ik geen volledig autonome agents.
                         <br /><br />
                         Er is nog een belangrijke reden waarom ik liever geen autonome AI gebruik.
@@ -388,8 +390,10 @@ const SkillsPage = () => {
                         This helped me refine my workflow, so I can benefit from the speed and knowledge of AI while keeping my code clean and understandable.
                         <br /><br />
                         I mostly use AI for things like boilerplate, debugging, and code reviews.
+                        <br />
                         That's why I call AI a tool, not a solution. AI keeps getting better at coding, but you still can't expect it to know and do everything, and I still catch it making mistakes regularly.
                         Even with newer models, a change can look right on its own and still break something elsewhere in the project, because the AI doesn't know my project the way I do.
+                        <br />
                         That's why I read all AI-generated code and don't use fully autonomous agents.
                         <br /><br />
                         There is one more important reason I don't like to use autonomous AI.
