@@ -305,11 +305,27 @@ const ProjectsPage = () => {
                     {/* Description */}
                     {language === 'nl' ? (
                         <p className="text-sm xl:text-lg">
-                            Where We Went is een game die ik in 2026 tijdens de Game Design and Development Minor heb gemaakt. De game is beschikbaar op Steam.
+                            Tijdens het tweede deel van de minor Game Design and Development, dat vier maanden duurde, werkte ik samen met 19 andere getalenteerde studenten aan de ontwikkeling van Where We Went!
+                            Het is een 3D puzzelgame waarin je door een eeuwenoude tombe trekt en puzzels oplost door de drie wachters aan te sturen.
+                            <br /><br />
+                            Als Technical Director van dit project leidde ik vijf andere developers en leerde ik veel over samenwerken in een team.
+                            Ik zorgde ervoor dat onze backlog overzichtelijk en up-to-date was, en dat de developers altijd om hulp konden vragen.
+                            <br /><br />
+                            Na de release van de game was het geweldig om alle reviews door te lezen. Het was vooral leuk om streamers live onze game te zien spelen, want zo zag ik hoe spelers het spel echt ervoeren.
+                            <br />
+                            Na mijn afstuderen heb ik samen met Youri Kelderman de game verbeterd, zodat het spel in een goede staat achterbleef.
                         </p>
                     ) : (
                         <p className="text-sm xl:text-lg">
-                            Where We Went is a game I made in 2026 during the Game Design and Development Minor. The game is available on Steam.
+                            During the second part of the Game Design and Development minor, which lasted four months, I worked together with 19 other talented students to develop Where We Went!
+                            It's a 3D puzzle game in which you venture through an ancient tomb and solve puzzles by commanding its three guardians.
+                            <br /><br />
+                            As Technical Director on this project, I was responsible for leading five other developers, and I learned a lot about working together as a team.
+                            I made sure our backlog was organized and up to date, and that the developers always had someone they could rely on for support.
+                            <br /><br />
+                            After we released the game, it was amazing to read through the reviews that came in. It was especially enjoyable to watch streamers play our game live and see how players experienced it.
+                            <br />
+                            After I graduated, I improved the game together with Youri Kelderman to make sure we left it in a good state.
                         </p>
                     )}
                     <p className="mt-6 text-xs xl:text-sm text-gray-400">2026</p>
