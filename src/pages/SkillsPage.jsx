@@ -368,8 +368,8 @@ const SkillsPage = () => {
                         Daardoor heb ik een workflow kunnen ontwikkelen waarmee ik kan profiteren van de snelheid en kennis van AI, en ik mijn code toch overzichtelijk en begrijpelijk houd.
                         <br /><br />
                         Ik gebruik AI vooral voor boilerplate, debugging en code reviews.
-                        Daarom noem ik AI een tool, geen oplossing. Je kunt niet verwachten dat het alles weet en kan, ik betrap het regelmatig op simpele fouten.
-                        Omdat de context van een AI beperkt is en het zich steeds op één taak richt, kan het de hele codebase breken terwijl het één feature probeert toe te voegen.
+                        Daarom noem ik AI een tool, geen oplossing. AI wordt steeds beter in programmeren, maar je kunt nog steeds niet verwachten dat het alles weet en kan. Ik betrap het nog regelmatig op fouten.
+                        Zelfs met nieuwere modellen kan een wijziging op zichzelf kloppen en toch ergens anders in het project iets breken, omdat de AI mijn project niet zo goed kent als ik.
                         Daarom lees ik alle gegenereerde code zelf door en gebruik ik geen volledig autonome agents.
                         <br /><br />
                         Er is nog een belangrijke reden waarom ik liever geen autonome AI gebruik.
@@ -388,8 +388,8 @@ const SkillsPage = () => {
                         This helped me refine my workflow, so I can benefit from the speed and knowledge of AI while keeping my code clean and understandable.
                         <br /><br />
                         I mostly use AI for things like boilerplate, debugging, and code reviews.
-                        That's why I call AI a tool, not a solution. You can't expect it to know and do everything, I catch it making simple mistakes all the time.
-                        Because an AI's context is limited and it focuses on a single task at a time, it might break the entire codebase while trying to add a single feature.
+                        That's why I call AI a tool, not a solution. AI keeps getting better at coding, but you still can't expect it to know and do everything, and I still catch it making mistakes regularly.
+                        Even with newer models, a change can look right on its own and still break something elsewhere in the project, because the AI doesn't know my project the way I do.
                         That's why I read all AI-generated code and don't use fully autonomous agents.
                         <br /><br />
                         There is one more important reason I don't like to use autonomous AI.
