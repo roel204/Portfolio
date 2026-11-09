@@ -251,6 +251,19 @@ const ProjectsPage = () => {
 
                     {/* Links */}
                     <div className="flex flex-row absolute bottom-5 xl:bottom-auto xl:top-5 xl:right-5">
+                        <a href="https://lnkd.in/p/e7Rhwvck" target="_blank"
+                            className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
+                            rel="noreferrer">
+                            <svg
+                                className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewBox="0 0 640 640">
+                                <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z" />
+                            </svg>
+                            <span className="">Post</span>
+                        </a>
                         <a href="https://play.google.com/store/apps/details?id=com.DataStudent.CrystallineCluster" target="_blank"
                             className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
                             rel="noreferrer">
@@ -269,11 +282,35 @@ const ProjectsPage = () => {
                     {/* Description */}
                     {language === 'nl' ? (
                         <p className="text-sm xl:text-lg">
-                            Crystalline Cluster is mijn afstudeerproject uit 2026. De game is beschikbaar op Google Play.
+                            Crystalline Cluster is mijn afstudeerproject, waarin ik voor het bedrijf DataStudent een online PvP-bordspel heb gebouwd, gebaseerd op Lines of Action.
+                            Dit project was heel anders dan mijn vorige project, Where We Went. Dat was een teamproject, terwijl ik dit keer zelf de volledige verantwoordelijkheid voor het project droeg.
+                            Ik werk graag in een team, maar zelfstandig werken is een van mijn sterke punten.
+                            <br /><br />
+                            Ik onderzocht meerdere onderdelen tegelijk: wat het spel precies is, of jongeren het leuk zouden vinden en hoe een multiplayer-bordspel eigenlijk werkt.
+                            Ik heb verschillende multiplayer frameworks vergeleken en uitgeprobeerd om uit te zoeken welke het beste bij het project past, niet alleen op basis van techniek, maar ook op basis van de kosten voor DataStudent.
+                            <br /><br />
+                            Tijdens de ontwikkeling heb ik de game meerdere keren getest met de doelgroep: jongeren.
+                            Dankzij hun feedback kon ik het spel verbeteren en ervoor zorgen dat ze het ook echt leuk vonden om te spelen.
+                            <br /><br />
+                            Op verzoek van DataStudent heb ik de game ook uitgebracht op Google Play, waar het nu beschikbaar is.
+                            Alles wat ik geleerd heb tijdens mijn studie kwam samen in dit project: een game van begin tot eind onderzoeken, bouwen, testen en uitbrengen.
+                            Ik heb geleerd om onderbouwde keuzes te maken en een project zelfstandig af te ronden. Met dit project ben ik afgestudeerd, en ik ben trots op het resultaat.
                         </p>
                     ) : (
                         <p className="text-sm xl:text-lg">
-                            Crystalline Cluster is my graduation project from 2026. The game is available on Google Play.
+                            Crystalline Cluster is my graduation project, in which I built an online PvP board game based on Lines of Action for the company DataStudent.
+                            This project was very different from my last project, Where We Went. That was a team effort, while this time I took full ownership of the project myself.
+                            I enjoy working in a team, but working independently is one of my strengths.
+                            <br /><br />
+                            I researched several aspects at the same time: what the game is, whether young people would enjoy it, and how a multiplayer board game works.
+                            I compared and tried out multiple multiplayer frameworks to find the best fit for the project, not only looking at how they worked, but also at the costs for DataStudent.
+                            <br /><br />
+                            Throughout development, I playtested the game several times with the target audience: young people.
+                            Their feedback helped me improve the game, so I could make sure it was something they would actually enjoy playing.
+                            <br /><br />
+                            At DataStudent's request, I also released the game on Google Play, where it is now live.
+                            This project brought together everything I learned during my studies: researching, building, testing, and releasing a game from start to finish.
+                            I learned to make informed decisions and to see a project through on my own. I graduated with this project, and I'm proud of the result.
                         </p>
                     )}
                     <p className="mt-6 text-xs xl:text-sm text-gray-400">2026</p>
