@@ -107,7 +107,7 @@ const Navbar = () => {
 
                     <ul className="py-4 space-y-2 w-full">
                         <li>
-                            <a href="mailto:roelhoogendoorn01369@gmail.com" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
+                            <a href="mailto:roel204@proton.me" target="_blank" className="flex flex-col items-center p-2 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
                                 rel="noreferrer noopener">
                                 <svg
                                     className="flex-shrink-0 w-[40%] text-gray-600 dark:text-gray-400 transition duration-75 group-hover:scale-110 group-hover:text-gray-900 dark:group-hover:text-white"
@@ -164,7 +164,7 @@ const Navbar = () => {
                 </div>
 
                 {/*Feedback Button*/}
-                <a href="https://forms.gle/NXLuRV2ut7Gw6gLa7" target="_blank" className="fixed top-4 right-4 bg-dgreen dark:bg-cgreen py-2 px-4 rounded-lg shadow-md z-50 xl:transition xl:hover:scale-125">Feedback?</a>
+                {/* <a href="https://forms.gle/NXLuRV2ut7Gw6gLa7" target="_blank" className="fixed top-4 right-4 bg-dgreen dark:bg-cgreen py-2 px-4 rounded-lg shadow-md z-50 xl:transition xl:hover:scale-125">Feedback?</a> */}
 
             </aside>
         );
@@ -193,7 +193,7 @@ const Navbar = () => {
                     <div className="h-full w-full flex flex-col items-center justify-center border-r-2 border-cgreen px-2 py-4 overflow-y-auto bg-green-200 dark:bg-[#252525]">
 
                         {/*Feedback Button*/}
-                        <a href="https://forms.gle/NXLuRV2ut7Gw6gLa7" target="_blank" className="fixed bottom-4 right-4 bg-dgreen dark:bg-cgreen py-2 px-4 rounded-lg shadow-md z-50">Feedback?</a>
+                        {/* <a href="https://forms.gle/NXLuRV2ut7Gw6gLa7" target="_blank" className="fixed bottom-4 right-4 bg-dgreen dark:bg-cgreen py-2 px-4 rounded-lg shadow-md z-50">Feedback?</a> */}
 
                         <Link to="/" onClick={toggleMobileMenu} className="pb-[5vh]">
                             <img src={"images/RHlogo.png"} alt="RH Logo" className="w-20 rounded object-contain" />

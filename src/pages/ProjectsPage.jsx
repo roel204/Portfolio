@@ -55,33 +55,53 @@ const ProjectsPage = () => {
     const texts = {
         en: {
             pageTitle: "MY PROJECTS",
-            flexCounter: "Flex Counter is a website/app that uses Machine Learning to count the number of bicep curls during a workout session. By using Mediapipe for arm position tracking, users receive real-time feedback. Counting the curls is done by a trained ML5 Neural Network, with the option for KNN and Logic. This web application is developed using React and Tailwind CSS, providing a responsive user experience. I learned a lot about React and Tailwind during the development of this website.",
-            spellAI: "With SpellAI, I took my first steps in developing an AI application, aimed at correcting written text. This web application offers a simple interface where users can input their text to be improved. In addition to the basic functionality, SpellAI offers extra options such as speech-to-text to facilitate the writing of new text, a choice of multiple models, and the ability to give specific instructions. All entered text is stored locally to prevent loss if the browser is closed.",
-            streamTeam: "Streamteam is a Tailored Learning Environment (TLE) project for the CMGT study at Rotterdam University of Applied Sciences. The project focuses on the existing IP-car, a car controlled via a server with a live feed, which is intended for use in daily activities within care homes. Through this software, the IP-car can connect to a guide who can see a live feed and take control of the car with a controller via the same connection. It is a delivery to VindiQu and FoxConnect. VindiQu already offers livestream daily activities to care homes, and FoxConnect is the developer of the first IP-car, originally intended for private use by people with mobility impairments.",
+            extraProjects: "EXTRA PROJECTS",
         },
         nl: {
             pageTitle: 'MIJN PROJECTEN',
-            flexCounter: "Flex Counter is een website/app die gebruikmaakt van Machine Learning om het aantal bicep curls te tellen tijdens een trainingssessie. Door gebruik te maken van Mediapipe voor armpositie tracking, krijgt de gebruiker real-time feedback. Het tellen van de curls wordt mogelijk gemaakt door een getraind ML5 Neural Network, met de optie voor KNN en Logic. Deze webapplicatie is ontwikkeld met React en Tailwind CSS, waardoor een responsive gebruikerservaring wordt geboden. Ik heb tijdens het maken van deze website veel geleerd over React en Tailwind.",
-            spellAI: "Met SpellAI heb ik mijn eerste stappen gezet in het ontwikkelen van een AI-applicatie, gericht op het corrigeren van geschreven tekst. Deze webapplicatie biedt een simpele interface waar gebruikers hun tekst kunnen invoeren om verbeterd te worden. Naast de basisfunctionaliteit biedt spellAI extra opties, zoals spraak-naar-tekst om het schrijven van nieuwe tekst makkelijk te maken, keuze uit meerdere modellen, en de mogelijkheid om specifieke instructies te geven. Alle ingevoerde tekst wordt lokaal opgeslagen zodat er niks verloren gaat als de browser gesloten wordt.",
-            streamTeam: "Streamteam is een TLE (Tailored Learning Environment) project voor de studie CMGT, Hogeschool Rotterdam. Het project focust op de bestaande IP-car, een via een server te besturen auto met een livefeed, die moet worden ingezet voor dagbesteding binnen zorghuizen. De IP-car kan via deze software verbinden met een gids, die een live beeld te zien krijgt en controle van de auto kan overnemen met een controller via dezelfde verbinding. Het is een oplevering aan VindiQu en FoxConnect. VindiQu biedt al livestream dagbesteding aan zorghuizen, en FoxConnect is de ontwikkelaar van de eerste IP-car, origineel bedoeld voor particulier gebruik van mensen met een motorische beperking.",
+            extraProjects: 'EXTRA PROJECTEN',
         },
     };
 
     const projectsCards = [
         {
-            title: "Flop 'n Drop",
-            tags: "Unity, Mobile, Released Game, Teamwork",
+            title: "Unity Packages",
+            tags: "Unity, Coming soon",
             desc: {
-                en: "A mobile game made during the Game Design and Developmet Minor.",
-                nl: "Een mobiele game gemaakt tijdens de Game Design and Development Minor.",
+                en: "My own packages on the Unity Asset Store!",
+                nl: "Mijn eigen packages op de Unity Asset Store!",
+            },
+        },
+        {
+            title: "Crystalline Cluster",
+            tags: "Unity, Graduation Project",
+            desc: {
+                en: "My graduation project, released on Google Play.",
+                nl: "Mijn afstudeerproject, uitgebracht op Google Play.",
+            },
+        },
+        {
+            title: "Where We Went",
+            tags: "Unity, 3D, Teamwork",
+            desc: {
+                en: "A 3D puzzle game made during the Game Design and Development Minor.",
+                nl: "Een 3D puzzle game gemaakt tijdens de Game Design and Development Minor.",
+            },
+        },
+        {
+            title: "Flop 'n Drop",
+            tags: "Unity, 2D, Teamwork",
+            desc: {
+                en: "A mobile arcade game made during the Game Design and Development Minor.",
+                nl: "Een mobiele arcade game gemaakt tijdens de Game Design and Development Minor.",
             },
         },
         {
             title: "Zero-G Guns",
-            tags: "Unity, VR, Released Game",
+            tags: "Unity, VR, Solo",
             desc: {
-                en: "My biggest game yet! It offers a new way of moving in VR.",
-                nl: "Mijn grootste game tot nu toe! Het biedt een nieuwe manier van bewegen in VR.",
+                en: "My first VR game! Shows a new way of moving in VR.",
+                nl: "Mijn eerste VR game! Het biedt een nieuwe manier van bewegen in VR.",
             },
         },
         {
@@ -106,22 +126,6 @@ const ProjectsPage = () => {
             desc: {
                 en: "Machine Learning application that counts your bicep curls using your webcam.",
                 nl: "Machine Learning app om bicep curls te tellen met je webcam.",
-            },
-        },
-        {
-            title: "SpellAI",
-            tags: "AI, ChatLLM, CMGT Project",
-            desc: {
-                en: "An AI (ChatLLM) application that will correct the spelling of your text.",
-                nl: "Een AI (ChatLLM) app die de spelling in jouw text verbeterd.",
-            },
-        },
-        {
-            title: "Stream Team",
-            tags: "Laravel, Teamwork, CMGT Project",
-            desc: {
-                en: "A website to control Fox-Connect's IP-Car.",
-                nl: "Een website om de IP-Car van Fox-Connect te besturen.",
             },
         },
     ];
@@ -158,8 +162,7 @@ const ProjectsPage = () => {
                         <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
                             <svg className="w-8 h-8" xmlns="http://www.w3.org/2000/svg"
                                 viewBox="0 0 448 512">
-                                <path
-                                    d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                                <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                             </svg>
                         </div>
                     </HashLink>
@@ -170,9 +173,203 @@ const ProjectsPage = () => {
             {/* Full Projects */}
             <div className="flex flex-col justify-center items-center mt-[5vh] max-w-full min-h-screen">
 
-                {/* Flop 'n Drop */}
+                {/* MARK: Unity Packages */}
                 <div id="0" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
+                    {/* Project Title */}
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Unity Packages</h3>
+
+                    {/* Links */}
+                    {/* <div className="flex flex-row absolute bottom-5 xl:bottom-auto xl:top-5 xl:right-5">
+                        <a href="https://assetstore.unity.com/publishers/165386" target="_blank"
+                            className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
+                            rel="noreferrer">
+                            <svg
+                                className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewBox="0 0 640 640">
+                                <path d="M339.6 155.6L419.7 202.4C422.6 204 422.7 208.6 419.7 210.2L324.5 265.8C321.6 267.5 318.2 267.4 315.5 265.8L220.3 210.2C217.4 208.6 217.3 203.9 220.3 202.4L300.4 155.6L300.4 64L96 183.4L96 422.2L174.4 376.4L174.4 282.8C174.3 279.5 178.2 277.1 181.1 278.9L276.3 334.5C279.2 336.2 280.8 339.2 280.8 342.3L280.8 453.5C280.9 456.8 277 459.2 274.1 457.4L194 410.8L115.6 456.6L320 576L524.4 456.6L446 410.8L365.9 457.6C363.1 459.3 359.1 457.1 359.2 453.7L359.2 342.5C359.2 339.2 361 336.2 363.7 334.7L458.9 279C461.7 277.3 465.7 279.5 465.6 282.9L465.6 376.5L544 422.3L544 183.5L339.6 64.1L339.6 155.7z" />
+                            </svg>
+                            <span className="">Store</span>
+                        </a>
+                    </div> */}
+
+                    {/* Description */}
+                    {language === 'nl' ? (
+                        <p className="text-sm xl:text-lg">
+                            Ik werk momenteel aan het uitbrengen van mijn eigen code packages op de Unity Asset Store!
+                            Ik heb altijd graag in losse systemen/packages gecodeerd om mijn games overzichtelijk te houden.
+                            Voor mij heeft elk nieuw systeem dat ik maakte de ontwikkeling van games versneld. Ik wil mijn packages uitbrengen zodat anderen hier ook van kunnen profiteren.
+                            <br /><br />
+                            De packages zijn nog niet live, maar zullen binnenkort beschikbaar zijn.
+                            Ik moet er eerst voor zorgen dat ze makkelijker te gebruiken zijn, en ze daarna door het reviewproces halen.
+                            <br /><br />
+                            Ik ben van plan om de volgende packages uit te brengen:
+                            <ul className="list-disc list-inside ml-2">
+                                <li>Data Manager | Sla eenvoudig elk soort data overal op.</li>
+                                <li>Sound Manager | Speel geluiden af en pas ze aan via code en GameObjects.</li>
+                                <li>Impact Manager | Laat elk soort effect verschijnen wanneer twee specifieke GameObjects botsen.</li>
+                                <li>Object Pool Manager | Beheer eenvoudig object pools. Dit systeem wordt gebruikt door de Impact Manager.</li>
+                                <li>Scene Transition Manager | Maakt het overgaan tussen scenes eenvoudig te beheren.</li>
+                                <li>Manager Initializer | Een klein hulpscript dat alle manager prefabs in een bepaalde volgorde spawnt.</li>
+                            </ul>
+                            <br />
+                            Deze packages zijn voor mij het nuttigst geweest. Nadat ik ze heb uitgebracht, breng ik misschien nog meer packages uit of maak ik hele nieuwe packages.
+                        </p>
+                    ) : (
+                        <p className="text-sm xl:text-lg">
+                            I'm currently working on releasing my own code packages on the Unity Asset Store!
+                            I have always loved coding in separate systems/packages to keep my games organized.
+                            For me, game development really sped up with each new package that I made. I want to release my packages so others can use them as well.
+                            <br /><br />
+                            The packages are not live yet, but they will be coming soon.
+                            I need to make sure they are easy to use for people other than me, and then put them through the review process.
+                            <br /><br />
+                            I'm planning to release the following packages:
+                            <ul className="list-disc list-inside ml-2">
+                                <li>Data Manager | Easily save any kind of data anywhere.</li>
+                                <li>Sound Manager | Play and manipulate sounds through code and GameObjects.</li>
+                                <li>Impact Manager | Spawn any kind of effect when two specific GameObjects collide.</li>
+                                <li>Object Pool Manager | Easily manage object pools. This package is used by the Impact Manager.</li>
+                                <li>Scene Transition Manager | Makes transitioning between scenes easy to manage.</li>
+                                <li>Manager Initializer | A small helper script that spawns all manager prefabs in a specified order.</li>
+                            </ul>
+                            <br />
+                            These packages have been the most useful to me. After I have released them, I may release more or create new useful packages from scratch.
+                        </p>
+                    )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2026 - now</p>
+                </div>
+
+                {/* MARK: Crystalline Cluster */}
+                <div id="1" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+
+                    {/* Project Title */}
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Crystalline Cluster</h3>
+
+                    {/* Links */}
+                    <div className="flex flex-row absolute bottom-5 xl:bottom-auto xl:top-5 xl:right-5">
+                        <a href="https://lnkd.in/p/e7Rhwvck" target="_blank"
+                            className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
+                            rel="noreferrer">
+                            <svg
+                                className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewBox="0 0 640 640">
+                                <path d="M512 96L127.9 96C110.3 96 96 110.5 96 128.3L96 511.7C96 529.5 110.3 544 127.9 544L512 544C529.6 544 544 529.5 544 511.7L544 128.3C544 110.5 529.6 96 512 96zM231.4 480L165 480L165 266.2L231.5 266.2L231.5 480L231.4 480zM198.2 160C219.5 160 236.7 177.2 236.7 198.5C236.7 219.8 219.5 237 198.2 237C176.9 237 159.7 219.8 159.7 198.5C159.7 177.2 176.9 160 198.2 160zM480.3 480L413.9 480L413.9 376C413.9 351.2 413.4 319.3 379.4 319.3C344.8 319.3 339.5 346.3 339.5 374.2L339.5 480L273.1 480L273.1 266.2L336.8 266.2L336.8 295.4L337.7 295.4C346.6 278.6 368.3 260.9 400.6 260.9C467.8 260.9 480.3 305.2 480.3 362.8L480.3 480z" />
+                            </svg>
+                            <span className="">Post</span>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.DataStudent.CrystallineCluster" target="_blank"
+                            className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
+                            rel="noreferrer">
+                            <svg
+                                className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewBox="0 0 640 640">
+                                <path d="M389.6 298.3L168.9 77L449.7 238.2L389.6 298.3zM111.3 64C98.3 70.8 89.6 83.2 89.6 99.3L89.6 540.6C89.6 556.7 98.3 569.1 111.3 575.9L367.9 319.9L111.3 64zM536.5 289.6L477.6 255.5L411.9 320L477.6 384.5L537.7 350.4C555.7 336.1 555.7 303.9 536.5 289.6zM168.9 563L449.7 401.8L389.6 341.7L168.9 563z" />
+                            </svg>
+                            <span className="">Play</span>
+                        </a>
+                    </div>
+
+                    {/* Description */}
+                    {language === 'nl' ? (
+                        <p className="text-sm xl:text-lg">
+                            Crystalline Cluster is mijn afstudeerproject, waarin ik voor het bedrijf DataStudent een online PvP-bordspel heb gebouwd, gebaseerd op Lines of Action.
+                            Dit project was heel anders dan mijn vorige project, Where We Went. Dat was een teamproject, terwijl ik dit keer zelf de volledige verantwoordelijkheid voor het project droeg.
+                            Ik werk graag in een team, maar zelfstandig werken is een van mijn sterke punten.
+                            <br /><br />
+                            Ik onderzocht meerdere onderdelen tegelijk: wat het spel precies is, of jongeren het leuk zouden vinden en hoe een multiplayer-bordspel eigenlijk werkt.
+                            Ik heb verschillende multiplayer frameworks vergeleken en uitgeprobeerd om uit te zoeken welke het beste bij het project past, niet alleen op basis van techniek, maar ook op basis van de kosten voor DataStudent.
+                            <br /><br />
+                            Tijdens de ontwikkeling heb ik de game meerdere keren getest met de doelgroep: jongeren.
+                            Dankzij hun feedback kon ik het spel verbeteren en ervoor zorgen dat ze het ook echt leuk vonden om te spelen.
+                            <br /><br />
+                            Op verzoek van DataStudent heb ik de game ook uitgebracht op Google Play, waar het nu beschikbaar is.
+                            Alles wat ik geleerd heb tijdens mijn studie kwam samen in dit project: een game van begin tot eind onderzoeken, bouwen, testen en uitbrengen.
+                            Ik heb geleerd om onderbouwde keuzes te maken en een project zelfstandig af te ronden. Met dit project ben ik afgestudeerd, en ik ben trots op het resultaat.
+                        </p>
+                    ) : (
+                        <p className="text-sm xl:text-lg">
+                            Crystalline Cluster is my graduation project, in which I built an online PvP board game based on Lines of Action for the company DataStudent.
+                            This project was very different from my last project, Where We Went. That was a team effort, while this time I took full ownership of the project myself.
+                            I enjoy working in a team, but working independently is one of my strengths.
+                            <br /><br />
+                            I researched several aspects at the same time: what the game is, whether young people would enjoy it, and how a multiplayer board game works.
+                            I compared and tried out multiple multiplayer frameworks to find the best fit for the project, not only looking at how they worked, but also at the costs for DataStudent.
+                            <br /><br />
+                            Throughout development, I playtested the game several times with the target audience: young people.
+                            Their feedback helped me improve the game, so I could make sure it was something they would actually enjoy playing.
+                            <br /><br />
+                            At DataStudent's request, I also released the game on Google Play, where it is now live.
+                            This project brought together everything I learned during my studies: researching, building, testing, and releasing a game from start to finish.
+                            I learned to make informed decisions and to see a project through on my own. I graduated with this project, and I'm proud of the result.
+                        </p>
+                    )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2026</p>
+                </div>
+
+                {/* MARK: Where We Went */}
+                <div id="2" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+
+                    {/* Project Title */}
+                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Where We Went</h3>
+
+                    {/* Links */}
+                    <div className="flex flex-row absolute bottom-5 xl:bottom-auto xl:top-5 xl:right-5">
+                        <a href="https://store.steampowered.com/app/4179960/Where_We_Went/" target="_blank"
+                            className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
+                            rel="noreferrer">
+                            <svg
+                                className="w-12 h-12 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110 pr-1"
+                                aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="currentColor"
+                                viewBox="0 0 570 570">
+                                <path d="M568 320C568 457 456.8 568 319.6 568C205.8 568 110 491.7 80.6 387.6L175.8 426.9C182.2 459 210.7 483.3 244.7 483.3C283.9 483.3 316.6 450.9 314.9 409.8L399.4 349.6C451.5 350.9 495.2 308.7 495.2 256.1C495.2 204.5 453.2 162.6 401.5 162.6C349.8 162.6 307.8 204.6 307.8 256.1L307.8 257.3L248.6 343C233.1 342.1 217.9 346.4 205.1 355.1L72 300.1C82.2 172.4 189.1 72 319.6 72C456.8 72 568 183 568 320zM227.7 448.3L197.2 435.7C202.8 447.3 212.5 456.5 224.4 461.5C251.3 472.7 282.2 459.9 293.4 433.1C298.8 420.1 298.9 405.8 293.5 392.8C288.1 379.8 278 369.6 265 364.2C252.1 358.8 238.3 359 226.1 363.6L257.6 376.6C277.4 384.8 286.8 407.5 278.5 427.3C270.2 447.2 247.5 456.5 227.7 448.3zM401.5 193.8C435.9 193.8 463.8 221.7 463.8 256.1C463.8 290.5 435.9 318.4 401.5 318.4C367.1 318.4 339.2 290.5 339.2 256.1C339.2 221.7 367.1 193.8 401.5 193.8zM401.6 302.8C427.4 302.8 448.4 281.8 448.4 256C448.4 230.2 427.4 209.2 401.6 209.2C375.8 209.2 354.8 230.2 354.8 256C354.8 281.8 375.8 302.8 401.6 302.8z" />
+                            </svg>
+                            <span className="">Steam</span>
+                        </a>
+                    </div>
+
+                    {/* Description */}
+                    {language === 'nl' ? (
+                        <p className="text-sm xl:text-lg">
+                            Tijdens het tweede deel van de minor Game Design and Development, dat vier maanden duurde, werkte ik samen met 19 andere getalenteerde studenten aan de ontwikkeling van Where We Went!
+                            Het is een 3D puzzelgame waarin je door een eeuwenoude tombe trekt en puzzels oplost door de drie wachters aan te sturen.
+                            <br /><br />
+                            Als Technical Director van dit project leidde ik vijf andere developers en leerde ik veel over samenwerken in een team.
+                            Ik zorgde ervoor dat onze backlog overzichtelijk en up-to-date was, en dat de developers altijd om hulp konden vragen.
+                            <br /><br />
+                            Na de release van de game was het geweldig om alle reviews door te lezen. Het was vooral leuk om streamers live onze game te zien spelen, want zo zag ik hoe spelers het spel echt ervoeren.
+                            <br />
+                            Na mijn afstuderen heb ik samen met Youri Kelderman de game verbeterd, zodat het spel in een goede staat achterbleef.
+                        </p>
+                    ) : (
+                        <p className="text-sm xl:text-lg">
+                            During the second part of the Game Design and Development minor, which lasted four months, I worked together with 19 other talented students to develop Where We Went!
+                            It's a 3D puzzle game in which you venture through an ancient tomb and solve puzzles by commanding its three guardians.
+                            <br /><br />
+                            As Technical Director on this project, I was responsible for leading five other developers, and I learned a lot about working together as a team.
+                            I made sure our backlog was organized and up to date, and that the developers always had someone they could rely on for support.
+                            <br /><br />
+                            After we released the game, it was amazing to read through the reviews that came in. It was especially enjoyable to watch streamers play our game live and see how players experienced it.
+                            <br />
+                            After I graduated, I improved the game together with Youri Kelderman to make sure we left it in a good state.
+                        </p>
+                    )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2026</p>
+                </div>
+
+                {/* MARK: Flop 'n Drop */}
+                <div id="3" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Flop 'n Drop</h3>
 
@@ -186,16 +383,15 @@ const ProjectsPage = () => {
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
-                                viewBox="0 0 576 512">
-                                <path
-                                    d="M420.6 301.9a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m-265.1 0a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m273.7-144.5 47.9-83a10 10 0 1 0 -17.3-10h0l-48.5 84.1a301.3 301.3 0 0 0 -246.6 0L116.2 64.5a10 10 0 1 0 -17.3 10h0l47.9 83C64.5 202.2 8.2 285.6 0 384H576c-8.2-98.5-64.5-181.8-146.9-226.6" />
+                                viewBox="0 0 640 640">
+                                <path d="M389.6 298.3L168.9 77L449.7 238.2L389.6 298.3zM111.3 64C98.3 70.8 89.6 83.2 89.6 99.3L89.6 540.6C89.6 556.7 98.3 569.1 111.3 575.9L367.9 319.9L111.3 64zM536.5 289.6L477.6 255.5L411.9 320L477.6 384.5L537.7 350.4C555.7 336.1 555.7 303.9 536.5 289.6zM168.9 563L449.7 401.8L389.6 341.7L168.9 563z" />
                             </svg>
-                            <span className="">Download</span>
+                            <span className="">Play</span>
                         </a>
                     </div>
 
                     {/* Description */}
-                    {language === 'nl' ? (  
+                    {language === 'nl' ? (
                         <p className="text-sm xl:text-lg">
                             Tijdens de Game Design and Development Minor van 2025 aan de Hogeschool Rotterdam werkte ik samen met vier andere studenten aan de game Flop 'n Drop.
                             In dit team van vijf was ik een van de twee developers die verantwoordelijk waren voor het programmeren van de game in Unity.
@@ -207,7 +403,6 @@ const ProjectsPage = () => {
                             <br /><br />
                             Door op platformen te landen bouwt de speler een streak op, wat de score-multiplier verhoogt. Zodra de vis te veel schade heeft opgelopen, is het game over.
                             De eindscore wordt bepaald op basis van de afgelegde afstand en de multiplier, en spelers kunnen hun score vergelijken met hun highscore.
-                            In de toekomst wil ik graag een global leaderboard toevoegen, zodat spelers wereldwijd kunnen strijden om de hoogste score.
                             <br /><br />
                             Ik heb ook het achievement system van de game ontworpen en ontwikkeld, dat spelers beloont voor het voltooien van uitdagingen.
                             Sommige achievements zijn gewoon voor de lol, terwijl andere nieuwe unieke vissen en biomes ontgrendelen.
@@ -218,7 +413,10 @@ const ProjectsPage = () => {
                             Ik ben erg trots op wat we met Flop 'n Drop hebben bereikt tijdens deze minor.
                             Het was een geweldige ervaring om in een team te werken en meer te leren over game development in Unity.
                             Ook ben ik trots dat ik mijn eerste mobiele game heb uitgebracht op de Google Play Store!
-
+                            <br /><br />
+                            Na mijn afstuderen nam ik de tijd om de game te verbeteren door de meest gevraagde feature toe te voegen: een online leaderboard.
+                            Gelukkig had ik deze online systemen al ontwikkeld tijdens mijn afstudeerproject Crystalline Cluster, dus die kon ik hergebruiken.
+                            Tijdens het toevoegen van het leaderboard heb ik ook veel andere verbeteringen doorgevoerd en alle bekende bugs opgelost, zodat de game perfect is voor de 2.0-release.
                         </p>
                     ) : (
                         <p className="text-sm xl:text-lg">
@@ -231,7 +429,6 @@ const ProjectsPage = () => {
                             <br /><br />
                             Landing on platforms builds up a streak, increasing the player's score multiplier. Once the fish takes too much damage, it's game over.
                             The final score is based on the distance fallen and the multiplier, and players can compare it to their high score.
-                            In the future I'd like to add a global leaderboard, so players can compete worldwide.
                             <br /><br />
                             I also designed and developed the game's achievement system, which rewards players for completing challenges.
                             Some achievements are just for fun, while others will unlock new unique fish and biomes.
@@ -242,12 +439,17 @@ const ProjectsPage = () => {
                             Overall, I'm very proud of what we accomplished with Flop 'n Drop during this minor.
                             It was a great experience working in a team and learning more about game development in Unity.
                             I'm also very proud to have released my first mobile game on the Google Play Store!
+                            <br /><br />
+                            After I graduated, I took the time to improve the game by adding the most requested feature: an online leaderboard.
+                            Luckily, I had already developed these online systems during my graduation project Crystalline Cluster, so I could reuse those.
+                            While adding the leaderboard, I also made a lot of other improvements and fixed all known bugs to make sure the game is perfect for its 2.0 release.
                         </p>
                     )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2025 - 2026</p>
                 </div>
 
-                {/* Zero-G Guns */}
-                <div id="1" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                {/* MARK: Zero-G Guns */}
+                <div id="4" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Zero-G Guns</h3>
@@ -263,8 +465,7 @@ const ProjectsPage = () => {
                                 xmlns="http://www.w3.org/2000/svg"
                                 fill="currentColor"
                                 viewBox="0 0 570 570">
-                                <path
-                                    d="M568 320C568 457 456.8 568 319.6 568C205.8 568 110 491.7 80.6 387.6L175.8 426.9C182.2 459 210.7 483.3 244.7 483.3C283.9 483.3 316.6 450.9 314.9 409.8L399.4 349.6C451.5 350.9 495.2 308.7 495.2 256.1C495.2 204.5 453.2 162.6 401.5 162.6C349.8 162.6 307.8 204.6 307.8 256.1L307.8 257.3L248.6 343C233.1 342.1 217.9 346.4 205.1 355.1L72 300.1C82.2 172.4 189.1 72 319.6 72C456.8 72 568 183 568 320zM227.7 448.3L197.2 435.7C202.8 447.3 212.5 456.5 224.4 461.5C251.3 472.7 282.2 459.9 293.4 433.1C298.8 420.1 298.9 405.8 293.5 392.8C288.1 379.8 278 369.6 265 364.2C252.1 358.8 238.3 359 226.1 363.6L257.6 376.6C277.4 384.8 286.8 407.5 278.5 427.3C270.2 447.2 247.5 456.5 227.7 448.3zM401.5 193.8C435.9 193.8 463.8 221.7 463.8 256.1C463.8 290.5 435.9 318.4 401.5 318.4C367.1 318.4 339.2 290.5 339.2 256.1C339.2 221.7 367.1 193.8 401.5 193.8zM401.6 302.8C427.4 302.8 448.4 281.8 448.4 256C448.4 230.2 427.4 209.2 401.6 209.2C375.8 209.2 354.8 230.2 354.8 256C354.8 281.8 375.8 302.8 401.6 302.8z" />
+                                <path d="M568 320C568 457 456.8 568 319.6 568C205.8 568 110 491.7 80.6 387.6L175.8 426.9C182.2 459 210.7 483.3 244.7 483.3C283.9 483.3 316.6 450.9 314.9 409.8L399.4 349.6C451.5 350.9 495.2 308.7 495.2 256.1C495.2 204.5 453.2 162.6 401.5 162.6C349.8 162.6 307.8 204.6 307.8 256.1L307.8 257.3L248.6 343C233.1 342.1 217.9 346.4 205.1 355.1L72 300.1C82.2 172.4 189.1 72 319.6 72C456.8 72 568 183 568 320zM227.7 448.3L197.2 435.7C202.8 447.3 212.5 456.5 224.4 461.5C251.3 472.7 282.2 459.9 293.4 433.1C298.8 420.1 298.9 405.8 293.5 392.8C288.1 379.8 278 369.6 265 364.2C252.1 358.8 238.3 359 226.1 363.6L257.6 376.6C277.4 384.8 286.8 407.5 278.5 427.3C270.2 447.2 247.5 456.5 227.7 448.3zM401.5 193.8C435.9 193.8 463.8 221.7 463.8 256.1C463.8 290.5 435.9 318.4 401.5 318.4C367.1 318.4 339.2 290.5 339.2 256.1C339.2 221.7 367.1 193.8 401.5 193.8zM401.6 302.8C427.4 302.8 448.4 281.8 448.4 256C448.4 230.2 427.4 209.2 401.6 209.2C375.8 209.2 354.8 230.2 354.8 256C354.8 281.8 375.8 302.8 401.6 302.8z" />
                             </svg>
                             <span className="">Steam</span>
                         </a>
@@ -310,13 +511,14 @@ const ProjectsPage = () => {
                             It also helped identifying probelms that I couldn't see myself becasue I made the game. I created a Discord server where people can give feedback, I also use it to to announce updates.
                             <br /><br />
                             The game is now available on Steam, and I plan to keep working on it when I have the time. Putting the game on Steam took a lot of effort,
-                            but it thought me a lot about the process of publishing a game and marketing it. Which is definetely useful for any future games I will make.
+                            but it tought me a lot about the process of publishing a game and marketing it. Which is definetely useful for any future games I will make.
                         </p>
                     )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2025</p>
                 </div>
 
-                {/* Hungry Fishies */}
-                <div id="2" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                {/* MARK: Hungry Fishies */}
+                <div id="5" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Hungry Fishies</h3>
@@ -330,8 +532,7 @@ const ProjectsPage = () => {
                                 className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
-                                <path
-                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
                             </svg>
                             <span className="">Code</span>
                         </a>
@@ -341,13 +542,10 @@ const ProjectsPage = () => {
                             <svg
                                 className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
                                 aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg"
-                                fill="currentColor"
-                                viewBox="0 0 576 512">
-                                <path
-                                    d="M420.6 301.9a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m-265.1 0a24 24 0 1 1 24-24 24 24 0 0 1 -24 24m273.7-144.5 47.9-83a10 10 0 1 0 -17.3-10h0l-48.5 84.1a301.3 301.3 0 0 0 -246.6 0L116.2 64.5a10 10 0 1 0 -17.3 10h0l47.9 83C64.5 202.2 8.2 285.6 0 384H576c-8.2-98.5-64.5-181.8-146.9-226.6" />
+                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
+                                <path d="M71.9 34.8C50.2 47.7 7.4 96.8 7 109.7v21.3c0 27.1 25.3 50.8 48.3 50.8 27.6 0 50.5-22.9 50.5-50 0 27.1 22.2 50 49.8 50s49-22.9 49-50c0 27.1 23.6 50 51.2 50h.5c27.6 0 51.2-22.9 51.2-50 0 27.1 21.5 50 49 50s49.8-22.9 49.8-50c0 27.1 23 50 50.5 50 23 0 48.3-23.8 48.3-50.8v-21.3c-.4-12.9-43.2-62.1-64.9-75C372.6 32.4 325.8 32 256 32S91.1 33.1 71.9 34.8zm132.3 134.4c-22 38.4-77.9 38.7-99.9 .3-13.2 23.1-43.2 32.1-56 27.7-3.9 40.2-13.7 237.1 17.7 269.2 80 18.7 302.1 18.1 379.8 0 31.7-32.3 21.3-232 17.8-269.2-12.9 4.4-42.9-4.6-56-27.7-22 38.5-77.9 38.1-99.9-.2-7.1 12.5-23.1 28.9-51.8 28.9a57.5 57.5 0 0 1 -51.8-28.9zm-41.6 53.8c16.5 0 31.1 0 49.2 19.8a436.9 436.9 0 0 1 88.2 0C318.2 223 332.9 223 349.3 223c52.3 0 65.2 77.5 83.9 144.5 17.3 62.2-5.5 63.7-34 63.7-42.2-1.6-65.5-32.2-65.5-62.8-39.3 6.4-101.9 8.8-155.6 0 0 30.6-23.3 61.2-65.5 62.8-28.4-.1-51.2-1.6-33.9-63.7 18.7-67 31.6-144.5 83.9-144.5zM256 270.8s-44.4 40.8-52.4 55.2l29-1.2v25.3c0 1.6 21.3 .2 23.3 .2 11.7 .5 23.3 1 23.3-.2v-25.3l29 1.2c-8-14.5-52.4-55.2-52.4-55.2z" />
                             </svg>
-                            <span className="">Download</span>
+                            <span className="">Itch.io</span>
                         </a>
                     </div>
 
@@ -355,24 +553,25 @@ const ProjectsPage = () => {
                     {language === 'nl' ? (
                         <p className="text-sm xl:text-lg">
                             Hungry Fish begon als een schoolproject in Excalibur.
-                            Tijdens de zomervakantie in 2023 besloot ik om deze game opnieuw te bouwen in Unity, waarbij ik mijn vaardigheden in game-ontwikkeling verder ontwikkelde.
+                            Tijdens de zomervakantie in 2024 besloot ik om deze game opnieuw te bouwen in Unity, waarbij ik mijn vaardigheden in game-ontwikkeling verder ontwikkelde.
                             Later heb ik de game verbeterd door upgrades, skins en andere game mechanics toe te voegen.
-                            In de zomervakantie van 2024 heb ik de game nog meer geupdate door sprites en code van Reef Keep toe te voegen en een deel van de code opnieuw te schrijven.
+                            In de zomervakantie van 2025 heb ik de game nog meer geupdate door sprites en code van Reef Keep toe te voegen en een deel van de code opnieuw te schrijven.
                             Dit is eigenlijk mijn 'test game' die ik gebruik om nieuwe dingen te leren en mijn code te verbeteren.
                         </p>
                     ) : (
                         <p className="text-sm xl:text-lg">
                             Hungry Fish began as a school project in Excalibur.
-                            During the 2023 summer break, I decided to rebuild this game in Unity, further improving my skills in game development.
+                            During the 2024 summer break, I decided to rebuild this game in Unity, further improving my skills in game development.
                             I later improved the game by adding upgrades, skins, and other game mechanics.
-                            During the 2024 summer break i further improved the game by adding new sprites and improving the code by using the things i learnt from making Reef Keep.
+                            During the 2025 summer break i further improved the game by adding new sprites and improving the code by using the things i learnt from making Reef Keep.
                             This is basically my 'test game' that I use to learn new things and improve my code.
                         </p>
                     )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2023 - 2025</p>
                 </div>
 
-                {/* Reef Keep */}
-                <div id="3" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                {/* MARK: Reef Keep */}
+                <div id="6" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Reef Keep</h3>
@@ -386,8 +585,7 @@ const ProjectsPage = () => {
                                 className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
-                                <path
-                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
                             </svg>
                             <span className="">Code</span>
                         </a>
@@ -398,10 +596,9 @@ const ProjectsPage = () => {
                                 className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
-                                <path
-                                    d="M71.9 34.8C50.2 47.7 7.4 96.8 7 109.7v21.3c0 27.1 25.3 50.8 48.3 50.8 27.6 0 50.5-22.9 50.5-50 0 27.1 22.2 50 49.8 50s49-22.9 49-50c0 27.1 23.6 50 51.2 50h.5c27.6 0 51.2-22.9 51.2-50 0 27.1 21.5 50 49 50s49.8-22.9 49.8-50c0 27.1 23 50 50.5 50 23 0 48.3-23.8 48.3-50.8v-21.3c-.4-12.9-43.2-62.1-64.9-75C372.6 32.4 325.8 32 256 32S91.1 33.1 71.9 34.8zm132.3 134.4c-22 38.4-77.9 38.7-99.9 .3-13.2 23.1-43.2 32.1-56 27.7-3.9 40.2-13.7 237.1 17.7 269.2 80 18.7 302.1 18.1 379.8 0 31.7-32.3 21.3-232 17.8-269.2-12.9 4.4-42.9-4.6-56-27.7-22 38.5-77.9 38.1-99.9-.2-7.1 12.5-23.1 28.9-51.8 28.9a57.5 57.5 0 0 1 -51.8-28.9zm-41.6 53.8c16.5 0 31.1 0 49.2 19.8a436.9 436.9 0 0 1 88.2 0C318.2 223 332.9 223 349.3 223c52.3 0 65.2 77.5 83.9 144.5 17.3 62.2-5.5 63.7-34 63.7-42.2-1.6-65.5-32.2-65.5-62.8-39.3 6.4-101.9 8.8-155.6 0 0 30.6-23.3 61.2-65.5 62.8-28.4-.1-51.2-1.6-33.9-63.7 18.7-67 31.6-144.5 83.9-144.5zM256 270.8s-44.4 40.8-52.4 55.2l29-1.2v25.3c0 1.6 21.3 .2 23.3 .2 11.7 .5 23.3 1 23.3-.2v-25.3l29 1.2c-8-14.5-52.4-55.2-52.4-55.2z" />
+                                <path d="M71.9 34.8C50.2 47.7 7.4 96.8 7 109.7v21.3c0 27.1 25.3 50.8 48.3 50.8 27.6 0 50.5-22.9 50.5-50 0 27.1 22.2 50 49.8 50s49-22.9 49-50c0 27.1 23.6 50 51.2 50h.5c27.6 0 51.2-22.9 51.2-50 0 27.1 21.5 50 49 50s49.8-22.9 49.8-50c0 27.1 23 50 50.5 50 23 0 48.3-23.8 48.3-50.8v-21.3c-.4-12.9-43.2-62.1-64.9-75C372.6 32.4 325.8 32 256 32S91.1 33.1 71.9 34.8zm132.3 134.4c-22 38.4-77.9 38.7-99.9 .3-13.2 23.1-43.2 32.1-56 27.7-3.9 40.2-13.7 237.1 17.7 269.2 80 18.7 302.1 18.1 379.8 0 31.7-32.3 21.3-232 17.8-269.2-12.9 4.4-42.9-4.6-56-27.7-22 38.5-77.9 38.1-99.9-.2-7.1 12.5-23.1 28.9-51.8 28.9a57.5 57.5 0 0 1 -51.8-28.9zm-41.6 53.8c16.5 0 31.1 0 49.2 19.8a436.9 436.9 0 0 1 88.2 0C318.2 223 332.9 223 349.3 223c52.3 0 65.2 77.5 83.9 144.5 17.3 62.2-5.5 63.7-34 63.7-42.2-1.6-65.5-32.2-65.5-62.8-39.3 6.4-101.9 8.8-155.6 0 0 30.6-23.3 61.2-65.5 62.8-28.4-.1-51.2-1.6-33.9-63.7 18.7-67 31.6-144.5 83.9-144.5zM256 270.8s-44.4 40.8-52.4 55.2l29-1.2v25.3c0 1.6 21.3 .2 23.3 .2 11.7 .5 23.3 1 23.3-.2v-25.3l29 1.2c-8-14.5-52.4-55.2-52.4-55.2z" />
                             </svg>
-                            <span className="">Download</span>
+                            <span className="">Itch.io</span>
                         </a>
                     </div>
 
@@ -505,10 +702,11 @@ const ProjectsPage = () => {
                             to add even more features and make it available on the Playstore.
                         </p>
                     )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2024</p>
                 </div>
 
-                {/* Flex Counter */}
-                <div id="4" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                {/* MARK: Flex Counter */}
+                <div id="7" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Flex Counter</h3>
@@ -522,8 +720,7 @@ const ProjectsPage = () => {
                                 className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
-                                <path
-                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
                             </svg>
                             <span className="">Code</span>
                         </a>
@@ -534,56 +731,32 @@ const ProjectsPage = () => {
                                 className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
-                                <path
-                                    d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
+                                <path d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
                             </svg>
                             <span className="">Website</span>
                         </a>
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm xl:text-lg">{texts[language].flexCounter}</p>
+                    {language === 'nl' ? (
+                        <p className="text-sm xl:text-lg">
+                            Flex Counter is een website/app die gebruikmaakt van Machine Learning om het aantal bicep curls te tellen tijdens een trainingssessie. Door gebruik te maken van Mediapipe voor armpositie tracking, krijgt de gebruiker real-time feedback. Het tellen van de curls wordt mogelijk gemaakt door een getraind ML5 Neural Network, met de optie voor KNN en Logic. Deze webapplicatie is ontwikkeld met React en Tailwind CSS, waardoor een responsive gebruikerservaring wordt geboden. Ik heb tijdens het maken van deze website veel geleerd over React en Tailwind.
+                        </p>
+                    ) : (
+                        <p className="text-sm xl:text-lg">
+                            Flex Counter is a website/app that uses Machine Learning to count the number of bicep curls during a workout session. By using Mediapipe for arm position tracking, users receive real-time feedback. Counting the curls is done by a trained ML5 Neural Network, with the option for KNN and Logic. This web application is developed using React and Tailwind CSS, providing a responsive user experience. I learned a lot about React and Tailwind during the development of this website.
+                        </p>
+                    )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2024 - 2025</p>
                 </div>
 
-                <div id="5" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
-
-                    {/* Project Title */}
-                    <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">SpellAI</h3>
-
-                    {/* Links */}
-                    <div className="flex flex-row absolute bottom-5 xl:bottom-auto xl:top-5 xl:right-5">
-                        <a href="https://github.com/roel204/SpellAI" target="_blank"
-                            className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
-                            rel="noreferrer">
-                            <svg
-                                className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
-                                <path
-                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                            </svg>
-                            <span className="">Code</span>
-                        </a>
-                        <a href="https://roel204.github.io/SpellAI/" target="_blank"
-                            className="flex flex-col items-center p-3 rounded-lg hover:bg-dgreen dark:hover:bg-cgreen group"
-                            rel="noreferrer">
-                            <svg
-                                className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
-                                aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
-                                <path
-                                    d="M352 256c0 22.2-1.2 43.6-3.3 64H163.3c-2.2-20.4-3.3-41.8-3.3-64s1.2-43.6 3.3-64H348.7c2.2 20.4 3.3 41.8 3.3 64zm28.8-64H503.9c5.3 20.5 8.1 41.9 8.1 64s-2.8 43.5-8.1 64H380.8c2.1-20.6 3.2-42 3.2-64s-1.1-43.4-3.2-64zm112.6-32H376.7c-10-63.9-29.8-117.4-55.3-151.6c78.3 20.7 142 77.5 171.9 151.6zm-149.1 0H167.7c6.1-36.4 15.5-68.6 27-94.7c10.5-23.6 22.2-40.7 33.5-51.5C239.4 3.2 248.7 0 256 0s16.6 3.2 27.8 13.8c11.3 10.8 23 27.9 33.5 51.5c11.6 26 20.9 58.2 27 94.7zm-209 0H18.6C48.6 85.9 112.2 29.1 190.6 8.4C165.1 42.6 145.3 96.1 135.3 160zM8.1 192H131.2c-2.1 20.6-3.2 42-3.2 64s1.1 43.4 3.2 64H8.1C2.8 299.5 0 278.1 0 256s2.8-43.5 8.1-64zM194.7 446.6c-11.6-26-20.9-58.2-27-94.6H344.3c-6.1 36.4-15.5 68.6-27 94.6c-10.5 23.6-22.2 40.7-33.5 51.5C272.6 508.8 263.3 512 256 512s-16.6-3.2-27.8-13.8c-11.3-10.8-23-27.9-33.5-51.5zM135.3 352c10 63.9 29.8 117.4 55.3 151.6C112.2 482.9 48.6 426.1 18.6 352H135.3zm358.1 0c-30 74.1-93.6 130.9-171.9 151.6c25.5-34.2 45.2-87.7 55.3-151.6H493.4z" />
-                            </svg>
-                            <span className="">Website</span>
-                        </a>
-                    </div>
-
-                    {/* Description */}
-                    <p className="text-sm xl:text-lg">{texts[language].spellAI}</p>
+                {/* Extra Projects */}
+                <div className="rounded-3xl mt-12 mb-4 bg-green-50/75 dark:bg-black/75">
+                    <h2 className="p-6 text-4xl xl:text-6xl font-bold text-cgreen">{texts[language].extraProjects}</h2>
                 </div>
 
-                {/* Stream Team */}
-                <div id="6" className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
+                {/* MARK: Stream Team */}
+                <div className="pt-10 pb-32 xl:pb-10 my-6 px-5 xl:px-10 xl:w-[60vw] relative rounded-3xl bg-green-50/75 dark:bg-black/75">
 
                     {/* Project Title */}
                     <h3 className="text-3xl xl:text-5xl font-bold text-cgreen mb-10">Stream Team</h3>
@@ -597,8 +770,7 @@ const ProjectsPage = () => {
                                 className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 496 512">
-                                <path
-                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                                <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
                             </svg>
                             <span className="">Code</span>
                         </a>
@@ -609,15 +781,23 @@ const ProjectsPage = () => {
                                 className="w-10 h-10 text-gray-700 dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white group-hover:scale-110"
                                 aria-hidden="true"
                                 xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 512 512">
-                                <path
-                                    d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
+                                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z" />
                             </svg>
                             <span className="">Info</span>
                         </a>
                     </div>
 
                     {/* Description */}
-                    <p className="text-sm xl:text-lg">{texts[language].streamTeam}</p>
+                    {language === 'nl' ? (
+                        <p className="text-sm xl:text-lg">
+                            Streamteam is een TLE (Tailored Learning Environment) project voor de studie CMGT, Hogeschool Rotterdam. Het project focust op de bestaande IP-car, een via een server te besturen auto met een livefeed, die moet worden ingezet voor dagbesteding binnen zorghuizen. De IP-car kan via deze software verbinden met een gids, die een live beeld te zien krijgt en controle van de auto kan overnemen met een controller via dezelfde verbinding. Het is een oplevering aan VindiQu en FoxConnect. VindiQu biedt al livestream dagbesteding aan zorghuizen, en FoxConnect is de ontwikkelaar van de eerste IP-car, origineel bedoeld voor particulier gebruik van mensen met een motorische beperking.
+                        </p>
+                    ) : (
+                        <p className="text-sm xl:text-lg">
+                            Streamteam is a Tailored Learning Environment (TLE) project for the CMGT study at Rotterdam University of Applied Sciences. The project focuses on the existing IP-car, a car controlled via a server with a live feed, which is intended for use in daily activities within care homes. Through this software, the IP-car can connect to a guide who can see a live feed and take control of the car with a controller via the same connection. It is a delivery to VindiQu and FoxConnect. VindiQu already offers livestream daily activities to care homes, and FoxConnect is the developer of the first IP-car, originally intended for private use by people with mobility impairments.
+                        </p>
+                    )}
+                    <p className="mt-6 text-xs xl:text-sm text-gray-400">2023 - 2024</p>
                 </div>
             </div>
         </div>

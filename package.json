@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "private": true,
-  "version": "1.1.7",
+  "version": "1.2.0",
   "type": "module",
   "homepage": "https://roel204.github.io/Portfolio/",
   "scripts": {
@@ -14,7 +14,7 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.0",
+    "react-router-dom": "^7.18.5",
     "react-router-hash-link": "^2.4.3"
   },
   "devDependencies": {
@@ -28,7 +28,11 @@
     "eslint-plugin-react-refresh": "^0.4.5",
     "gh-pages": "^6.1.1",
     "postcss": "^8.4.33",
+    "sass-embedded": "^1.107.1",
     "tailwindcss": "^3.4.1",
     "vite": "^7.3.0"
+  },
+  "allowScripts": {
+    "esbuild@0.27.2": true
   }
 }

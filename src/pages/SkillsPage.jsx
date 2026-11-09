@@ -25,6 +25,7 @@ const SkillsPage = () => {
         en: {
             codeTitle: "CODE SKILLS",
             codeDesc: "I have experience with a variety of programming languages, frameworks, and tools.\nWhile I learned many of these through my studies, I also enjoy exploring new technologies out of personal interest.\nI'm especially passionate about game development in Unity. To me, coding isn't just a means to create games, but an opportunity to write clean, efficient, and reusable systems which can be used by others.",
+            aiTitle: "AI USE",
             pcTitle: "PC BUILDING",
             pcDesc: "I have built multiple computers and love searching for the perfect parts that will fit the build.",
             roelTitle: "My Computer",
@@ -37,6 +38,7 @@ const SkillsPage = () => {
         nl: {
             codeTitle: 'CODE SKILLS',
             codeDesc: "Ik heb ervaring met verschillende programmeertalen, frameworks en tools.\nHoewel ik veel hiervan tijdens mijn studie heb geleerd, vind ik het ook leuk om zelf nieuwe technologieën te ontdekken.\nIk ben vooral gepassioneerd over game development in Unity. Voor mij is programmeren niet alleen een middel om games te maken, maar een kans om schone, efficiënte en herbruikbare systemen te schrijven die door anderen gebruikt kunnen worden.",
+            aiTitle: "AI GEBRUIK",
             pcTitle: "PC BOUWEN",
             pcDesc: "Ik heb meerdere computers gebouwd en vind het leuk om op zoek te gaan naar de perfecte onderdelen die bij de computer passen.",
             roelTitle: "Mijn Computer",
@@ -53,7 +55,7 @@ const SkillsPage = () => {
         <div className="xl:ml-[6vw] flex flex-col justify-center items-center max-w-full min-h-screen">
             <div className="py-10 my-10 xl:px-10 xl:w-[60vw] rounded-3xl bg-green-50/75 dark:bg-black/75">
                 <h1 className="gradientText text-5xl xl:text-8xl pb-5">{texts[language].codeTitle}</h1>
-                <p className="text-gray-400 text-center px-4 xl:whitespace-pre-line">{texts[language].codeDesc}</p>
+                <p className="text-center px-4 xl:whitespace-pre-line">{texts[language].codeDesc}</p>
 
                 {isMobile ? (
                     // Content for mobile
@@ -350,9 +352,61 @@ const SkillsPage = () => {
                 )}
             </div>
 
+            {/* AI View */}
+            <div className="py-10 my-10 xl:px-10 xl:w-[60vw] rounded-3xl bg-green-50/75 dark:bg-black/75">
+                <h1 className="gradientText text-5xl xl:text-8xl pb-5">{texts[language].aiTitle}</h1>
+
+                {/* Description */}
+                {language === 'nl' ? (
+                    <p className="text-sm xl:text-lg">
+                        AI is een nuttige tool, geen oplossing. Je kunt een AI niet vragen: "Maak alsjeblieft een game" en dan een goed resultaat verwachten.
+                        <br /><br />
+                        Ik begon met leren programmeren vlak voordat AI (large language models) echt doorbrak, en ik heb gezien hoe de mogelijkheden van AI zich samen met mijn eigen vaardigheden verbeterden.
+                        Naarmate AI beter werd, leerde ik het effectief te gebruiken en ermee samen te werken om problemen op te lossen.
+                        Ik experimenteerde met vroege modellen zoals GPT-3, bekeek leerzame video's en schreef mijn eigen games en applicaties waarin AI wordt gebruikt.
+                        Zo leerde ik zowel de sterke als de zwakke kanten van AI kennen.
+                        Daardoor heb ik een workflow kunnen ontwikkelen waarmee ik kan profiteren van de snelheid en kennis van AI, en ik mijn code toch overzichtelijk en begrijpelijk houd.
+                        <br /><br />
+                        Ik gebruik AI vooral voor boilerplate, debugging en code reviews.
+                        <br />
+                        Daarom noem ik AI een tool, geen oplossing. AI wordt steeds beter in programmeren, maar je kunt nog steeds niet verwachten dat het alles weet en kan. Ik betrap het nog regelmatig op fouten.
+                        Zelfs met nieuwere modellen kan een wijziging op zichzelf kloppen en toch ergens anders in het project iets breken, omdat de AI mijn project niet zo goed kent als ik.
+                        <br />
+                        Daarom lees ik alle gegenereerde code zelf door en gebruik ik geen volledig autonome agents.
+                        <br /><br />
+                        Er is nog een belangrijke reden waarom ik liever geen autonome AI gebruik.
+                        <br />
+                        Het is gewoon niet leuk! Ik programmeer graag en vind het geweldig om systemen te ontwerpen en te bouwen. Dat geeft me veel voldoening.
+                        Het is ook veel leuker om zelf nieuwe dingen te leren dan ze aan een AI over te laten en te hopen dat die al je problemen oplost.
+                    </p>
+                ) : (
+                    <p className="text-sm xl:text-lg">
+                        AI is a really useful tool, not a solution. You can't ask an AI to "Please make a game" and expect a good result.
+                        <br /><br />
+                        I started learning to program just before AI (large language models) became a thing, and I've seen its capabilities improve alongside my own.
+                        As AI got better, I learned to use it effectively and to work with it to solve problems.
+                        I played around with early models like GPT-3, watched informative videos, and wrote my own games and applications that use AI.
+                        Along the way, I learned both the strengths and the weaknesses of using AI.
+                        This helped me refine my workflow, so I can benefit from the speed and knowledge of AI while keeping my code clean and understandable.
+                        <br /><br />
+                        I mostly use AI for things like boilerplate, debugging, and code reviews.
+                        <br />
+                        That's why I call AI a tool, not a solution. AI keeps getting better at coding, but you still can't expect it to know and do everything, and I still catch it making mistakes regularly.
+                        Even with newer models, a change can look right on its own and still break something elsewhere in the project, because the AI doesn't know my project the way I do.
+                        <br />
+                        That's why I read all AI-generated code and don't use fully autonomous agents.
+                        <br /><br />
+                        There is one more important reason I don't like to use autonomous AI.
+                        <br />
+                        It's not fun! I like programming, and I enjoy designing and creating systems. It's very satisfying to me.
+                        It's also fun to learn new things, instead of throwing them at an AI and hoping it solves all your problems.
+                    </p>
+                )}
+            </div>
+
             <div className="py-10 my-10 xl:px-10 xl:w-[60vw] rounded-3xl bg-green-50/75 dark:bg-black/75">
                 <h1 className="gradientText text-5xl xl:text-8xl pb-5">{texts[language].pcTitle}</h1>
-                <p className="text-gray-400 text-center px-4 xl:whitespace-pre-line">{texts[language].pcDesc}</p>
+                <p className="text-center px-4 xl:whitespace-pre-line">{texts[language].pcDesc}</p>
 
                 {/*Roel Computer*/}
                 <div className="border-2 border-cgreen rounded-t-2xl p-4 mt-[5vh] text-center bg-white/50 dark:bg-black/50">
@@ -363,7 +417,7 @@ const SkillsPage = () => {
                     <div className="flex justify-center w-full xl:w-auto order-first xl:order-last">
                         <img src={"images/roelPCsm.png"} alt="Roel's PC" className="max-w-[30vw] xl:max-w-[10vw] xl:mr-5 mb-auto object-contain transition xl:hover:scale-125" />
                     </div>
-                    
+
                     <div className="borr-2 flex flex-col justify-around w-full xl:w-[60%]">
                         <div className="p-2">
                             <p>{texts[language].roelDesc}</p>
@@ -384,7 +438,7 @@ const SkillsPage = () => {
                     <h3 className="text-2xl font-bold">{texts[language].jitseTitle}</h3>
                 </div>
                 <div className="flex flex-col xl:flex-row justify-between border-x-2 border-b-2 border-cgreen rounded-b-2xl p-2">
-                    
+
                     <div className="flex justify-center w-full xl:w-auto order-first xl:order-last">
                         <img src={"images/jitsePCsm.png"} alt="Jitse's PC" className="max-w-[30vw] xl:max-w-[10vw] xl:mr-5 mb-auto object-contain transition xl:hover:scale-125" />
                     </div>
@@ -409,7 +463,7 @@ const SkillsPage = () => {
                     <h3 className="text-2xl font-bold">{texts[language].vincentTitle}</h3>
                 </div>
                 <div className="flex flex-col xl:flex-row justify-between border-x-2 border-b-2 border-cgreen rounded-b-2xl p-2">
-                    
+
                     <div className="flex justify-center w-full xl:w-auto order-first xl:order-last">
                         <img src={"images/vincentPCsm.png"} alt="Vincent's PC" className="max-w-[30vw] xl:max-w-[10vw] xl:mr-5 mb-auto object-contain transition xl:hover:scale-125" />
                     </div>
